@@ -1,0 +1,22 @@
+## READ.ME file che spiega i concetti base della modellazione Medea ##
+
+1) I nodi hanno un nome che corrisponde grosso modo ad una tabella.
+	I nodi possono avere delle `label` che sono dei nomi aggiuntivi e che rappresentano delle viste alterntive (anche diverse) del nodo.
+	Nodi e relazioni hanno proprietà (che corrispondono grosso modo agli attributi)
+
+2) Naming rules:
+	a) I nomi dei nodi/entità/Oggetti sono CamelCase con iniziale `Maiuscola` (TipoDiAppuntamento)
+	b) I nomi degli attributi sono CamelCase con iniziali `minuscola` (cognomeDelTitolare)
+	c) I nomi delle relazioni sono UPPER_CASE separati da underscore (PERSONA_HA_CONTO)
+
+3) se non è specificato il tipo, si considera testo (UNICODE lungo a piacere)
+
+4) Tutte le relazioni si intendono navigabili in entrambe le direzioni, anche se sono direzionali. Ilmnome della relazione è riferito alla direzione.
+
+5) tutte le relazioni in cui non appare la molteplicità si intendono con molteplicità = 1
+
+6) Tutte le relazioni esplicitate nel modello come una aggregazione (con un rombo all'inizio) si intendono come relazioni effettive (collegamenti ad altri nodi), mentre quelli che non sono esplicitati come relazioni si intendono concettualmente come attributi complessi (o relazioni implicite). Anche se interni, se hanno molteplicita 0..1 si intndono non obbligatori (e quindi non presenti in quella specifica istanza)
+Gli attributi possono essere degli array.
+
+7) Tutti gli oggetti hanno un attributo implicito che è l'uuid che è cura del programmatore o di chi scrive le query specificare. E' sull'uuid che il programmatore naviga i link.
+

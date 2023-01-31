@@ -1,0 +1,2549 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	0)
+
+(object Class_Category "Visualizzazione Elenco Istituti Scolastici"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    attributes 	(list Attribute_Set
+	(object Attribute
+	    tool       	"e-gov"
+	    name       	"cg_style"
+	    value      	"Default")
+	(object Attribute
+	    tool       	"e-gov"
+	    name       	"Status"
+	    value      	("StatusTy" 2))
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNamespace"
+	    value      	"")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"UsedNamespaces"
+	    value      	"Scuola;OggettiCondivisi;")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNameSpacePrefix"
+	    value      	"Scuola")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNameSpace"
+	    value      	"")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"UsedNameSpaces"
+	    value      	"Scuola;OggettiCondivisi;"))
+    quid       	"40F294EF0038"
+    stereotype 	"Business System"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object UseCase "Visualizzazione Elenco Istituti Scolastici"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"cg_style"
+		    value      	"Default")
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"TipoDiCollaborazione"
+		    value      	("TipoDiCollaborazioneTy" 7))
+		(object Attribute
+		    tool       	"Navigator"
+		    name       	"cg_style"
+		    value      	"Default")
+		(object Attribute
+		    tool       	"Arianna"
+		    name       	"ErogabileSoloseEsisteBackOffice"
+		    value      	"True")
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"Richiesta"
+		    value      	0)
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"TipoRichiesta"
+		    value      	"online")
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"Risposta"
+		    value      	"Elenco Degli Istituti Scolastici"))
+	    quid       	"402F5C170289"
+	    stereotype 	"use-case realization"
+	    statemachine 	(object State_Machine "Visualizzazione Elenco Istituti Scolastici"
+		quid       	"402CCC5C0172"
+		states     	(list States
+		    (object ActivityState "Visualizzazione Elenco Istituti Scolastici"
+			attributes 	(list Attribute_Set)
+			quid       	"402CCC5C0173"
+			stereotype 	"Business activity"
+			statemachine 	(object State_Machine "Visualizzazione Elenco Istituti Scolastici"
+			    quid       	"402CCC5C0175"
+			    states     	(list States
+				(object State "$UNNAMED$0"
+				    quid       	"402CCC5C017B"
+				    type       	"StartState")
+				(object State "$UNNAMED$1"
+				    quid       	"402CCC5C017C"
+				    type       	"EndState")
+				(object ActivityState "Compilazione della Richiesta"
+				    attributes 	(list Attribute_Set)
+				    quid       	"402CCC5C017D"))
+			    partitions 	(list Partitions
+				(object Partition "FSL"
+				    quid       	"402CCC5C017A"
+				    class      	"Use Case View::Architettura applicativa::Front-End Service Layer (FSL)::FSL"
+				    quidu      	"40164CDB0010"
+				    persistence 	"Transient"
+				    creationObj 	FALSE
+				    multi      	FALSE)
+				(object Partition "Utente"
+				    quid       	"402E8330015C"
+				    quidu      	"3EEDA1AE002A"
+				    persistence 	"Transient"
+				    creationObj 	FALSE
+				    multi      	FALSE))
+			    objects    	(list Objects
+				(object Object "Elenco degli Istituti Scolastici"
+				    quid       	"402CCC5C0189"
+				    class      	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici (Oggetti)::Elenco Degli Istituti Scolastici"
+				    quidu      	"402CCC5C0121"
+				    persistence 	"Transient"
+				    creationObj 	FALSE
+				    multi      	FALSE)
+				(object Object "Richiesta di Visualizzazione Elenco Istituti Scolastici"
+				    quid       	"402E80370148"
+				    class      	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici (Oggetti)::Richiesta Di Visualizzazione Elenco Istituti Scolastici"
+				    quidu      	"402CCC5C0127"
+				    persistence 	"Transient"
+				    creationObj 	FALSE
+				    multi      	FALSE)
+				(object Object "Eccezione"
+				    quid       	"402E87B60112"
+				    class      	"Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Eccezione::Eccezione"
+				    quidu      	"4006CB23006A"
+				    persistence 	"Transient"
+				    creationObj 	FALSE
+				    multi      	FALSE))
+			    transitions 	(list transition_list
+				(object State_Transition
+				    quid       	"402E7E6501D0"
+				    supplier   	""
+				    supplier_quidu 	"401E49E003BF"
+				    client     	"$UNNAMED$0"
+				    client_quidu 	"402CCC5C017B"
+				    sendEvent  	(object sendEvent
+					quid       	"402E7E6501D3")))
+			    objectflows 	(list objectflow_list
+				(object Object_Flow
+				    quid       	"402E845A02A7"
+				    supplier   	"Use Case View::Processi::Pattern Di Processo::MetaModello di Erogazione dei Servizi::Richiedente::Compilazione della Richiesta::Compilazione della Richiesta::Compilazione della Richiesta"
+				    supplier_quidu 	"401F9CD50325"
+				    client     	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici::Richiesta di Visualizzazione Elenco Istituti Scolastici"
+				    client_quidu 	"402E80370148"
+				    State      	"Predisposta"
+				    quidstate  	"402CCC5C012A"))
+			    statediagrams 	(list StateDiagrams
+				(object ActivityDiagram "Visualizzazione Elenco Istituti Scolastici-WF"
+				    quid       	"402CCC5C0176"
+				    title      	"Visualizzazione Elenco Istituti Scolastici-WF"
+				    zoom       	100
+				    max_height 	28350
+				    max_width  	21600
+				    origin_x   	0
+				    origin_y   	0
+				    items      	(list diagram_item_list
+					(object Swimlane "Utente" @1
+					    quid       	"4DBC5A12035D"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    line_color 	3342489
+					    quidu      	"402E8330015C"
+					    width      	2154)
+					(object ObjectView "Richiesta di Visualizzazione Elenco Istituti Scolastici" @2
+					    quid       	"4DBC5A12035E"
+					    Parent_View 	@1
+					    location   	(1855, 512)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A12035F"
+						Parent_View 	@2
+						location   	(1855, 735)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	5975
+						justify    	0
+						label      	"Richiesta di Visualizzazione Elenco Istituti Scolastici")
+					    icon       	"Modulo (Form)"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"402E80370148"
+					    compartment 	(object Compartment
+						quid       	"4DBC5A120361"
+						Parent_View 	@2
+						location   	(1734, 776)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						icon_style 	"Icon"
+						anchor     	2
+						nlines     	1
+						max_width  	239
+						justify    	0
+						compartmentItems 	(list Compartment
+						    "[Predisposta]"))
+					    annotation 	4
+					    autoResize 	TRUE
+					    subobjects 	0
+					    x_offset   	0.000000
+					    y_offset   	0.000000
+					    State      	"Predisposta"
+					    quidstate  	"402CCC5C012A")
+					(object ActivityStateView "Compilazione della Richiesta" @3
+					    quid       	"4DBC5A120363"
+					    Parent_View 	@1
+					    location   	(320, 912)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A120364"
+						Parent_View 	@3
+						location   	(320, 899)
+						fill_color 	16777215
+						anchor_loc 	1
+						nlines     	2
+						max_width  	167
+						justify    	0
+						label      	"Compilazione della Richiesta")
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"402CCC5C017D"
+					    width      	295
+					    height     	138
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object Object_Flow_View "" @4
+					    quid       	"4DBC5A120366"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"402E845A02A7"
+					    client     	@2
+					    supplier   	@3
+					    vertices   	(list Points
+						(1733, 540)
+						(458, 875))
+					    line_style 	0)
+					(object ObjectView "Richiesta di Visualizzazione Elenco Istituti Scolastici" @5
+					    quid       	"4DBC5A120368"
+					    Parent_View 	@1
+					    location   	(1971, 1168)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A120369"
+						Parent_View 	@5
+						location   	(1971, 1391)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	5972
+						justify    	0
+						label      	"Richiesta di Visualizzazione Elenco Istituti Scolastici")
+					    icon       	"Modulo (Form)"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"402E80370148"
+					    compartment 	(object Compartment
+						quid       	"4DBC5A12036B"
+						Parent_View 	@5
+						location   	(1711, 1432)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						icon_style 	"Icon"
+						anchor     	2
+						nlines     	1
+						max_width  	517
+						justify    	0
+						compartmentItems 	(list Compartment
+						    "[Completamente Compilata]"))
+					    annotation 	4
+					    autoResize 	TRUE
+					    subobjects 	0
+					    x_offset   	-0.080000
+					    y_offset   	0.110000
+					    State      	"Completamente Compilata"
+					    quidstate  	"402CCC5C012C")
+					(object StateView "StartState" "$UNNAMED$0" @6
+					    quid       	"4DBC5A12036D"
+					    Parent_View 	@1
+					    location   	(128, 224)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @7
+						quid       	"4DBC5A12036E"
+						Parent_View 	@6
+						location   	(170, 194)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	TRUE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						hidden     	TRUE
+						nlines     	2
+						max_width  	600
+						justify    	1
+						label      	""
+						pctDist    	1.000000
+						height     	0
+						orientation 	0)
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    quidu      	"402CCC5C017B"
+					    autoResize 	TRUE)
+					(object ActivityStateView "Inoltro della Richiesta" @8
+					    quid       	"4DBC5A12036F"
+					    Parent_View 	@1
+					    location   	(560, 1776)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A120370"
+						Parent_View 	@8
+						location   	(560, 1920)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	874
+						justify    	0
+						label      	"Inoltro della Richiesta")
+					    icon       	"Business Activity"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"4023B4F30228"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object Swimlane "FSL" @9
+					    quid       	"4DBC5A120372"
+					    location   	(2154, 0)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    line_color 	3342489
+					    quidu      	"402CCC5C017A"
+					    width      	1344)
+					(object ActivityStateView "Predisposizione del Modulo di Richiesta" @10
+					    quid       	"4DBC5A120373"
+					    Parent_View 	@9
+					    location   	(2640, 224)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A120374"
+						Parent_View 	@10
+						location   	(2640, 368)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	1142
+						justify    	0
+						label      	"Predisposizione del Modulo di Richiesta")
+					    icon       	"Business Activity"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"401E49E003BF"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object Object_Flow_View "" @11
+					    quid       	"4DBC5A120376"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"402E84410105"
+					    client     	@10
+					    supplier   	@2
+					    vertices   	(list Points
+						(2498, 274)
+						(1975, 464))
+					    line_style 	0)
+					(object TransView "" @12
+					    quid       	"4DBC5A120378"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"402E7E6501D0"
+					    client     	@6
+					    supplier   	@10
+					    vertices   	(list Points
+						(158, 224)
+						(2496, 224))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object ActivityStateView "Processa la Richiesta" @13
+					    quid       	"4DBC5A12037A"
+					    Parent_View 	@9
+					    location   	(2800, 1744)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A12037B"
+						Parent_View 	@13
+						location   	(2800, 1898)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	1309
+						justify    	0
+						label      	"Processa la Richiesta")
+					    icon       	"Business Transaction"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"40250DC50357"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object ObjectView "Elenco degli Istituti Scolastici" @14
+					    quid       	"4DBC5A12037D"
+					    Parent_View 	@9
+					    location   	(2738, 2384)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A12037E"
+						Parent_View 	@14
+						location   	(2737, 2600)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	5721
+						justify    	0
+						label      	"Elenco degli Istituti Scolastici")
+					    icon       	"Business Document"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"402CCC5C0189"
+					    width      	228
+					    annotation 	4
+					    autoResize 	TRUE
+					    subobjects 	0
+					    x_offset   	0.000000
+					    y_offset   	0.000000)
+					(object Object_Flow_View "" @15
+					    quid       	"4DBC5A120380"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"402E84D30089"
+					    client     	@13
+					    supplier   	@14
+					    vertices   	(list Points
+						(2791, 1817)
+						(2748, 2246))
+					    line_style 	0)
+					(object ObjectView "Eccezione" @16
+					    quid       	"4DBC5A120382"
+					    Parent_View 	@9
+					    location   	(3369, 2112)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A120383"
+						Parent_View 	@16
+						location   	(3368, 2277)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	773
+						justify    	0
+						label      	"Eccezione")
+					    icon       	"Exception"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"402E87B60112"
+					    width      	138
+					    annotation 	4
+					    autoResize 	TRUE
+					    subobjects 	0
+					    x_offset   	0.000000
+					    y_offset   	0.000000)
+					(object Object_Flow_View "" @17
+					    quid       	"4DBC5A120385"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"402E87DD03AD"
+					    client     	@13
+					    supplier   	@16
+					    vertices   	(list Points
+						(2912, 1817)
+						(3301, 2067))
+					    line_style 	0)
+					(object Swimlane "" @18
+					    quid       	"4DBC5A120387"
+					    location   	(3498, 0)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    line_color 	3342489
+					    width      	450)
+					(object TransView "" @19
+					    quid       	"4DBC5A120388"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @20
+						quid       	"4DBC5A120389"
+						Parent_View 	@19
+						location   	(504, 1415)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor_loc 	1
+						nlines     	1
+						max_width  	1104
+						justify    	0
+						label      	"Inoltra( Richiesta )[ richiesta = [completamente compilata] ]"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"4023B510036C"
+					    client     	@3
+					    supplier   	@8
+					    vertices   	(list Points
+						(339, 980)
+						(541, 1712))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @21
+					    quid       	"4DBC5A12038B"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @22
+						quid       	"4DBC5A12038C"
+						Parent_View 	@21
+						location   	(1668, 1714)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor_loc 	1
+						nlines     	1
+						max_width  	1243
+						justify    	0
+						label      	"Richiede Inoltro( Richiesta )[ Richiesta = Pronta per il Pagamento ]"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40250DDA0240"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @23
+					    quid       	"4DBC5A12038E"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @24
+						quid       	"4DBC5A12038F"
+						Parent_View 	@23
+						location   	(1668, 1714)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor_loc 	1
+						nlines     	1
+						max_width  	450
+						justify    	0
+						label      	"( Richiesta )"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"402E726A01CA"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @25
+					    quid       	"4DBC5A120391"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @26
+						quid       	"4DBC5A120392"
+						Parent_View 	@25
+						location   	(1668, 1714)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor_loc 	1
+						nlines     	1
+						max_width  	1275
+						justify    	0
+						label      	"Richiede Inoltro( Richiesta )[ Richiesta = Completamente Compilata ]"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"409BE5230077"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @27
+					    quid       	"4DBC5A120394"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"409BE98002C1"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @28
+					    quid       	"4DBC5A120396"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"409BED5E026B"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @29
+					    quid       	"4DBC5A120398"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"409BEE5F00BC"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @30
+					    quid       	"4DBC5A12039A"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @31
+						quid       	"4DBC5A12039B"
+						Parent_View 	@30
+						location   	(1668, 1714)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor_loc 	1
+						nlines     	1
+						max_width  	674
+						justify    	0
+						label      	"( Richiesta di Dichiarazione TARSU )"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"4041FDE900DD"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @32
+					    quid       	"4DBC5A12039D"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40B771590275"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @33
+					    quid       	"4DBC5A12039F"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40E2A30C00D9"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @34
+					    quid       	"4DBC5A1203A1"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40E5362701A6"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @35
+					    quid       	"4DBC5A1203A3"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40E537BB03D3"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @36
+					    quid       	"4DBC5A1203A5"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @37
+						quid       	"4DBC5A1203A6"
+						Parent_View 	@36
+						location   	(1668, 1714)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor_loc 	1
+						nlines     	1
+						max_width  	1275
+						justify    	0
+						label      	"Richiede Inoltro( Richiesta )[ Richiesta = Completamente Compilata ]"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40E5391F00D8"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @38
+					    quid       	"4DBC5A1203A8"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40E53CA2006E"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @39
+					    quid       	"4DBC5A1203AA"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @40
+						quid       	"4DBC5A1203AB"
+						Parent_View 	@39
+						location   	(1668, 1714)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor_loc 	1
+						nlines     	1
+						max_width  	1275
+						justify    	0
+						label      	"Richiede Inoltro( Richiesta )[ Richiesta = Completamente Compilata ]"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40EAAEE203E0"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @41
+					    quid       	"4DBC5A1203AD"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40EAB6700179"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @42
+					    quid       	"4DBC5A1203AF"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"413338F300E8"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @43
+					    quid       	"4DBC5A1203B1"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @44
+						quid       	"4DBC5A1203B2"
+						Parent_View 	@43
+						location   	(1668, 1714)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor_loc 	1
+						nlines     	1
+						max_width  	1275
+						justify    	0
+						label      	"Richiede Inoltro( Richiesta )[ Richiesta = Completamente Compilata ]"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"43C79C5402F1"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @45
+					    quid       	"4DBC5A1203B4"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40F4FBA900C7"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @46
+					    quid       	"4DBC5A1203B6"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40F2A002038E"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @47
+					    quid       	"4DBC5A1203B8"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @48
+						quid       	"4DBC5A1203B9"
+						Parent_View 	@47
+						location   	(504, 1415)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor_loc 	1
+						nlines     	1
+						max_width  	1104
+						justify    	0
+						label      	"Inoltra( Richiesta )[ richiesta = [completamente compilata] ]"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"440477010351"
+					    client     	@3
+					    supplier   	@8
+					    vertices   	(list Points
+						(339, 980)
+						(541, 1712))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @49
+					    quid       	"4DBC5A1203BB"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @50
+						quid       	"4DBC5A1203BC"
+						Parent_View 	@49
+						location   	(1668, 1714)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor_loc 	1
+						nlines     	1
+						max_width  	1275
+						justify    	0
+						label      	"Richiede Inoltro( Richiesta )[ Richiesta = Completamente Compilata ]"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"44056D53006B"
+					    client     	@8
+					    supplier   	@13
+					    vertices   	(list Points
+						(702, 1772)
+						(2634, 1744))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object Object_Flow_View "" @51
+					    quid       	"4DBC5A1203BE"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"402E84730150"
+					    client     	@3
+					    supplier   	@5
+					    vertices   	(list Points
+						(467, 934)
+						(1849, 1147))
+					    line_style 	0)))))))
+		partitions 	(list Partitions)
+		objects    	(list Objects)
+		transitions 	(list transition_list
+		    (object State_Transition
+			quid       	"402E863C0279"
+			supplier_quidu 	"402E829A0202"
+			client     	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici"
+			client_quidu 	"402CCC5C0173"
+			sendEvent  	(object sendEvent
+			    quid       	"402E863C027C")))
+		objectflows 	(list objectflow_list
+		    (object Object_Flow
+			quid       	"402D5596012A"
+			supplier   	""
+			supplier_quidu 	"402D554F000F"
+			client     	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici"
+			client_quidu 	"402CCC5C0173")
+		    (object Object_Flow
+			quid       	"4075640202A6"
+			supplier   	""
+			supplier_quidu 	"407563BE0062"
+			client     	""
+			client_quidu 	"43FEDFBA03D5")
+		    (object Object_Flow
+			quid       	"407564410122"
+			supplier   	""
+			supplier_quidu 	"407563630092"
+			client     	""
+			client_quidu 	"43FEDFBA03D5"))
+		statediagrams 	(list StateDiagrams))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "Visualizzazione Elenco Istituti Scolastici"
+		    quid       	"402F8BCC013E"
+		    title      	"Visualizzazione Elenco Istituti Scolastici"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici (Oggetti)::Richiesta Di Visualizzazione Elenco Istituti Scolastici" @52
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1203D5"
+			    location   	(2127, 177)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1203D6"
+				Parent_View 	@52
+				location   	(2127, 400)
+				anchor_loc 	1
+				nlines     	1
+				max_width  	5483
+				justify    	0
+				label      	"Richiesta Di Visualizzazione Elenco Istituti Scolastici")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"402CCC5C0127"
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici (Oggetti)::Elenco Degli Istituti Scolastici" @53
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1203D9"
+			    location   	(2127, 993)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1203DA"
+				Parent_View 	@53
+				location   	(2126, 1209)
+				anchor_loc 	1
+				nlines     	1
+				max_width  	4965
+				justify    	0
+				label      	"Elenco Degli Istituti Scolastici")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"402CCC5C0121"
+			    width      	228
+			    autoResize 	TRUE)
+			(object UseCaseView "Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici" @54
+			    quid       	"4DBC5A1203DD"
+			    location   	(1344, 591)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1203DE"
+				Parent_View 	@54
+				location   	(1344, 732)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	648
+				justify    	0
+				label      	"Visualizzazione Elenco Istituti Scolastici")
+			    icon       	"use-case realization"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"402F5C170289")
+			(object AssociationViewNew "" @55
+			    quid       	"4DBC5A1203E7"
+			    location   	(1553, 477)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4129BC230103"
+			    roleview_list 	(list RoleViews
+				(object RoleView "" @56
+				    quid       	"4DBC5A1203E9"
+				    Parent_View 	@55
+				    location   	(209, -115)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4129BC24006B"
+				    client     	@55
+				    supplier   	@52
+				    vertices   	(list Points
+					(1553, 477)
+					(2003, 238))
+				    line_style 	0)
+				(object RoleView "" @57
+				    quid       	"4DBC5A1203EB"
+				    Parent_View 	@55
+				    location   	(209, -115)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4129BC240075"
+				    client     	@55
+				    supplier   	@54
+				    vertices   	(list Points
+					(1553, 477)
+					(1446, 530))
+				    line_style 	0)))
+			(object AssociationViewNew "" @58
+			    quid       	"4DBC5A1203ED"
+			    location   	(1820, 833)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4129BC26016B"
+			    roleview_list 	(list RoleViews
+				(object RoleView "" @59
+				    quid       	"4DBC5A1203EF"
+				    Parent_View 	@58
+				    location   	(476, 241)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4129BC270337"
+				    client     	@58
+				    supplier   	@53
+				    vertices   	(list Points
+					(1820, 833)
+					(2013, 932))
+				    line_style 	0)
+				(object RoleView "" @60
+				    quid       	"4DBC5A1203F1"
+				    Parent_View 	@58
+				    location   	(476, 241)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4129BC270341"
+				    client     	@58
+				    supplier   	@54
+				    vertices   	(list Points
+					(1820, 833)
+					(1664, 753))
+				    line_style 	0)))
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Attori::Service Layer" @61
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4DBC5A1203D1"
+			    location   	(465, 591)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1203D2"
+				Parent_View 	@61
+				location   	(464, 764)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	1310
+				justify    	0
+				label      	"Service Layer")
+			    icon       	"Resource"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"401C24D900D3"
+			    width      	310
+			    height     	188
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "" @62
+			    quid       	"50954A3E007D"
+			    location   	(924, 591)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"50954A3E0080"
+			    roleview_list 	(list RoleViews
+				(object RoleView "" @63
+				    quid       	"50954A3E007E"
+				    Parent_View 	@62
+				    location   	(459, 0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"50954A3F0024"
+				    client     	@62
+				    supplier   	@54
+				    vertices   	(list Points
+					(924, 591)
+					(1230, 591))
+				    line_style 	0)
+				(object RoleView "" @64
+				    quid       	"50954A3E007F"
+				    Parent_View 	@62
+				    location   	(459, 0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"50954A3F002E"
+				    client     	@62
+				    supplier   	@61
+				    vertices   	(list Points
+					(924, 591)
+					(617, 591))
+				    line_style 	0)))))))
+	(object Association "$UNNAMED$2"
+	    quid       	"4129BC230103"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$3"
+		    quid       	"4129BC24006B"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici (Oggetti)::Richiesta Di Visualizzazione Elenco Istituti Scolastici"
+		    quidu      	"402CCC5C0127"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$4"
+		    quid       	"4129BC240075"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici"
+		    quidu      	"402F5C170289")))
+	(object Association "$UNNAMED$5"
+	    quid       	"4129BC26016B"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$6"
+		    quid       	"4129BC270337"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici (Oggetti)::Elenco Degli Istituti Scolastici"
+		    quidu      	"402CCC5C0121"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$7"
+		    quid       	"4129BC270341"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici"
+		    quidu      	"402F5C170289")))
+	(object Association "$UNNAMED$8"
+	    quid       	"50954A3E0080"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$9"
+		    quid       	"50954A3F0024"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici"
+		    quidu      	"402F5C170289"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$10"
+		    quid       	"50954A3F002E"
+		    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Attori::Service Layer"
+		    quidu      	"401C24D900D3")))
+	(object Class_Category "Visualizzazione Elenco Istituti Scolastici (Oggetti)"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNamespace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNamespaces"
+		    value      	"Scuola;OggettiCondivisi;")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpacePrefix"
+		    value      	"Scuola")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNameSpaces"
+		    value      	"Scuola;OggettiCondivisi;"))
+	    quid       	"4129BC770346"
+	    stereotype 	"Business Analysis Model"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class "Richiesta Di Visualizzazione Elenco Istituti Scolastici"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"Criterio Di Ricerca Istituti Scolastici;Richiedente;Titolare;")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"3")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"401FC3DE02C2")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"OggettiCondivisi:RichiestaDiServizioOnLineAllaPa")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNamespaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNamespace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"Only Ref")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"Scuola")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"401FC3DE02C2")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"OggettiCondivisi:RichiestaDiServizioOnLineAllaPa")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	""))
+		    quid       	"402CCC5C0127"
+		    stereotype 	"Modulo (Form)"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"402CCC5C0156"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Richiesta::Richiesta Di Servizio On Line Alla Pa"
+			    quidu      	"401FC3DE02C2"))
+		    statemachine 	(object State_Machine "Richiesta di Visualizzazione Elenco Istituti Scolastici"
+			quid       	"402CCC5C0129"
+			states     	(list States
+			    (object State "Predisposta"
+				quid       	"402CCC5C012A"
+				type       	"Normal")
+			    (object State "Parzialmente Compilata"
+				quid       	"402CCC5C012B"
+				type       	"Normal")
+			    (object State "Completamente Compilata"
+				quid       	"402CCC5C012C"
+				type       	"Normal"))
+			partitions 	(list Partitions)
+			objects    	(list Objects)
+			transitions 	(list transition_list)
+			objectflows 	(list objectflow_list)
+			statediagrams 	(list StateDiagrams)))
+		(object Class "Elenco Degli Istituti Scolastici"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"Istituto Scolastico;")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"1")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"3EEDAE420055")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"OggettiCondivisi:Risposta")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNamespaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNamespace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"Only Ref")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"Scuola")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"3EEDAE420055")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"OggettiCondivisi:Risposta")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	""))
+		    quid       	"402CCC5C0121"
+		    stereotype 	"Business Document"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"402CCC5C0158"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Risposta::Risposta"
+			    quidu      	"3EEDAE420055")))
+		(object Association "$UNNAMED$11"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"e-gov"
+			    name       	"cg_style"
+			    value      	"Default")
+			(object Attribute
+			    tool       	"XSD"
+			    name       	"cg_style"
+			    value      	"Default"))
+		    quid       	"402E04760081"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$12"
+			    quid       	"402E0476029B"
+			    supplier   	"Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Scuola (Oggetti)::Sussidi E Finanziamenti::Istituto Scolastico::Istituto Scolastico"
+			    quidu      	"402CFA3D023F"
+			    client_cardinality 	(value cardinality "0..*")
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$13"
+			    quid       	"402E047602AF"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici (Oggetti)::Elenco Degli Istituti Scolastici"
+			    quidu      	"402CCC5C0121"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$14"
+		    quid       	"4141D0770155"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$15"
+			    quid       	"4141D0780081"
+			    supplier   	"Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Scuola (Oggetti)::Servizi Di Supporto::Criterio di Ricerca Istituti Scolastici::Criterio Di Ricerca Istituti Scolastici"
+			    quidu      	"4141CB6D03A6"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$16"
+			    quid       	"4141D078008B"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici (Oggetti)::Richiesta Di Visualizzazione Elenco Istituti Scolastici"
+			    quidu      	"402CCC5C0127"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$17"
+		    quid       	"41FF898A029B"
+		    roles      	(list role_list
+			(object Role "Richiedente"
+			    quid       	"41FF898B01B3"
+			    label      	"Richiedente"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Credenziali::Credenziali Certificate::Credenziali Service Layer Certificate::Credenziali Service Layer Certificate"
+			    quidu      	"417C2CC20270"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$18"
+			    quid       	"41FF898B01C7"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici (Oggetti)::Richiesta Di Visualizzazione Elenco Istituti Scolastici"
+			    quidu      	"402CCC5C0127"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$19"
+		    quid       	"41FF89A501E5"
+		    roles      	(list role_list
+			(object Role "Titolare"
+			    quid       	"41FF89A60004"
+			    label      	"Titolare"
+			    supplier   	"Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Scuola (Oggetti)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Titolare Richiesta Visualizzazione Elenco Istituti Scolastici::Titolare Richiesta Visualizzazione Elenco Istituti Scolastici"
+			    quidu      	"49E4DC2600C8"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$20"
+			    quid       	"41FF89A6007C"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici (Oggetti)::Richiesta Di Visualizzazione Elenco Istituti Scolastici"
+			    quidu      	"402CCC5C0127"
+			    is_aggregate 	TRUE))))
+	    logical_presentations 	(list unit_reference_list
+		(object ClassDiagram "Richiesta di Visualizzazione Elenco Istituti Scolastici-Definizione"
+		    quid       	"402CCC7D0052"
+		    title      	"Richiesta di Visualizzazione Elenco Istituti Scolastici-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	469
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Richiesta::Richiesta Di Servizio On Line Alla Pa" @65
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A120421"
+			    location   	(1857, 1329)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A120422"
+				Parent_View 	@65
+				location   	(1857, 1552)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	1514
+				justify    	0
+				label      	"Richiesta Di Servizio On Line Alla Pa")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"401FC3DE02C2"
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Richiesta::Richiesta Di Servizio Alla Pa" @66
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A120425"
+			    location   	(1167, 1296)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A120426"
+				Parent_View 	@66
+				location   	(1167, 1519)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	1362
+				justify    	0
+				label      	"Richiesta Di Servizio Alla Pa")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"401D135D0321"
+			    autoResize 	TRUE)
+			(object InheritView "" @67
+			    quid       	"4DBC5A120429"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"401FC4020379"
+			    client     	@65
+			    supplier   	@66
+			    vertices   	(list Points
+				(1735, 1321)
+				(1287, 1300))
+			    line_style 	0)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Richiesta::Richiesta" @68
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A12042B"
+			    location   	(543, 1104)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A12042C"
+				Parent_View 	@68
+				location   	(543, 1327)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	1278
+				justify    	0
+				label      	"Richiesta")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"3F522B7F031D"
+			    autoResize 	TRUE)
+			(object InheritView "" @69
+			    quid       	"4DBC5A12042F"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"497AE5680094"
+			    client     	@66
+			    supplier   	@68
+			    vertices   	(list Points
+				(1044, 1255)
+				(663, 1139))
+			    line_style 	0)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Scuola (Oggetti)::Servizi Di Supporto::Criterio di Ricerca Istituti Scolastici::Criterio Di Ricerca Istituti Scolastici" @70
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A120431"
+			    location   	(1374, 258)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A120432"
+				Parent_View 	@70
+				location   	(1017, 212)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	714
+				justify    	0
+				label      	"Criterio Di Ricerca Istituti Scolastici")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4141CB6D03A6"
+			    width      	732
+			    height     	117
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Credenziali::Credenziali Certificate::Credenziali Service Layer Certificate::Credenziali Service Layer Certificate" @71
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A120435"
+			    location   	(2112, 591)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A120436"
+				Parent_View 	@71
+				location   	(1896, 520)
+				fill_color 	13434879
+				nlines     	2
+				max_width  	432
+				justify    	0
+				label      	"Credenziali Service Layer Certificate")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"417C2CC20270"
+			    width      	450
+			    height     	167
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Scuola (Oggetti)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Titolare Richiesta Visualizzazione Elenco Istituti Scolastici::Titolare Richiesta Visualizzazione Elenco Istituti Scolastici" @72
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4DBC5A120439"
+			    location   	(681, 495)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A12043A"
+				Parent_View 	@72
+				location   	(108, 449)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	1146
+				justify    	0
+				label      	"Titolare Richiesta Visualizzazione Elenco Istituti Scolastici")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"49E4DC2600C8"
+			    width      	1164
+			    height     	117
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici (Oggetti)::Richiesta Di Visualizzazione Elenco Istituti Scolastici" @73
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4DBC5A12043D"
+			    location   	(1377, 768)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A12043E"
+				Parent_View 	@73
+				location   	(1377, 991)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	5487
+				justify    	0
+				label      	"Richiesta Di Visualizzazione Elenco Istituti Scolastici")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"402CCC5C0127"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @74
+			    quid       	"4DBC5A120441"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"402CCC5C0156"
+			    client     	@73
+			    supplier   	@65
+			    vertices   	(list Points
+				(1497, 908)
+				(1734, 1186))
+			    line_style 	0)
+			(object AssociationViewNew "$UNNAMED$14" @75
+			    quid       	"4DBC5A120443"
+			    location   	(1373, 470)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4141D0770155"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$15" @76
+				    quid       	"4DBC5A120444"
+				    Parent_View 	@75
+				    location   	(253, -826)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4141D0780081"
+				    client     	@75
+				    supplier   	@70
+				    vertices   	(list Points
+					(1373, 470)
+					(1373, 316))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$16" @77
+				    quid       	"4DBC5A120445"
+				    Parent_View 	@75
+				    location   	(253, -826)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4141D078008B"
+				    client     	@75
+				    supplier   	@73
+				    vertices   	(list Points
+					(1373, 470)
+					(1373, 625))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$17" @78
+			    quid       	"4DBC5A120446"
+			    location   	(1691, 690)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"41FF898A029B"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Richiedente" @79
+				    quid       	"4DBC5A120447"
+				    Parent_View 	@78
+				    location   	(587, 210)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @80
+					quid       	"4DBC5A120448"
+					Parent_View 	@79
+					location   	(1884, 710)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	239
+					justify    	0
+					label      	"+Richiedente"
+					pctDist    	0.915425
+					height     	64
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"41FF898B01B3"
+				    client     	@78
+				    supplier   	@71
+				    vertices   	(list Points
+					(1691, 690)
+					(1886, 643))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$18" @81
+				    quid       	"4DBC5A12044A"
+				    Parent_View 	@78
+				    location   	(587, 210)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"41FF898B01C7"
+				    client     	@78
+				    supplier   	@73
+				    vertices   	(list Points
+					(1691, 690)
+					(1497, 736))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$19" @82
+			    quid       	"4DBC5A12044B"
+			    location   	(1042, 635)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"41FF89A501E5"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Titolare" @83
+				    quid       	"4DBC5A12044C"
+				    Parent_View 	@82
+				    location   	(-62, 155)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @84
+					quid       	"4DBC5A12044D"
+					Parent_View 	@83
+					location   	(859, 609)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	170
+					justify    	0
+					label      	"+Titolare"
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"41FF89A60004"
+				    client     	@82
+				    supplier   	@72
+				    vertices   	(list Points
+					(1042, 635)
+					(832, 553))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$20" @85
+				    quid       	"4DBC5A12044F"
+				    Parent_View 	@82
+				    location   	(-62, 155)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"41FF89A6007C"
+				    client     	@82
+				    supplier   	@73
+				    vertices   	(list Points
+					(1042, 635)
+					(1253, 715))
+				    line_style 	0)))))
+		(object ClassDiagram "Elenco degli Istituti Scolastici-Definizione"
+		    quid       	"402E0423022A"
+		    title      	"Elenco degli Istituti Scolastici-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	178
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Scuola (Oggetti)::Sussidi E Finanziamenti::Istituto Scolastico::Istituto Scolastico" @86
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4DBC5A120452"
+			    location   	(831, 159)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A120453"
+				Parent_View 	@86
+				location   	(649, 113)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	364
+				justify    	0
+				label      	"Istituto Scolastico")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"402CFA3D023F"
+			    width      	382
+			    height     	117
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Scuola::Scuola (Servizi)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Visualizzazione Elenco Istituti Scolastici (Oggetti)::Elenco Degli Istituti Scolastici" @87
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4DBC5A120456"
+			    location   	(831, 609)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A120457"
+				Parent_View 	@87
+				location   	(830, 825)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	4968
+				justify    	0
+				label      	"Elenco Degli Istituti Scolastici")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"402CCC5C0121"
+			    width      	228
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$11" @88
+			    quid       	"4DBC5A12045A"
+			    location   	(831, 345)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"402E04760081"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$12" @89
+				    quid       	"4DBC5A12045B"
+				    Parent_View 	@88
+				    location   	(-321, -39)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"402E0476029B"
+				    client     	@88
+				    supplier   	@86
+				    vertices   	(list Points
+					(831, 345)
+					(831, 217))
+				    line_style 	0
+				    label      	(object SegLabel @90
+					quid       	"4DBC5A12045C"
+					Parent_View 	@89
+					location   	(779, 263)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..*"
+					pctDist    	0.642857
+					height     	53
+					orientation 	0))
+				(object RoleView "$UNNAMED$13" @91
+				    quid       	"4DBC5A12045D"
+				    Parent_View 	@88
+				    location   	(-321, -39)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"402E047602AF"
+				    client     	@88
+				    supplier   	@87
+				    vertices   	(list Points
+					(831, 345)
+					(831, 473))
+				    line_style 	0)))
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Risposta::Risposta" @92
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A12045E"
+			    location   	(831, 1263)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A12045F"
+				Parent_View 	@92
+				location   	(830, 1479)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	1210
+				justify    	0
+				label      	"Risposta")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"3EEDAE420055"
+			    width      	228
+			    autoResize 	TRUE)
+			(object InheritView "" @93
+			    quid       	"4DBC5A120462"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"402CCC5C0158"
+			    client     	@87
+			    supplier   	@92
+			    vertices   	(list Points
+				(831, 850)
+				(831, 1127))
+			    line_style 	0))))))
+    logical_presentations 	(list unit_reference_list))

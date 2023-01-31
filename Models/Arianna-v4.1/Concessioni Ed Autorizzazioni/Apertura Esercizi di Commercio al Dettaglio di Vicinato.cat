@@ -1,0 +1,2527 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	0)
+
+(object Class_Category "Apertura Esercizi di Commercio al Dettaglio di Vicinato"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    attributes 	(list Attribute_Set
+	(object Attribute
+	    tool       	"ModelGen"
+	    name       	"TipoTy"
+	    value      	(list Attribute_Set
+		(object Attribute
+		    tool       	"ModelGen"
+		    name       	""
+		    value      	1)
+		(object Attribute
+		    tool       	"ModelGen"
+		    name       	"OnLine"
+		    value      	2)
+		(object Attribute
+		    tool       	"ModelGen"
+		    name       	"OffLine"
+		    value      	3)))
+	(object Attribute
+	    tool       	"ModelGen"
+	    name       	"NomeRichiesta"
+	    value      	"")
+	(object Attribute
+	    tool       	"ModelGen"
+	    name       	"NomeRisposta"
+	    value      	"Ricevuta di Apertura Esercizi di Commercio al Dettaglio di Vicinato")
+	(object Attribute
+	    tool       	"ModelGen"
+	    name       	"NomeComunicazione"
+	    value      	"")
+	(object Attribute
+	    tool       	"ModelGen"
+	    name       	"TipoComunicazioneTy"
+	    value      	(list Attribute_Set
+		(object Attribute
+		    tool       	"ModelGen"
+		    name       	""
+		    value      	1)
+		(object Attribute
+		    tool       	"ModelGen"
+		    name       	"Comunicazione"
+		    value      	2)
+		(object Attribute
+		    tool       	"ModelGen"
+		    name       	"Esito"
+		    value      	3)))
+	(object Attribute
+	    tool       	"ModelGen"
+	    name       	"RichiestaComplessa"
+	    value      	FALSE)
+	(object Attribute
+	    tool       	"ModelGen"
+	    name       	"SupportoAllaCompilazione"
+	    value      	FALSE)
+	(object Attribute
+	    tool       	"ModelGen"
+	    name       	"Tipo"
+	    value      	"OffLine")
+	(object Attribute
+	    tool       	"ModelGen"
+	    name       	"TipoComunicazione"
+	    value      	"")
+	(object Attribute
+	    tool       	"e-gov"
+	    name       	"cg_style"
+	    value      	"Default")
+	(object Attribute
+	    tool       	"e-gov"
+	    name       	"Status"
+	    value      	("StatusTy" 2))
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNameSpacePrefix"
+	    value      	"Imprese")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNameSpace"
+	    value      	"")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"UsedNameSpaces"
+	    value      	"Imprese;OggettiCondivisi;"))
+    quid       	"47D152040347"
+    stereotype 	"Business System"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object UseCase "Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"cg_style"
+		    value      	"Default")
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"TipoDiCollaborazione"
+		    value      	("TipoDiCollaborazioneTy" 6))
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"Ricevuta"
+		    value      	"Ricevuta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato")
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"Richiesta"
+		    value      	0)
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"TipoRichiesta"
+		    value      	"online"))
+	    quid       	"47D15271024A"
+	    stereotype 	"Business Use Case Realization"
+	    statemachine 	(object State_Machine "Apertura Esercizi di Commercio al Dettaglio di Vicinato"
+		quid       	"47D1530802F4"
+		states     	(list States
+		    (object ActivityState "Richiesta di Apertura Esercizi di Commercio al Dettaglio di Vicinato"
+			quid       	"47D153080302"
+			stereotype 	"Business activity"
+			statemachine 	(object State_Machine "Richiesta di Apertura Esercizi di Commercio al Dettaglio di Vicinato"
+			    quid       	"47D153080304"
+			    states     	(list States
+				(object State "$UNNAMED$0"
+				    quid       	"47D153080371"
+				    type       	"StartState")
+				(object State "$UNNAMED$1"
+				    quid       	"47D153080374"
+				    type       	"EndState")
+				(object ActivityState "$UNNAMED$2"
+				    quid       	"47D153080377"
+				    stereotype 	"And")
+				(object ActivityState "$UNNAMED$3"
+				    quid       	"47D15308037B"
+				    stereotype 	"Null"))
+			    partitions 	(list Partitions
+				(object Partition "Richiedente"
+				    quid       	"47D153080309"
+				    persistence 	"Transient"
+				    creationObj 	FALSE
+				    multi      	FALSE)
+				(object Partition "FSL"
+				    quid       	"47D153080334"
+				    persistence 	"Transient"
+				    creationObj 	FALSE
+				    multi      	FALSE))
+			    objects    	(list Objects
+				(object Object "Richiesta di Apertura Esercizi di Commercio al Dettaglio di Vicinato"
+				    quid       	"47D1530900E6"
+				    class      	"Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Richiesta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato"
+				    quidu      	"47D1530800AE"
+				    persistence 	"Transient"
+				    creationObj 	FALSE
+				    multi      	FALSE)
+				(object Object "Ricevuta di Apertura Esercizi di Commercio al Dettaglio di Vicinato"
+				    quid       	"47D1530900FB"
+				    class      	"Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Ricevuta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato"
+				    quidu      	"47D15307030B"
+				    persistence 	"Transient"
+				    creationObj 	FALSE
+				    multi      	FALSE))
+			    transitions 	(list transition_list
+				(object State_Transition
+				    quid       	"47D15309006E"
+				    label      	""
+				    supplier   	""
+				    supplier_quidu 	"4024FECE01F7"
+				    client     	"$UNNAMED$0"
+				    client_quidu 	"47D153080371"
+				    Event      	(object Event "Richiede il servizio di Apertura Esercizi di Commercio al Dettaglio di Vicinato"
+					quid       	"47D15309006F")
+				    sendEvent  	(object sendEvent
+					quid       	"47D153090071"))
+				(object State_Transition
+				    quid       	"47D1530900DA"
+				    supplier   	"Use Case View::Processi::Pattern Di Processo::MetaModello di Erogazione dei Servizi::Richiedente::Inoltro della Richiesta::Inoltro della Richiesta::Inoltro della Richiesta"
+				    supplier_quidu 	"4023B4F30228"
+				    client     	"$UNNAMED$2"
+				    client_quidu 	"47D153080377"
+				    sendEvent  	(object sendEvent
+					quid       	"47D1530900DD"))
+				(object State_Transition
+				    quid       	"47D1530900E0"
+				    supplier   	"$UNNAMED$1"
+				    supplier_quidu 	"47D153080374"
+				    client     	"$UNNAMED$3"
+				    client_quidu 	"47D15308037B"
+				    sendEvent  	(object sendEvent
+					quid       	"47D1530900E3")))
+			    objectflows 	(list objectflow_list
+				(object Object_Flow
+				    quid       	"47D1530900EB"
+				    supplier   	"Use Case View::Processi::Pattern Di Processo::MetaModello di Erogazione dei Servizi::Richiedente::Compilazione della Richiesta::Compilazione della Richiesta::Compilazione della Richiesta"
+				    supplier_quidu 	"401F9CD50325"
+				    client     	"Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Richiesta di Apertura Esercizi di Commercio al Dettaglio di Vicinato::Richiesta di Apertura Esercizi di Commercio al Dettaglio di Vicinato::Richiesta di Apertura Esercizi di Commercio al Dettaglio di Vicinato"
+				    client_quidu 	"47D1530900E6"))
+			    statediagrams 	(list StateDiagrams
+				(object ActivityDiagram "Richiesta di Apertura Esercizi di Commercio al Dettaglio di Vicinato-WF"
+				    quid       	"47D153080306"
+				    title      	"Richiesta di Apertura Esercizi di Commercio al Dettaglio di Vicinato-WF"
+				    zoom       	60
+				    max_height 	28350
+				    max_width  	21600
+				    origin_x   	0
+				    origin_y   	0
+				    items      	(list diagram_item_list
+					(object Swimlane "Richiedente" @1
+					    quid       	"4DBC5A1115EC"
+					    line_color 	3342489
+					    quidu      	"47D153080309"
+					    width      	3582)
+					(object StateView "StartState" "$UNNAMED$0" @2
+					    quid       	"4DBC5A1115ED"
+					    Parent_View 	@1
+					    location   	(90, 128)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @3
+						quid       	"4DBC5A1115EE"
+						Parent_View 	@2
+						location   	(132, 98)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	TRUE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						hidden     	TRUE
+						nlines     	2
+						max_width  	174
+						justify    	1
+						label      	""
+						pctDist    	1.000000
+						height     	0
+						orientation 	0)
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    quidu      	"47D153080371"
+					    autoResize 	TRUE)
+					(object StateView "EndState" "$UNNAMED$1" @4
+					    quid       	"4DBC5A1115EF"
+					    Parent_View 	@1
+					    location   	(112, 416)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @5
+						quid       	"4DBC5A1115F0"
+						Parent_View 	@4
+						location   	(166, 374)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	TRUE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						hidden     	TRUE
+						nlines     	2
+						max_width  	174
+						justify    	1
+						label      	""
+						pctDist    	1.000000
+						height     	0
+						orientation 	0)
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    quidu      	"47D153080374"
+					    autoResize 	TRUE)
+					(object ActivityStateView "$UNNAMED$2" @6
+					    quid       	"4DBC5A1115F1"
+					    Parent_View 	@1
+					    location   	(752, 2192)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A1115F2"
+						Parent_View 	@6
+						location   	(752, 2329)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	340
+						justify    	0
+						label      	"")
+					    icon       	"And"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"47D153080377"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object ActivityStateView "$UNNAMED$3" @7
+					    quid       	"4DBC5A1115F3"
+					    Parent_View 	@1
+					    location   	(688, 400)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A1115F4"
+						Parent_View 	@7
+						location   	(688, 537)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	340
+						justify    	0
+						label      	"")
+					    icon       	"Null"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"47D15308037B"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object TransView "" @8
+					    quid       	"4DBC5A1115F5"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"47D1530900E0"
+					    client     	@7
+					    supplier   	@4
+					    vertices   	(list Points
+						(631, 400)
+						(154, 414))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object ActivityStateView "Compilazione della Richiesta" @9
+					    quid       	"4DBC5A1115F7"
+					    Parent_View 	@1
+					    location   	(1792, 1184)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A1115F8"
+						Parent_View 	@9
+						location   	(1792, 1328)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	850
+						justify    	0
+						label      	"Compilazione della Richiesta")
+					    icon       	"Business Activity"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"401F9CD50325"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object TransView "" @10
+					    quid       	"4DBC5A1115FA"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @11
+						quid       	"4DBC5A1115FB"
+						Parent_View 	@10
+						location   	(1242, 1777)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor_loc 	1
+						nlines     	1
+						max_width  	450
+						justify    	0
+						label      	"Richiede inoltro (Richiesta)"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"47D1530900D3"
+					    client     	@9
+					    supplier   	@6
+					    vertices   	(list Points
+						(1721, 1247)
+						(805, 2136))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object ActivityStateView "Inoltro della Richiesta" @12
+					    quid       	"4DBC5A1115FD"
+					    Parent_View 	@1
+					    location   	(656, 2640)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A1115FE"
+						Parent_View 	@12
+						location   	(656, 2784)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	850
+						justify    	0
+						label      	"Inoltro della Richiesta")
+					    icon       	"Business Activity"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"4023B4F30228"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object TransView "" @13
+					    quid       	"4DBC5A111600"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"47D1530900DA"
+					    client     	@6
+					    supplier   	@12
+					    vertices   	(list Points
+						(738, 2248)
+						(668, 2576))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object ObjectView "Richiesta di Apertura Esercizi di Commercio al Dettaglio di Vicinato" @14
+					    quid       	"4DBC5A111602"
+					    Parent_View 	@1
+					    location   	(2352, 400)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A111603"
+						Parent_View 	@14
+						location   	(2352, 623)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	5452
+						justify    	0
+						label      	"Richiesta di Apertura Esercizi di Commercio al Dettaglio di Vicinato")
+					    icon       	"Modulo (Form)"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"47D1530900E6"
+					    annotation 	4
+					    autoResize 	TRUE
+					    subobjects 	0
+					    x_offset   	0.000000
+					    y_offset   	0.000000)
+					(object Object_Flow_View "" @15
+					    quid       	"4DBC5A111605"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"47D1530900EB"
+					    client     	@14
+					    supplier   	@9
+					    vertices   	(list Points
+						(2247, 541)
+						(1835, 1120))
+					    line_style 	0)
+					(object ObjectView "Richiesta di Apertura Esercizi di Commercio al Dettaglio di Vicinato" @16
+					    quid       	"4DBC5A111607"
+					    Parent_View 	@1
+					    location   	(836, 784)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A111608"
+						Parent_View 	@16
+						location   	(836, 1007)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	5455
+						justify    	0
+						label      	"Richiesta di Apertura Esercizi di Commercio al Dettaglio di Vicinato")
+					    icon       	"Modulo (Form)"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"47D1530900E6"
+					    annotation 	4
+					    autoResize 	TRUE
+					    subobjects 	0
+					    x_offset   	0.000000
+					    y_offset   	0.000000)
+					(object ObjectView "Richiesta di Apertura Esercizi di Commercio al Dettaglio di Vicinato" @17
+					    quid       	"4DBC5A11160A"
+					    Parent_View 	@1
+					    location   	(1920, 1792)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A11160B"
+						Parent_View 	@17
+						location   	(1920, 2015)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	5458
+						justify    	0
+						label      	"Richiesta di Apertura Esercizi di Commercio al Dettaglio di Vicinato")
+					    icon       	"Modulo (Form)"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"47D1530900E6"
+					    annotation 	4
+					    autoResize 	TRUE
+					    subobjects 	0
+					    x_offset   	0.000000
+					    y_offset   	0.000000)
+					(object ObjectView "Ricevuta di Apertura Esercizi di Commercio al Dettaglio di Vicinato" @18
+					    quid       	"4DBC5A11160D"
+					    Parent_View 	@1
+					    location   	(1680, 3104)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A11160E"
+						Parent_View 	@18
+						location   	(1679, 3320)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	5471
+						justify    	0
+						label      	"Ricevuta di Apertura Esercizi di Commercio al Dettaglio di Vicinato")
+					    icon       	"Business Document"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"47D1530900FB"
+					    width      	228
+					    annotation 	4
+					    autoResize 	TRUE
+					    subobjects 	0
+					    x_offset   	0.000000
+					    y_offset   	0.000000)
+					(object Swimlane "FSL" @19
+					    quid       	"4DBC5A111610"
+					    location   	(3582, 0)
+					    line_color 	3342489
+					    quidu      	"47D153080334"
+					    width      	1202)
+					(object ActivityStateView "Predisposizione del Modulo di Richiesta" @20
+					    quid       	"4DBC5A111611"
+					    Parent_View 	@19
+					    location   	(4096, 736)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A111612"
+						Parent_View 	@20
+						location   	(4096, 880)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	850
+						justify    	0
+						label      	"Predisposizione del Modulo di Richiesta")
+					    icon       	"Business Activity"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"401E49E003BF"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object Object_Flow_View "" @21
+					    quid       	"4DBC5A111614"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"47D1530900E9"
+					    client     	@20
+					    supplier   	@14
+					    vertices   	(list Points
+						(3952, 707)
+						(2472, 420))
+					    line_style 	0)
+					(object ActivityStateView "Identifica il Supporto alla Compilazione della Richiesta" @22
+					    quid       	"4DBC5A111616"
+					    Parent_View 	@19
+					    location   	(4096, 96)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A111617"
+						Parent_View 	@22
+						location   	(4096, 240)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	850
+						justify    	0
+						label      	"Identifica il Supporto alla Compilazione della Richiesta")
+					    icon       	"Business Activity"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"4024FECE01F7"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object TransView "" @23
+					    quid       	"4DBC5A111619"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @24
+						quid       	"4DBC5A11161A"
+						Parent_View 	@23
+						location   	(2037, 67)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor_loc 	1
+						nlines     	1
+						max_width  	450
+						justify    	0
+						label      	"Richiede il servizio di Apertura Esercizi di Commercio al Dettaglio di Vicinato"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"47D15309006E"
+					    client     	@2
+					    supplier   	@22
+					    vertices   	(list Points
+						(120, 127)
+						(3953, 96))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @25
+					    quid       	"4DBC5A11161C"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40C1BC910307"
+					    client     	@22
+					    supplier   	@20
+					    vertices   	(list Points
+						(4096, 266)
+						(4096, 670))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object ActivityStateView "Processa la Richiesta" @26
+					    quid       	"4DBC5A11161E"
+					    Parent_View 	@19
+					    location   	(3840, 2640)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A11161F"
+						Parent_View 	@26
+						location   	(3840, 2794)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	994
+						justify    	0
+						label      	"Processa la Richiesta")
+					    icon       	"Business Transaction"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"40250DC50357"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object TransView "" @27
+					    quid       	"4DBC5A111621"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @28
+						quid       	"4DBC5A111622"
+						Parent_View 	@27
+						location   	(2236, 2596)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor_loc 	1
+						nlines     	1
+						max_width  	450
+						justify    	0
+						label      	"Richiede Inoltro( Richiesta )[ Richiesta = Pronta per il Pagamento ]"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40250DDA0240"
+					    client     	@12
+					    supplier   	@26
+					    vertices   	(list Points
+						(798, 2640)
+						(3673, 2640))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object Swimlane "" @29
+					    quid       	"4DBC5A111624"
+					    location   	(4032, 0)
+					    line_color 	3342489
+					    width      	450)
+					(object Object_Flow_View "" @30
+					    quid       	"4DBC5A111625"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"47D153090105"
+					    client     	@26
+					    supplier   	@18
+					    vertices   	(list Points
+						(3674, 2673)
+						(1791, 3078))
+					    line_style 	0)))))))
+		partitions 	(list Partitions)
+		objects    	(list Objects)
+		transitions 	(list transition_list)
+		objectflows 	(list objectflow_list)
+		statediagrams 	(list StateDiagrams))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "Apertura Esercizi di Commercio al Dettaglio di Vicinato"
+		    quid       	"47D153080170"
+		    title      	"Apertura Esercizi di Commercio al Dettaglio di Vicinato"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Attori::Utente Servizi::Utente Autenticato" @31
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A111629"
+			    location   	(303, 801)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A11162A"
+				Parent_View 	@31
+				location   	(302, 1009)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	568
+				justify    	0
+				label      	"Utente Autenticato")
+			    icon       	"Business Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"3F02928500C9"
+			    width      	202
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Ricevuta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato" @32
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A11162D"
+			    location   	(1761, 1281)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A11162E"
+				Parent_View 	@32
+				location   	(1760, 1497)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	1232
+				justify    	0
+				label      	"Ricevuta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"47D15307030B"
+			    width      	228
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Richiesta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato" @33
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A111631"
+			    location   	(1857, 336)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A111632"
+				Parent_View 	@33
+				location   	(1857, 559)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	1271
+				justify    	0
+				label      	"Richiesta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"47D1530800AE"
+			    autoResize 	TRUE)
+			(object UseCaseView "Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato" @34
+			    quid       	"4DBC5A111635"
+			    location   	(1008, 801)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A111636"
+				Parent_View 	@34
+				location   	(1007, 977)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	879
+				justify    	0
+				label      	"Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato")
+			    icon       	"Business Use Case Realization"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"47D15271024A"
+			    width      	306
+			    height     	194)
+			(object AssociationViewNew "richiede" @35
+			    quid       	"4DBC5A111638"
+			    location   	(628, 801)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @36
+				quid       	"4DBC5A111639"
+				Parent_View 	@35
+				location   	(628, 742)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"richiede"
+				pctDist    	0.500000
+				height     	60
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"47D153080191"
+			    roleview_list 	(list RoleViews
+				(object RoleView "" @37
+				    quid       	"4DBC5A11163B"
+				    Parent_View 	@35
+				    location   	(-380, 1)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @38
+					quid       	"4DBC5A11163C"
+					Parent_View 	@37
+					location   	(447, 843)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47D153080194"
+				    client     	@35
+				    supplier   	@31
+				    vertices   	(list Points
+					(628, 801)
+					(401, 801))
+				    line_style 	0)
+				(object RoleView "" @39
+				    quid       	"4DBC5A11163E"
+				    Parent_View 	@35
+				    location   	(-380, 1)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @40
+					quid       	"4DBC5A11163F"
+					Parent_View 	@39
+					location   	(809, 843)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47D153080192"
+				    client     	@35
+				    supplier   	@34
+				    vertices   	(list Points
+					(628, 801)
+					(854, 801))
+				    line_style 	0)))
+			(object AssociationViewNew "" @41
+			    quid       	"4DBC5A111641"
+			    location   	(1486, 1105)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"47D1530802E0"
+			    roleview_list 	(list RoleViews
+				(object RoleView "" @42
+				    quid       	"4DBC5A111643"
+				    Parent_View 	@41
+				    location   	(478, 305)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @43
+					quid       	"4DBC5A111644"
+					Parent_View 	@42
+					location   	(1592, 1221)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47D1530802E2"
+				    client     	@41
+				    supplier   	@32
+				    vertices   	(list Points
+					(1486, 1105)
+					(1648, 1206))
+				    line_style 	0)
+				(object RoleView "" @44
+				    quid       	"4DBC5A111646"
+				    Parent_View 	@41
+				    location   	(478, 305)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @45
+					quid       	"4DBC5A111647"
+					Parent_View 	@44
+					location   	(1337, 1060)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47D1530802E1"
+				    client     	@41
+				    supplier   	@34
+				    vertices   	(list Points
+					(1486, 1105)
+					(1327, 1002))
+				    line_style 	0)))
+			(object AssociationViewNew "" @46
+			    quid       	"4DBC5A111649"
+			    location   	(1280, 649)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"47D1530802EA"
+			    roleview_list 	(list RoleViews
+				(object RoleView "" @47
+				    quid       	"4DBC5A11164B"
+				    Parent_View 	@46
+				    location   	(272, -151)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @48
+					quid       	"4DBC5A11164C"
+					Parent_View 	@47
+					location   	(1357, 562)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47D1530802EC"
+				    client     	@46
+				    supplier   	@33
+				    vertices   	(list Points
+					(1280, 649)
+					(1733, 400))
+				    line_style 	0)
+				(object RoleView "" @49
+				    quid       	"4DBC5A11164E"
+				    Parent_View 	@46
+				    location   	(272, -151)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @50
+					quid       	"4DBC5A11164F"
+					Parent_View 	@49
+					location   	(1163, 666)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47D1530802EB"
+				    client     	@46
+				    supplier   	@34
+				    vertices   	(list Points
+					(1280, 649)
+					(1158, 715))
+				    line_style 	0)))))))
+	(object Association "$UNNAMED$4"
+	    quid       	"47D1530802E0"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$5"
+		    quid       	"47D1530802E1"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato"
+		    quidu      	"47D15271024A")
+		(object Role "$UNNAMED$6"
+		    quid       	"47D1530802E2"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Ricevuta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato"
+		    quidu      	"47D15307030B"
+		    is_navigable 	TRUE)))
+	(object Association "$UNNAMED$7"
+	    quid       	"47D1530802EA"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$8"
+		    quid       	"47D1530802EB"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato"
+		    quidu      	"47D15271024A")
+		(object Role "$UNNAMED$9"
+		    quid       	"47D1530802EC"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Richiesta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato"
+		    quidu      	"47D1530800AE"
+		    is_navigable 	TRUE)))
+	(object Class_Category "Apertura Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpacePrefix"
+		    value      	"Imprese")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNameSpaces"
+		    value      	"Imprese;OggettiCondivisi;"))
+	    quid       	"47D153070307"
+	    stereotype 	"Business Analysis Model"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class "Ricevuta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"4027B5770014")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"OggettiCondivisi:Ricevuta")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"4027B5770014")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"OggettiCondivisi:Ricevuta")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"Imprese")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"none")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	""))
+		    quid       	"47D15307030B"
+		    stereotype 	"Business Document"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"47D1530800A2"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Ricevuta::Ricevuta"
+			    quidu      	"4027B5770014")))
+		(object Class "Richiesta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"7")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"3F522B7F031D")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"OggettiCondivisi:Richiesta")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"3F522B7F031D")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"OggettiCondivisi:Richiesta")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"Imprese")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"Only Ref")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"Comunicazione Per Esercizio Di Commercio;Estremi Apertura Esercizio Di Commercio;Autocertificazione Per Esercizi Di Commercio Al Dettaglio Di Vicinato;Titolare;Richiedente;Dichiarazione Altre Persone;Dichiarazione Settore Alimentare;"))
+		    quid       	"47D1530800AE"
+		    stereotype 	"Modulo (Form)"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"47D153080167"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Richiesta::Richiesta"
+			    quidu      	"3F522B7F031D"))
+		    statemachine 	(object State_Machine "Apertura Esercizi di Commercio al Dettaglio di Vicinato"
+			quid       	"47D15308016B"
+			states     	(list States
+			    (object State "Predisposta"
+				quid       	"47D15308016D"
+				type       	"Normal")
+			    (object State "Parzialmente Compilata"
+				quid       	"47D15308016E"
+				type       	"Normal")
+			    (object State "Completamente Compilata"
+				quid       	"47D15308016F"
+				type       	"Normal"))
+			partitions 	(list Partitions)
+			objects    	(list Objects)
+			transitions 	(list transition_list)
+			objectflows 	(list objectflow_list)
+			statediagrams 	(list StateDiagrams)))
+		(object Association "$UNNAMED$10"
+		    quid       	"47D157DC0318"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$11"
+			    quid       	"47D157DD02C0"
+			    supplier   	"Use Case View::Oggetti::Oggetti Tematici::Imprese (Oggetti)::Concessioni Ed Autorizzazioni (Oggetti)::Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Comunicazione per Esercizio di Commercio::Comunicazione Per Esercizio Di Commercio"
+			    quidu      	"4106301101E3"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$12"
+			    quid       	"47D157DD02DE"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Richiesta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato"
+			    quidu      	"47D1530800AE"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$13"
+		    quid       	"47D157E4014C"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$14"
+			    quid       	"47D157E501D0"
+			    supplier   	"Use Case View::Oggetti::Oggetti Tematici::Imprese (Oggetti)::Concessioni Ed Autorizzazioni (Oggetti)::Comunicazione Per Commercio (Oggetti)::Apertura Esercizio di Commercio::Estremi Apertura Esercizio Di Commercio"
+			    quidu      	"467BD1AC005D"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$15"
+			    quid       	"47D157E501D2"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Richiesta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato"
+			    quidu      	"47D1530800AE"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$16"
+		    quid       	"47D157EC00E9"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$17"
+			    quid       	"47D157ED0195"
+			    supplier   	"Use Case View::Oggetti::Oggetti Tematici::Imprese (Oggetti)::Concessioni Ed Autorizzazioni (Oggetti)::Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Autocertificazione per Esercizi di Commercio al Dettaglio di Vicinato::Autocertificazione Per Esercizi Di Commercio Al Dettaglio Di Vicinato"
+			    quidu      	"467790F5001B"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$18"
+			    quid       	"47D157ED019F"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Richiesta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato"
+			    quidu      	"47D1530800AE"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$19"
+		    quid       	"47D157F20351"
+		    roles      	(list role_list
+			(object Role "Titolare"
+			    quid       	"47D157F303AD"
+			    label      	"Titolare"
+			    supplier   	"Use Case View::Oggetti::Oggetti Tematici::Imprese (Oggetti)::Concessioni Ed Autorizzazioni (Oggetti)::Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Titolare Esercizio di Commercio di Vicinato::Titolare Esercizio Di Commercio Di Vicinato"
+			    quidu      	"467121060370"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$20"
+			    quid       	"47D157F303B7"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Richiesta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato"
+			    quidu      	"47D1530800AE"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$21"
+		    quid       	"47D157F602AD"
+		    roles      	(list role_list
+			(object Role "Richiedente"
+			    quid       	"47D157F7022B"
+			    label      	"Richiedente"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Credenziali::Credenziali Certificate::Credenziali Utente Certificate::Credenziali Utente Certificate"
+			    quidu      	"417C2C860170"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$22"
+			    quid       	"47D157F7027B"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Richiesta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato"
+			    quidu      	"47D1530800AE"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$23"
+		    quid       	"47E1390E03C2"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$24"
+			    quid       	"47E1391000C5"
+			    supplier   	"Use Case View::Oggetti::Oggetti Tematici::Imprese (Oggetti)::Concessioni Ed Autorizzazioni (Oggetti)::Comunicazione Per Commercio (Oggetti)::Dichiarazione Altre Persone::Dichiarazione Altre Persone"
+			    quidu      	"467A3BCA02F5"
+			    client_cardinality 	(value cardinality "0..*")
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$25"
+			    quid       	"47E1391000C7"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Richiesta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato"
+			    quidu      	"47D1530800AE"
+			    is_aggregate 	TRUE))
+		    Constraints 	"Solo per le società")
+		(object Association "$UNNAMED$26"
+		    quid       	"47E139B003B6"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$27"
+			    quid       	"47E139B103C6"
+			    supplier   	"Use Case View::Oggetti::Oggetti Tematici::Imprese (Oggetti)::Concessioni Ed Autorizzazioni (Oggetti)::Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Dichiarazione Settore Alimentare::Dichiarazione Settore Alimentare"
+			    quidu      	"467A31DC0208"
+			    client_cardinality 	(value cardinality "0..1")
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$28"
+			    quid       	"47E139B103D0"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Richiesta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato"
+			    quidu      	"47D1530800AE"
+			    is_aggregate 	TRUE))
+		    Constraints 	"Solo per il commercio del settore alimentare"))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "Ricevuta di Apertura Esercizi di Commercio al Dettaglio di Vicinato-Definizione"
+		    quid       	"47D15307030E"
+		    title      	"Ricevuta di Apertura Esercizi di Commercio al Dettaglio di Vicinato-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Ricevuta::Ricevuta" @51
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A11168E"
+			    location   	(696, 231)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A11168F"
+				Parent_View 	@51
+				location   	(695, 447)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	1405
+				justify    	0
+				label      	"Ricevuta")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4027B5770014"
+			    width      	228
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Ricevuta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato" @52
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A111692"
+			    location   	(696, 936)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A111693"
+				Parent_View 	@52
+				location   	(695, 1152)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	5331
+				justify    	0
+				label      	"Ricevuta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"47D15307030B"
+			    width      	228
+			    autoResize 	TRUE)
+			(object InheritView "" @53
+			    quid       	"4DBC5A111696"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"47D1530800A2"
+			    client     	@52
+			    supplier   	@51
+			    vertices   	(list Points
+				(696, 798)
+				(696, 472))
+			    line_style 	0)))
+		(object UseCaseDiagram "Richiesta di Apertura Esercizi di Commercio al Dettaglio di Vicinato-Definizione"
+		    quid       	"47D1530800B0"
+		    title      	"Richiesta di Apertura Esercizi di Commercio al Dettaglio di Vicinato-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Richiesta::Richiesta" @54
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A11169A"
+			    location   	(1776, 1545)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A11169B"
+				Parent_View 	@54
+				location   	(1776, 1768)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	1459
+				justify    	0
+				label      	"Richiesta")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"3F522B7F031D"
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Tematici::Imprese (Oggetti)::Concessioni Ed Autorizzazioni (Oggetti)::Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Comunicazione per Esercizio di Commercio::Comunicazione Per Esercizio Di Commercio" @55
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A11169E"
+			    location   	(1905, 177)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A11169F"
+				Parent_View 	@55
+				location   	(1464, 131)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	882
+				justify    	0
+				label      	"Comunicazione Per Esercizio Di Commercio")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4106301101E3"
+			    width      	900
+			    height     	117
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Tematici::Imprese (Oggetti)::Concessioni Ed Autorizzazioni (Oggetti)::Comunicazione Per Commercio (Oggetti)::Apertura Esercizio di Commercio::Estremi Apertura Esercizio Di Commercio" @56
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1116A2"
+			    location   	(2592, 369)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1116A3"
+				Parent_View 	@56
+				location   	(2185, 323)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	814
+				justify    	0
+				label      	"Estremi Apertura Esercizio Di Commercio")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"467BD1AC005D"
+			    width      	832
+			    height     	117
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Tematici::Imprese (Oggetti)::Concessioni Ed Autorizzazioni (Oggetti)::Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Titolare Esercizio di Commercio di Vicinato::Titolare Esercizio Di Commercio Di Vicinato" @57
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1116A6"
+			    location   	(849, 321)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1116A7"
+				Parent_View 	@57
+				location   	(412, 275)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	874
+				justify    	0
+				label      	"Titolare Esercizio Di Commercio Di Vicinato")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"467121060370"
+			    width      	892
+			    height     	117
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Credenziali::Credenziali Certificate::Credenziali Utente Certificate::Credenziali Utente Certificate" @58
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1116AA"
+			    location   	(831, 783)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1116AB"
+				Parent_View 	@58
+				location   	(519, 737)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	624
+				justify    	0
+				label      	"Credenziali Utente Certificate")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"417C2C860170"
+			    width      	642
+			    height     	117
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Tematici::Imprese (Oggetti)::Concessioni Ed Autorizzazioni (Oggetti)::Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Dichiarazione Settore Alimentare::Dichiarazione Settore Alimentare" @59
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1116AE"
+			    location   	(2865, 1521)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1116AF"
+				Parent_View 	@59
+				location   	(2523, 1475)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	684
+				justify    	0
+				label      	"Dichiarazione Settore Alimentare")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"467A31DC0208"
+			    width      	702
+			    height     	117
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Tematici::Imprese (Oggetti)::Concessioni Ed Autorizzazioni (Oggetti)::Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Autocertificazione per Esercizi di Commercio al Dettaglio di Vicinato::Autocertificazione Per Esercizi Di Commercio Al Dettaglio Di Vicinato" @60
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1116B2"
+			    location   	(3072, 735)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1116B3"
+				Parent_View 	@60
+				location   	(2402, 689)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	1340
+				justify    	0
+				label      	"Autocertificazione Per Esercizi Di Commercio Al Dettaglio Di Vicinato")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"467790F5001B"
+			    width      	1358
+			    height     	117
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Tematici::Imprese (Oggetti)::Concessioni Ed Autorizzazioni (Oggetti)::Comunicazione Per Commercio (Oggetti)::Dichiarazione Altre Persone::Dichiarazione Altre Persone" @61
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1116B6"
+			    location   	(2754, 996)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1116B7"
+				Parent_View 	@61
+				location   	(2457, 950)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	594
+				justify    	0
+				label      	"Dichiarazione Altre Persone")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"467A3BCA02F5"
+			    width      	612
+			    height     	117
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Di Business::Imprese::Concessioni Ed Autorizzazioni::Apertura Esercizi di Commercio al Dettaglio di Vicinato::Apertura Esercizi di Commercio al Dettaglio di Vicinato (Oggetti)::Richiesta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato" @62
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1116BA"
+			    location   	(1776, 897)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1116BB"
+				Parent_View 	@62
+				location   	(1776, 1120)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	5339
+				justify    	0
+				label      	"Richiesta Di Apertura Esercizi Di Commercio Al Dettaglio Di Vicinato")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"47D1530800AE"
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$10" @63
+			    quid       	"4DBC5A1116BE"
+			    location   	(1845, 494)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"47D157DC0318"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$11" @64
+				    quid       	"4DBC5A1116BF"
+				    Parent_View 	@63
+				    location   	(69, -402)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47D157DD02C0"
+				    client     	@63
+				    supplier   	@55
+				    vertices   	(list Points
+					(1845, 494)
+					(1893, 235))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$12" @65
+				    quid       	"4DBC5A1116C0"
+				    Parent_View 	@63
+				    location   	(69, -402)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47D157DD02DE"
+				    client     	@63
+				    supplier   	@62
+				    vertices   	(list Points
+					(1845, 494)
+					(1797, 753))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$13" @66
+			    quid       	"4DBC5A1116C1"
+			    location   	(2198, 620)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"47D157E4014C"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$14" @67
+				    quid       	"4DBC5A1116C2"
+				    Parent_View 	@66
+				    location   	(422, -276)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47D157E501D0"
+				    client     	@66
+				    supplier   	@56
+				    vertices   	(list Points
+					(2198, 620)
+					(2499, 427))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$15" @68
+				    quid       	"4DBC5A1116C3"
+				    Parent_View 	@66
+				    location   	(422, -276)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47D157E501D2"
+				    client     	@66
+				    supplier   	@62
+				    vertices   	(list Points
+					(2198, 620)
+					(1896, 815))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$19" @69
+			    quid       	"4DBC5A1116C4"
+			    location   	(1298, 599)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"47D157F20351"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Titolare" @70
+				    quid       	"4DBC5A1116C5"
+				    Parent_View 	@69
+				    location   	(-478, -297)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @71
+					quid       	"4DBC5A1116C6"
+					Parent_View 	@70
+					location   	(994, 460)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	170
+					justify    	0
+					label      	"+Titolare"
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47D157F303AD"
+				    client     	@69
+				    supplier   	@57
+				    vertices   	(list Points
+					(1298, 599)
+					(945, 379))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$20" @72
+				    quid       	"4DBC5A1116C8"
+				    Parent_View 	@69
+				    location   	(-478, -297)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47D157F303B7"
+				    client     	@69
+				    supplier   	@62
+				    vertices   	(list Points
+					(1298, 599)
+					(1654, 818))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$21" @73
+			    quid       	"4DBC5A1116C9"
+			    location   	(1403, 850)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"47D157F602AD"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Richiedente" @74
+				    quid       	"4DBC5A1116CA"
+				    Parent_View 	@73
+				    location   	(-373, -46)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @75
+					quid       	"4DBC5A1116CB"
+					Parent_View 	@74
+					location   	(1207, 785)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	239
+					justify    	0
+					label      	"+Richiedente"
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47D157F7022B"
+				    client     	@73
+				    supplier   	@58
+				    vertices   	(list Points
+					(1403, 850)
+					(1152, 820))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$22" @76
+				    quid       	"4DBC5A1116CD"
+				    Parent_View 	@73
+				    location   	(-373, -46)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47D157F7027B"
+				    client     	@73
+				    supplier   	@62
+				    vertices   	(list Points
+					(1403, 850)
+					(1654, 877))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$26" @77
+			    quid       	"4DBC5A1116CE"
+			    location   	(2329, 1213)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"47E139B003B6"
+			    label      	(object SegLabel @78
+				quid       	"4DBC5A1116CF"
+				Parent_View 	@77
+				location   	(2329, 1226)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	822
+				justify    	0
+				label      	"{Solo per il commercio del settore alimentare}"
+				pctDist    	0.500000
+				height     	13
+				orientation 	1)
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$27" @79
+				    quid       	"4DBC5A1116D0"
+				    Parent_View 	@77
+				    location   	(553, 317)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47E139B103C6"
+				    client     	@77
+				    supplier   	@59
+				    vertices   	(list Points
+					(2329, 1213)
+					(2763, 1462))
+				    line_style 	0
+				    label      	(object SegLabel @80
+					quid       	"4DBC5A1116D1"
+					Parent_View 	@79
+					location   	(2745, 1390)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..1"
+					pctDist    	0.900000
+					height     	54
+					orientation 	0))
+				(object RoleView "$UNNAMED$28" @81
+				    quid       	"4DBC5A1116D2"
+				    Parent_View 	@77
+				    location   	(553, 317)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47E139B103D0"
+				    client     	@77
+				    supplier   	@62
+				    vertices   	(list Points
+					(2329, 1213)
+					(1896, 964))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$16" @82
+			    quid       	"4DBC5A1116D3"
+			    location   	(2246, 835)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"47D157EC00E9"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$17" @83
+				    quid       	"4DBC5A1116D4"
+				    Parent_View 	@82
+				    location   	(470, -61)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47D157ED0195"
+				    client     	@82
+				    supplier   	@60
+				    vertices   	(list Points
+					(2246, 835)
+					(2587, 793))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$18" @84
+				    quid       	"4DBC5A1116D5"
+				    Parent_View 	@82
+				    location   	(470, -61)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47D157ED019F"
+				    client     	@82
+				    supplier   	@62
+				    vertices   	(list Points
+					(2246, 835)
+					(1896, 877))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$23" @85
+			    quid       	"4DBC5A1116D6"
+			    location   	(2171, 935)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"47E1390E03C2"
+			    label      	(object SegLabel @86
+				quid       	"4DBC5A1116D7"
+				Parent_View 	@85
+				location   	(2171, 995)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	2
+				anchor_loc 	1
+				nlines     	1
+				max_width  	363
+				justify    	0
+				label      	"{Solo per le società}"
+				pctDist    	0.500000
+				height     	60
+				orientation 	1)
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$24" @87
+				    quid       	"4DBC5A1116D8"
+				    Parent_View 	@85
+				    location   	(395, 39)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47E1391000C5"
+				    client     	@85
+				    supplier   	@61
+				    vertices   	(list Points
+					(2171, 935)
+					(2447, 963))
+				    line_style 	0
+				    label      	(object SegLabel @88
+					quid       	"4DBC5A1116D9"
+					Parent_View 	@87
+					location   	(2423, 907)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..*"
+					pctDist    	0.900000
+					height     	54
+					orientation 	0))
+				(object RoleView "$UNNAMED$25" @89
+				    quid       	"4DBC5A1116DA"
+				    Parent_View 	@85
+				    location   	(395, 39)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"47E1391000C7"
+				    client     	@85
+				    supplier   	@62
+				    vertices   	(list Points
+					(2171, 935)
+					(1896, 907))
+				    line_style 	0)))
+			(object InheritView "" @90
+			    quid       	"4DBC5A1116DB"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"47D153080167"
+			    client     	@62
+			    supplier   	@54
+			    vertices   	(list Points
+				(1776, 1145)
+				(1776, 1402))
+			    line_style 	0))))))
+    logical_presentations 	(list unit_reference_list))

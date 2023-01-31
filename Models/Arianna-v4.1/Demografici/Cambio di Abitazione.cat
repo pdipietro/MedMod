@@ -1,0 +1,4271 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	0)
+
+(object Class_Category "Cambio di Abitazione"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    attributes 	(list Attribute_Set
+	(object Attribute
+	    tool       	"e-gov"
+	    name       	"cg_style"
+	    value      	"Default")
+	(object Attribute
+	    tool       	"e-gov"
+	    name       	"DaPubblicare"
+	    value      	FALSE)
+	(object Attribute
+	    tool       	"e-gov"
+	    name       	"Status"
+	    value      	("StatusTy" 2))
+	(object Attribute
+	    tool       	"Navigator"
+	    name       	"cg_style"
+	    value      	"Default")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNamespace"
+	    value      	"")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"UsedNamespaces"
+	    value      	"Demografici;OggettiCondivisi;")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNameSpacePrefix"
+	    value      	"Demografici")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNameSpace"
+	    value      	"")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"UsedNameSpaces"
+	    value      	"Demografici;OggettiCondivisi;"))
+    quid       	"4038E70101F1"
+    stereotype 	"Business System"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object UseCase "Cambio Di Abitazione"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"RequisitePro"
+		    name       	"ReqProProjectPath"
+		    value      	"")
+		(object Attribute
+		    tool       	"RequisitePro"
+		    name       	"ReqProProjectGuid"
+		    value      	"")
+		(object Attribute
+		    tool       	"RequisitePro"
+		    name       	"ReqProDocumentName"
+		    value      	"")
+		(object Attribute
+		    tool       	"RequisitePro"
+		    name       	"ReqProDocumentGuid"
+		    value      	"")
+		(object Attribute
+		    tool       	"RequisitePro"
+		    name       	"ReqProDocType"
+		    value      	"")
+		(object Attribute
+		    tool       	"RequisitePro"
+		    name       	"ReqProReqType"
+		    value      	"")
+		(object Attribute
+		    tool       	"RequisitePro"
+		    name       	"ReqProRequirementId"
+		    value      	"")
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"cg_style"
+		    value      	"Default")
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"TipoDiCollaborazione"
+		    value      	("TipoDiCollaborazioneTy" 6))
+		(object Attribute
+		    tool       	"Navigator"
+		    name       	"cg_style"
+		    value      	"Default")
+		(object Attribute
+		    tool       	"Navigator"
+		    name       	"LinkToDiagram"
+		    value      	(value Text ""))
+		(object Attribute
+		    tool       	"Arianna"
+		    name       	"ErogabileAncheSoloConPEC"
+		    value      	"True")
+		(object Attribute
+		    tool       	"Arianna"
+		    name       	"MiglioraConSupportoOnLine"
+		    value      	"True")
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"Richiesta"
+		    value      	0)
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"TipoRichiesta"
+		    value      	"online")
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"Ricevuta"
+		    value      	"Ricevuta Di Cambio Di Abitazione"))
+	    quid       	"3F9BEB550223"
+	    stereotype 	"Business Use Case Realization"
+	    statemachine 	(object State_Machine "Cambio di Abitazione"
+		quid       	"4026539B00B1"
+		states     	(list States
+		    (object ActivityState "Richiesta di Cambio di Abitazione"
+			attributes 	(list Attribute_Set)
+			quid       	"402653AE02F3"
+			stereotype 	"Business Activity"
+			statemachine 	(object State_Machine "Richiesta di Cambio di Abitazione"
+			    quid       	"402653C401DC"
+			    states     	(list States
+				(object State "$UNNAMED$0"
+				    quid       	"402667940113"
+				    type       	"StartState")
+				(object State "$UNNAMED$1"
+				    quid       	"4027B090006D"
+				    type       	"EndState")
+				(object ActivityState "$UNNAMED$2"
+				    attributes 	(list Attribute_Set)
+				    quid       	"4055958300B0"
+				    stereotype 	"And")
+				(object ActivityState "$UNNAMED$3"
+				    quid       	"40DC05D20335"
+				    stereotype 	"null"))
+			    partitions 	(list Partitions
+				(object Partition "Richiedente"
+				    quid       	"4026677400B2"
+				    class      	"Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Richiesta::Richiedente::Richiedente"
+				    quidu      	"401C23EC00CE"
+				    persistence 	"Transient"
+				    creationObj 	FALSE
+				    multi      	FALSE)
+				(object Partition "FSL"
+				    quid       	"40266804035C"
+				    class      	"Use Case View::Architettura applicativa::Front-End Service Layer (FSL)::FSL"
+				    quidu      	"40164CDB0010"
+				    persistence 	"Transient"
+				    creationObj 	FALSE
+				    multi      	FALSE))
+			    objects    	(list Objects
+				(object Object "Eccezione"
+				    quid       	"40266E46020C"
+				    class      	"Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Eccezione::Eccezione"
+				    quidu      	"4006CB23006A"
+				    persistence 	"Transient"
+				    creationObj 	FALSE
+				    multi      	FALSE)
+				(object Object "Richiesta di Cambio di Abitazione"
+				    quid       	"4027AED8018B"
+				    class      	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio di Abitazione (Oggetti)::Richiesta Di Cambio Di Abitazione"
+				    quidu      	"400E4CBA032E"
+				    persistence 	"Transient"
+				    creationObj 	FALSE
+				    multi      	FALSE)
+				(object Object "Ricevuta di Cambio di Abitazione"
+				    quid       	"40280D500069"
+				    class      	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio di Abitazione (Oggetti)::Ricevuta Di Cambio Di Abitazione"
+				    quidu      	"407BF8B90369"
+				    persistence 	"Transient"
+				    creationObj 	FALSE
+				    multi      	FALSE))
+			    transitions 	(list transition_list
+				(object State_Transition
+				    quid       	"4054A20703E5"
+				    label      	""
+				    supplier   	""
+				    supplier_quidu 	"40742EE2037C"
+				    client     	"$UNNAMED$0"
+				    client_quidu 	"402667940113"
+				    Event      	(object Event "Richiede il cambio di abitazione"
+					quid       	"40557C7E00AB")
+				    sendEvent  	(object sendEvent
+					quid       	"4054A20703E8"))
+				(object State_Transition
+				    quid       	"405595F000BE"
+				    supplier   	""
+				    supplier_quidu 	"4044A08B0330"
+				    client     	"$UNNAMED$2"
+				    client_quidu 	"4055958300B0"
+				    sendEvent  	(object sendEvent
+					quid       	"405595F000C1"))
+				(object State_Transition
+				    quid       	"40DC06230223"
+				    supplier   	"Use Case View::Processi::Pattern Di Processo::MetaModello di Erogazione dei Servizi::Richiedente::Inoltro della Richiesta::Inoltro della Richiesta::Inoltro della Richiesta"
+				    supplier_quidu 	"4023B4F30228"
+				    client     	"$UNNAMED$2"
+				    client_quidu 	"4055958300B0"
+				    sendEvent  	(object sendEvent
+					quid       	"40DC06230226"))
+				(object State_Transition
+				    quid       	"40DC05EA00C3"
+				    supplier   	"$UNNAMED$1"
+				    supplier_quidu 	"4027B090006D"
+				    client     	"$UNNAMED$3"
+				    client_quidu 	"40DC05D20335"
+				    sendEvent  	(object sendEvent
+					quid       	"40DC05EA00C6")))
+			    objectflows 	(list objectflow_list
+				(object Object_Flow
+				    quid       	"4027B0140309"
+				    supplier   	""
+				    supplier_quidu 	"40449FF801DA"
+				    client     	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio Di Abitazione::Cambio di Abitazione::Richiesta di Cambio di Abitazione::Richiesta di Cambio di Abitazione::Richiesta di Cambio di Abitazione"
+				    client_quidu 	"4027AED8018B"
+				    State      	"Predisposta"
+				    quidstate  	"4027AF560103")
+				(object Object_Flow
+				    quid       	"4054A19701D6"
+				    supplier   	"$UNNAMED$2"
+				    supplier_quidu 	"4055958300B0"
+				    client     	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio Di Abitazione::Cambio di Abitazione::Richiesta di Cambio di Abitazione::Richiesta di Cambio di Abitazione::Richiesta di Cambio di Abitazione"
+				    client_quidu 	"4027AED8018B"
+				    State      	"Completamente Compilata"
+				    quidstate  	"4027B0470051")
+				(object Object_Flow
+				    quid       	"40DC05BC0135"
+				    supplier   	"Use Case View::Processi::Pattern Di Processo::MetaModello di Erogazione dei Servizi::Richiedente::Compilazione della Richiesta::Compilazione della Richiesta::Compilazione della Richiesta"
+				    supplier_quidu 	"401F9CD50325"
+				    client     	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio Di Abitazione::Cambio di Abitazione::Richiesta di Cambio di Abitazione::Richiesta di Cambio di Abitazione::Richiesta di Cambio di Abitazione"
+				    client_quidu 	"4027AED8018B"
+				    State      	"Predisposta"
+				    quidstate  	"4027AF560103")
+				(object Object_Flow
+				    quid       	"40DC05EF017E"
+				    supplier   	"$UNNAMED$3"
+				    supplier_quidu 	"40DC05D20335"
+				    client     	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio Di Abitazione::Cambio di Abitazione::Richiesta di Cambio di Abitazione::Richiesta di Cambio di Abitazione::Richiesta di Cambio di Abitazione"
+				    client_quidu 	"4027AED8018B"
+				    State      	"Parzialmente Compilata"
+				    quidstate  	"4027B05903DD"))
+			    statediagrams 	(list StateDiagrams
+				(object ActivityDiagram "Richiesta di Cambio di Abitazione-WF"
+				    quid       	"402653C401FB"
+				    title      	"Richiesta di Cambio di Abitazione-WF"
+				    zoom       	90
+				    max_height 	28350
+				    max_width  	21600
+				    origin_x   	1465
+				    origin_y   	0
+				    items      	(list diagram_item_list
+					(object Swimlane "Richiedente" @1
+					    quid       	"4DBC5A120185"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    line_color 	3342489
+					    quidu      	"4026677400B2"
+					    width      	3044)
+					(object StateView "StartState" "$UNNAMED$0" @2
+					    quid       	"4DBC5A120186"
+					    Parent_View 	@1
+					    location   	(112, 160)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @3
+						quid       	"4DBC5A120187"
+						Parent_View 	@2
+						location   	(154, 130)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	TRUE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						hidden     	TRUE
+						nlines     	2
+						max_width  	174
+						justify    	1
+						label      	""
+						pctDist    	1.000000
+						height     	0
+						orientation 	0)
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    quidu      	"402667940113"
+					    autoResize 	TRUE)
+					(object ObjectView "Richiesta di Cambio di Abitazione" @4
+					    quid       	"4DBC5A120188"
+					    Parent_View 	@1
+					    location   	(1060, 432)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A120189"
+						Parent_View 	@4
+						location   	(1060, 655)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	4535
+						justify    	0
+						label      	"Richiesta di Cambio di Abitazione")
+					    icon       	"Modulo (Form)"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"4027AED8018B"
+					    compartment 	(object Compartment
+						quid       	"4DBC5A12018B"
+						Parent_View 	@4
+						location   	(940, 696)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						icon_style 	"Icon"
+						anchor     	2
+						nlines     	1
+						max_width  	237
+						justify    	0
+						compartmentItems 	(list Compartment
+						    "[Predisposta]"))
+					    annotation 	4
+					    autoResize 	TRUE
+					    subobjects 	0
+					    x_offset   	0.000000
+					    y_offset   	0.000000
+					    State      	"Predisposta"
+					    quidstate  	"4027AF560103")
+					(object ObjectView "Richiesta di Cambio di Abitazione" @5
+					    quid       	"4DBC5A12018D"
+					    Parent_View 	@1
+					    location   	(1168, 2176)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A12018E"
+						Parent_View 	@5
+						location   	(1168, 2399)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	4546
+						justify    	0
+						label      	"Richiesta di Cambio di Abitazione")
+					    icon       	"Modulo (Form)"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"4027AED8018B"
+					    compartment 	(object Compartment
+						quid       	"4DBC5A120190"
+						Parent_View 	@5
+						location   	(903, 2440)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						icon_style 	"Icon"
+						anchor     	2
+						nlines     	1
+						max_width  	527
+						justify    	0
+						compartmentItems 	(list Compartment
+						    "[Completamente Compilata]"))
+					    annotation 	4
+					    autoResize 	TRUE
+					    subobjects 	0
+					    x_offset   	0.000000
+					    y_offset   	0.000000
+					    State      	"Completamente Compilata"
+					    quidstate  	"4027B0470051")
+					(object ObjectView "Richiesta di Cambio di Abitazione" @6
+					    quid       	"4DBC5A120192"
+					    Parent_View 	@1
+					    location   	(1104, 1280)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A120193"
+						Parent_View 	@6
+						location   	(1104, 1503)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	4554
+						justify    	0
+						label      	"Richiesta di Cambio di Abitazione")
+					    icon       	"Modulo (Form)"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"4027AED8018B"
+					    compartment 	(object Compartment
+						quid       	"4DBC5A120195"
+						Parent_View 	@6
+						location   	(865, 1544)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						icon_style 	"Icon"
+						anchor     	2
+						nlines     	1
+						max_width  	476
+						justify    	0
+						compartmentItems 	(list Compartment
+						    "[Parzialmente Compilata]"))
+					    annotation 	4
+					    autoResize 	TRUE
+					    subobjects 	0
+					    x_offset   	0.000000
+					    y_offset   	0.000000
+					    State      	"Parzialmente Compilata"
+					    quidstate  	"4027B05903DD")
+					(object StateView "EndState" "$UNNAMED$1" @7
+					    quid       	"4DBC5A120197"
+					    Parent_View 	@1
+					    location   	(288, 960)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @8
+						quid       	"4DBC5A120198"
+						Parent_View 	@7
+						location   	(342, 918)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	TRUE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						hidden     	TRUE
+						nlines     	2
+						max_width  	174
+						justify    	1
+						label      	""
+						pctDist    	1.000000
+						height     	0
+						orientation 	0)
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    quidu      	"4027B090006D"
+					    autoResize 	TRUE)
+					(object ObjectView "Ricevuta di Cambio di Abitazione" @9
+					    quid       	"4DBC5A120199"
+					    Parent_View 	@1
+					    location   	(1680, 3568)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A12019A"
+						Parent_View 	@9
+						location   	(1679, 3784)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	4289
+						justify    	0
+						label      	"Ricevuta di Cambio di Abitazione")
+					    icon       	"Business Document"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"40280D500069"
+					    width      	228
+					    annotation 	4
+					    autoResize 	TRUE
+					    subobjects 	0
+					    x_offset   	0.000000
+					    y_offset   	0.000000)
+					(object ActivityStateView "$UNNAMED$2" @10
+					    quid       	"4DBC5A12019C"
+					    Parent_View 	@1
+					    location   	(2512, 2624)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A12019D"
+						Parent_View 	@10
+						location   	(2512, 2761)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	351
+						justify    	0
+						label      	"")
+					    icon       	"And"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"4055958300B0"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object Object_Flow_View "" @11
+					    quid       	"4DBC5A12019E"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"4054A19701D6"
+					    client     	@5
+					    supplier   	@10
+					    vertices   	(list Points
+						(1288, 2214)
+						(2453, 2601))
+					    line_style 	0)
+					(object ActivityStateView "Compilazione della Richiesta" @12
+					    quid       	"4DBC5A1201A0"
+					    Parent_View 	@1
+					    location   	(1696, 992)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A1201A1"
+						Parent_View 	@12
+						location   	(1696, 1136)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	989
+						justify    	0
+						label      	"Compilazione della Richiesta")
+					    icon       	"Business Activity"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"401F9CD50325"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object Object_Flow_View "" @13
+					    quid       	"4DBC5A1201A3"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40DC05BC0135"
+					    client     	@4
+					    supplier   	@12
+					    vertices   	(list Points
+						(1180, 537)
+						(1623, 928))
+					    line_style 	0)
+					(object Object_Flow_View "" @14
+					    quid       	"4DBC5A1201A5"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"4027B08A038F"
+					    client     	@12
+					    supplier   	@6
+					    vertices   	(list Points
+						(1560, 1055)
+						(1224, 1218))
+					    line_style 	0)
+					(object Object_Flow_View "" @15
+					    quid       	"4DBC5A1201A7"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40DC05FC0321"
+					    client     	@12
+					    supplier   	@5
+					    vertices   	(list Points
+						(1665, 1055)
+						(1228, 2032))
+					    line_style 	0)
+					(object TransView "" @16
+					    quid       	"4DBC5A1201A9"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40DC060102D8"
+					    client     	@12
+					    supplier   	@10
+					    vertices   	(list Points
+						(1726, 1055)
+						(2482, 2568))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object ActivityStateView "$UNNAMED$3" @17
+					    quid       	"4DBC5A1201AB"
+					    Parent_View 	@1
+					    location   	(688, 960)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A1201AC"
+						Parent_View 	@17
+						location   	(688, 1097)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	342
+						justify    	0
+						label      	"")
+					    icon       	"null"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"40DC05D20335"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object TransView "" @18
+					    quid       	"4DBC5A1201AD"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40DC05EA00C3"
+					    client     	@17
+					    supplier   	@7
+					    vertices   	(list Points
+						(631, 960)
+						(330, 960))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object Object_Flow_View "" @19
+					    quid       	"4DBC5A1201AF"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40DC05EF017E"
+					    client     	@6
+					    supplier   	@17
+					    vertices   	(list Points
+						(982, 1185)
+						(745, 1004))
+					    line_style 	0)
+					(object ActivityStateView "Inoltro della Richiesta" @20
+					    quid       	"4DBC5A1201B1"
+					    Parent_View 	@1
+					    location   	(2512, 3024)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A1201B2"
+						Parent_View 	@20
+						location   	(2512, 3168)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	992
+						justify    	0
+						label      	"Inoltro della Richiesta")
+					    icon       	"Business Activity"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"4023B4F30228"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object TransView "" @21
+					    quid       	"4DBC5A1201B4"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40DC06230223"
+					    client     	@10
+					    supplier   	@20
+					    vertices   	(list Points
+						(2512, 2680)
+						(2512, 2958))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object Swimlane "FSL" @22
+					    quid       	"4DBC5A1201B6"
+					    location   	(3044, 0)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    line_color 	3342489
+					    quidu      	"40266804035C"
+					    width      	1514)
+					(object ActivityStateView "Predisposizione del Modulo di Richiesta" @23
+					    quid       	"4DBC5A1201B7"
+					    Parent_View 	@22
+					    location   	(3760, 672)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A1201B8"
+						Parent_View 	@23
+						location   	(3760, 816)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	1175
+						justify    	0
+						label      	"Predisposizione del Modulo di Richiesta")
+					    icon       	"Business Activity"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"401E49E003BF"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object Object_Flow_View "" @24
+					    quid       	"4DBC5A1201BA"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"4027AEE801C1"
+					    client     	@23
+					    supplier   	@4
+					    vertices   	(list Points
+						(3616, 657)
+						(1180, 441))
+					    line_style 	0)
+					(object ActivityStateView "Identifica il Supporto alla Compilazione della Richiesta" @25
+					    quid       	"4DBC5A1201BC"
+					    Parent_View 	@22
+					    location   	(3760, 160)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A1201BD"
+						Parent_View 	@25
+						location   	(3760, 304)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	1406
+						justify    	0
+						label      	"Identifica il Supporto alla Compilazione della Richiesta")
+					    icon       	"Business Activity"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"40742EE2037C"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object TransView "" @26
+					    quid       	"4DBC5A1201BF"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @27
+						quid       	"4DBC5A1201C0"
+						Parent_View 	@26
+						location   	(1880, 116)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor_loc 	1
+						nlines     	1
+						max_width  	637
+						justify    	0
+						label      	"Richiede il cambio di abitazione"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"4054A20703E5"
+					    client     	@2
+					    supplier   	@25
+					    vertices   	(list Points
+						(142, 160)
+						(3618, 160))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object TransView "" @28
+					    quid       	"4DBC5A1201C2"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40743198014B"
+					    client     	@25
+					    supplier   	@23
+					    vertices   	(list Points
+						(3760, 330)
+						(3760, 608))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object ActivityStateView "Processa la Richiesta" @29
+					    quid       	"4DBC5A1201C4"
+					    Parent_View 	@22
+					    location   	(3504, 3024)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A1201C5"
+						Parent_View 	@29
+						location   	(3504, 3178)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	1189
+						justify    	0
+						label      	"Processa la Richiesta")
+					    icon       	"Business Transaction"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"40250DC50357"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object Swimlane "" @30
+					    quid       	"4DBC5A1201C7"
+					    location   	(4558, 0)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    line_color 	3342489
+					    width      	450)
+					(object Object_Flow_View "" @31
+					    quid       	"4DBC5A1201C8"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40DC0649025A"
+					    client     	@29
+					    supplier   	@9
+					    vertices   	(list Points
+						(3338, 3071)
+						(1791, 3530))
+					    line_style 	0)
+					(object TransView "" @32
+					    quid       	"4DBC5A1201CA"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @33
+						quid       	"4DBC5A1201CB"
+						Parent_View 	@32
+						location   	(2995, 2980)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor_loc 	1
+						nlines     	1
+						max_width  	450
+						justify    	0
+						label      	"Richiede Inoltro( Richiesta )[ Richiesta = Pronta per il Pagamento ]"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40250DDA0240"
+					    client     	@20
+					    supplier   	@29
+					    vertices   	(list Points
+						(2654, 3024)
+						(3336, 3024))
+					    line_style 	0
+					    x_offset   	FALSE)))))))
+		partitions 	(list Partitions)
+		objects    	(list Objects)
+		transitions 	(list transition_list)
+		objectflows 	(list objectflow_list)
+		statediagrams 	(list StateDiagrams))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "Cambio di Abitazione"
+		    quid       	"402F652102E0"
+		    title      	"Cambio di Abitazione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio di Abitazione (Oggetti)::Richiesta Di Cambio Di Abitazione" @34
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4DBC5A1201D3"
+			    location   	(2481, 627)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1201D4"
+				Parent_View 	@34
+				location   	(2481, 850)
+				anchor_loc 	1
+				nlines     	1
+				max_width  	4121
+				justify    	0
+				label      	"Richiesta Di Cambio Di Abitazione")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"400E4CBA032E"
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio di Abitazione (Oggetti)::Ricevuta Di Cambio Di Abitazione" @35
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4DBC5A1201D7"
+			    location   	(2550, 1422)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1201D8"
+				Parent_View 	@35
+				location   	(2549, 1638)
+				anchor_loc 	1
+				nlines     	1
+				max_width  	2782
+				justify    	0
+				label      	"Ricevuta Di Cambio Di Abitazione")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"407BF8B90369"
+			    width      	228
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object UseCaseView "Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via" @36
+			    quid       	"4DBC5A1201DB"
+			    location   	(1380, 1995)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1201DC"
+				Parent_View 	@36
+				location   	(1380, 2136)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	648
+				justify    	0
+				label      	"Valida Via")
+			    icon       	"use-case realization"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"43F2194201D8")
+			(object UseCaseView "Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Verifica Residenza::Verifica Residenza" @37
+			    quid       	"4DBC5A1201DE"
+			    location   	(564, 1764)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1201DF"
+				Parent_View 	@37
+				location   	(563, 1940)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	879
+				justify    	0
+				label      	"Verifica Residenza")
+			    icon       	"Business Use Case Realization"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4AA2CCE902CE")
+			(object UseCaseView "Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Verifica Esistenza Persona In Anagrafe::Verifica Esistenza Persona In Anagrafe" @38
+			    quid       	"4DBC5A1201E1"
+			    location   	(2139, 1863)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1201E2"
+				Parent_View 	@38
+				location   	(2138, 2039)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	879
+				justify    	0
+				label      	"Verifica Esistenza Persona In Anagrafe")
+			    icon       	"Business Use Case Realization"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4AA3FBA50240")
+			(object UseCaseView "Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Visura Di Stato Di Famiglia::Visura Di Stato Di Famiglia" @39
+			    quid       	"4DBC5A1201E4"
+			    location   	(1389, 210)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1201E5"
+				Parent_View 	@39
+				location   	(1388, 386)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	879
+				justify    	0
+				label      	"Visura Di Stato Di Famiglia")
+			    icon       	"Business Use Case Realization"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4985D127014E")
+			(object UseCaseView "Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Visura Anagrafica Personale::Visura Anagrafica Personale" @40
+			    quid       	"4DBC5A1201E7"
+			    location   	(468, 294)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1201E8"
+				Parent_View 	@40
+				location   	(467, 470)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	879
+				justify    	0
+				label      	"Visura Anagrafica Personale")
+			    icon       	"Business Use Case Realization"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"49A7FE710200")
+			(object UseCaseView "Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio Di Abitazione" @41
+			    quid       	"4DBC5A1201EA"
+			    location   	(1401, 1014)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1201EB"
+				Parent_View 	@41
+				location   	(1400, 1190)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	879
+				justify    	0
+				label      	"Cambio Di Abitazione")
+			    icon       	"Business Use Case Realization"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"3F9BEB550223"
+			    width      	306
+			    height     	194)
+			(object AssociationViewNew "" @42
+			    quid       	"4DBC5A1201F4"
+			    location   	(1954, 811)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"40DB10850258"
+			    roleview_list 	(list RoleViews
+				(object RoleView "" @43
+				    quid       	"4DBC5A1201F6"
+				    Parent_View 	@42
+				    location   	(594, 123)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"40DB108601D4"
+				    client     	@42
+				    supplier   	@34
+				    vertices   	(list Points
+					(1954, 811)
+					(2359, 668))
+				    line_style 	0)
+				(object RoleView "" @44
+				    quid       	"4DBC5A1201F8"
+				    Parent_View 	@42
+				    location   	(594, 123)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"40DB108601F2"
+				    client     	@42
+				    supplier   	@41
+				    vertices   	(list Points
+					(1954, 811)
+					(1551, 955))
+				    line_style 	0)))
+			(object AssociationViewNew "" @45
+			    quid       	"4DBC5A1201FA"
+			    location   	(1994, 1222)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"40DB108B0012"
+			    roleview_list 	(list RoleViews
+				(object RoleView "" @46
+				    quid       	"4DBC5A1201FC"
+				    Parent_View 	@45
+				    location   	(634, 534)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"40DB108C00A6"
+				    client     	@45
+				    supplier   	@35
+				    vertices   	(list Points
+					(1994, 1222)
+					(2436, 1378))
+				    line_style 	0)
+				(object RoleView "" @47
+				    quid       	"4DBC5A1201FE"
+				    Parent_View 	@45
+				    location   	(634, 534)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"40DB108C00BA"
+				    client     	@45
+				    supplier   	@41
+				    vertices   	(list Points
+					(1994, 1222)
+					(1551, 1064))
+				    line_style 	0)))
+			(object AssociationViewNew "" @48
+			    quid       	"4DBC5A120200"
+			    location   	(1387, 1574)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @49
+				quid       	"4DBC5A120201"
+				Parent_View 	@48
+				location   	(1376, 1525)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<controllo>>"
+				pctDist    	0.333333
+				height     	50
+				orientation 	0)
+			    line_color 	3342489
+			    quidu      	"4A96E43C019A"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Controllo Correttezza Via" @50
+				    quid       	"4DBC5A120203"
+				    Parent_View 	@48
+				    location   	(28, 887)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @51
+					quid       	"4DBC5A120204"
+					Parent_View 	@50
+					location   	(1363, 1806)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	502
+					justify    	0
+					label      	"+Controllo Correttezza Via"
+					pctDist    	0.643464
+					height     	20
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4A96E43D0023"
+				    client     	@48
+				    supplier   	@36
+				    vertices   	(list Points
+					(1387, 1574)
+					(1380, 1934))
+				    line_style 	0)
+				(object RoleView "" @52
+				    quid       	"4DBC5A120206"
+				    Parent_View 	@48
+				    location   	(28, 887)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4A96E43D0027"
+				    client     	@48
+				    supplier   	@41
+				    vertices   	(list Points
+					(1387, 1574)
+					(1393, 1215))
+				    line_style 	0)))
+			(object AssociationViewNew "" @53
+			    quid       	"4DBC5A120208"
+			    location   	(933, 1429)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @54
+				quid       	"4DBC5A120209"
+				Parent_View 	@53
+				location   	(969, 1391)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<controllo>>"
+				pctDist    	1.100000
+				height     	39
+				orientation 	0)
+			    line_color 	3342489
+			    quidu      	"4AA3FA6F0139"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Verifica Residenza Famiglia Ricevente" @55
+				    quid       	"4DBC5A12020B"
+				    Parent_View 	@53
+				    location   	(-468, 415)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @56
+					quid       	"4DBC5A12020C"
+					Parent_View 	@55
+					location   	(752, 1616)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	766
+					justify    	0
+					label      	"+Verifica Residenza Famiglia Ricevente"
+					pctDist    	0.731595
+					height     	19
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4AA3FA6F03CF"
+				    client     	@53
+				    supplier   	@37
+				    vertices   	(list Points
+					(933, 1429)
+					(665, 1666))
+				    line_style 	0)
+				(object RoleView "" @57
+				    quid       	"4DBC5A12020E"
+				    Parent_View 	@53
+				    location   	(-468, 415)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4AA3FA6F03D1"
+				    client     	@53
+				    supplier   	@41
+				    vertices   	(list Points
+					(933, 1429)
+					(1172, 1215))
+				    line_style 	0)))
+			(object AssociationViewNew "" @58
+			    quid       	"4DBC5A120210"
+			    location   	(1813, 1490)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @59
+				quid       	"4DBC5A120211"
+				Parent_View 	@58
+				location   	(1798, 1537)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<controllo>>"
+				pctDist    	0.250000
+				height     	47
+				orientation 	1)
+			    line_color 	3342489
+			    quidu      	"4AA3FC4000A9"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Verifica Anagrafica Terzo Trasferito Stesso Comune" @60
+				    quid       	"4DBC5A120213"
+				    Parent_View 	@58
+				    location   	(412, 476)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @61
+					quid       	"4DBC5A120214"
+					Parent_View 	@60
+					location   	(1926, 1641)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	2
+					max_width  	619
+					justify    	0
+					label      	"+Verifica Anagrafica Terzo Trasferito Stesso Comune"
+					pctDist    	0.515024
+					height     	15
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4AA3FC400366"
+				    client     	@58
+				    supplier   	@38
+				    vertices   	(list Points
+					(1813, 1490)
+					(2054, 1767))
+				    line_style 	0)
+				(object RoleView "" @62
+				    quid       	"4DBC5A120216"
+				    Parent_View 	@58
+				    location   	(412, 476)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4AA3FC400368"
+				    client     	@58
+				    supplier   	@41
+				    vertices   	(list Points
+					(1813, 1490)
+					(1574, 1215))
+				    line_style 	0)))
+			(object AssociationViewNew "" @63
+			    quid       	"4DBC5A120218"
+			    location   	(1393, 686)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @64
+				quid       	"4DBC5A120219"
+				Parent_View 	@63
+				location   	(1382, 686)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<supporto>>"
+				pctDist    	0.333333
+				height     	0
+				orientation 	0)
+			    line_color 	3342489
+			    quidu      	"4A96E437001E"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Visura Stato Di Famiglia Richiedente" @65
+				    quid       	"4DBC5A12021B"
+				    Parent_View 	@63
+				    location   	(34, -1)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @66
+					quid       	"4DBC5A12021C"
+					Parent_View 	@65
+					location   	(1394, 537)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	741
+					justify    	0
+					label      	"+Visura Stato Di Famiglia Richiedente"
+					pctDist    	0.648239
+					height     	3
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4A96E4370272"
+				    client     	@63
+				    supplier   	@39
+				    vertices   	(list Points
+					(1393, 686)
+					(1389, 411))
+				    line_style 	0)
+				(object RoleView "" @67
+				    quid       	"4DBC5A12021E"
+				    Parent_View 	@63
+				    location   	(34, -1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4A96E4370274"
+				    client     	@63
+				    supplier   	@41
+				    vertices   	(list Points
+					(1393, 686)
+					(1397, 918))
+				    line_style 	0)))
+			(object AssociationViewNew "" @68
+			    quid       	"4DBC5A120220"
+			    location   	(2028, 450)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @69
+				quid       	"4DBC5A120221"
+				Parent_View 	@68
+				location   	(1955, 521)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<supporto>>"
+				pctDist    	-0.733333
+				height     	71
+				orientation 	1)
+			    line_color 	3342489
+			    quidu      	"4AA4CDCC021F"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Visura Stato Di Famiglia Titolare" @70
+				    quid       	"4DBC5A120223"
+				    Parent_View 	@68
+				    location   	(627, -564)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @71
+					quid       	"4DBC5A120224"
+					Parent_View 	@70
+					location   	(1884, 317)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	700
+					justify    	0
+					label      	"+Visura Stato Di Famiglia Titolare"
+					pctDist    	0.498023
+					height     	5
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4AA4CDCF01B4"
+				    client     	@68
+				    supplier   	@39
+				    vertices   	(list Points
+					(2028, 450)
+					(2112, 375)
+					(1539, 241))
+				    line_style 	0)
+				(object RoleView "" @72
+				    quid       	"4DBC5A120226"
+				    Parent_View 	@68
+				    location   	(627, -564)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4AA4CDCF01B6"
+				    client     	@68
+				    supplier   	@41
+				    vertices   	(list Points
+					(2028, 450)
+					(1504, 916))
+				    line_style 	0)))
+			(object AssociationViewNew "" @73
+			    quid       	"4DBC5A120228"
+			    location   	(1002, 706)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @74
+				quid       	"4DBC5A120229"
+				Parent_View 	@73
+				location   	(1036, 756)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<supporto>>"
+				pctDist    	1.066667
+				height     	50
+				orientation 	1)
+			    line_color 	3342489
+			    quidu      	"4AA4DDE50287"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Visura Anagrafica Personale Richiedente" @75
+				    quid       	"4DBC5A12022B"
+				    Parent_View 	@73
+				    location   	(-399, -308)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @76
+					quid       	"4DBC5A12022C"
+					Parent_View 	@75
+					location   	(585, 599)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	792
+					justify    	0
+					label      	"+Visura Anagrafica Personale Richiedente"
+					pctDist    	1.145824
+					height     	170
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4AA4DDE60212"
+				    client     	@73
+				    supplier   	@40
+				    vertices   	(list Points
+					(1002, 706)
+					(728, 495))
+				    line_style 	0)
+				(object RoleView "" @77
+				    quid       	"4DBC5A12022E"
+				    Parent_View 	@73
+				    location   	(-399, -308)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4AA4DDE60216"
+				    client     	@73
+				    supplier   	@41
+				    vertices   	(list Points
+					(1002, 706)
+					(1279, 918))
+				    line_style 	0)))
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Attori::Utente Servizi::Utente Autenticato" @78
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4DBC5A1201CF"
+			    location   	(426, 1014)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1201D0"
+				Parent_View 	@78
+				location   	(425, 1222)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	573
+				justify    	0
+				label      	"Utente Autenticato")
+			    icon       	"Business Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"3F02928500C9"
+			    width      	202
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "" @79
+			    quid       	"509551A20274"
+			    location   	(886, 1014)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"509551A20277"
+			    roleview_list 	(list RoleViews
+				(object RoleView "richiede" @80
+				    quid       	"509551A20275"
+				    Parent_View 	@79
+				    location   	(460, 0)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @81
+					quid       	"509551FF02AC"
+					Parent_View 	@80
+					location   	(1158, 973)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	179
+					justify    	0
+					label      	"+richiede"
+					pctDist    	0.749311
+					height     	41
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"509551A3034F"
+				    client     	@79
+				    supplier   	@41
+				    vertices   	(list Points
+					(886, 1014)
+					(1249, 1014))
+				    line_style 	0)
+				(object RoleView "" @82
+				    quid       	"509551A20276"
+				    Parent_View 	@79
+				    location   	(460, 0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"509551A30351"
+				    client     	@79
+				    supplier   	@78
+				    vertices   	(list Points
+					(886, 1014)
+					(524, 1014))
+				    line_style 	0)))))))
+	(object Association "$UNNAMED$4"
+	    quid       	"40DB10850258"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$5"
+		    quid       	"40DB108601D4"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio di Abitazione (Oggetti)::Richiesta Di Cambio Di Abitazione"
+		    quidu      	"400E4CBA032E"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$6"
+		    quid       	"40DB108601F2"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio Di Abitazione"
+		    quidu      	"3F9BEB550223")))
+	(object Association "$UNNAMED$7"
+	    quid       	"40DB108B0012"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$8"
+		    quid       	"40DB108C00A6"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio di Abitazione (Oggetti)::Ricevuta Di Cambio Di Abitazione"
+		    quidu      	"407BF8B90369"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$9"
+		    quid       	"40DB108C00BA"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio Di Abitazione"
+		    quidu      	"3F9BEB550223")))
+	(object Association "$UNNAMED$10"
+	    quid       	"4A96E437001E"
+	    stereotype 	"supporto"
+	    roles      	(list role_list
+		(object Role "Visura Stato Di Famiglia Richiedente"
+		    quid       	"4A96E4370272"
+		    label      	"Visura Stato Di Famiglia Richiedente"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Visura Di Stato Di Famiglia::Visura Di Stato Di Famiglia"
+		    quidu      	"4985D127014E"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$11"
+		    quid       	"4A96E4370274"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio Di Abitazione"
+		    quidu      	"3F9BEB550223")))
+	(object Association "$UNNAMED$12"
+	    quid       	"4A96E43C019A"
+	    stereotype 	"controllo"
+	    roles      	(list role_list
+		(object Role "Controllo Correttezza Via"
+		    quid       	"4A96E43D0023"
+		    label      	"Controllo Correttezza Via"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via"
+		    quidu      	"43F2194201D8"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$13"
+		    quid       	"4A96E43D0027"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio Di Abitazione"
+		    quidu      	"3F9BEB550223")))
+	(object Association "$UNNAMED$14"
+	    quid       	"4AA3FA6F0139"
+	    stereotype 	"controllo"
+	    roles      	(list role_list
+		(object Role "Verifica Residenza Famiglia Ricevente"
+		    quid       	"4AA3FA6F03CF"
+		    label      	"Verifica Residenza Famiglia Ricevente"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Verifica Residenza::Verifica Residenza"
+		    quidu      	"4AA2CCE902CE"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$15"
+		    quid       	"4AA3FA6F03D1"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio Di Abitazione"
+		    quidu      	"3F9BEB550223")))
+	(object Association "$UNNAMED$16"
+	    quid       	"4AA3FC4000A9"
+	    stereotype 	"controllo"
+	    roles      	(list role_list
+		(object Role "Verifica Anagrafica Terzo Trasferito Stesso Comune"
+		    quid       	"4AA3FC400366"
+		    label      	"Verifica Anagrafica Terzo Trasferito Stesso Comune"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Verifica Esistenza Persona In Anagrafe::Verifica Esistenza Persona In Anagrafe"
+		    quidu      	"4AA3FBA50240"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$17"
+		    quid       	"4AA3FC400368"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio Di Abitazione"
+		    quidu      	"3F9BEB550223")))
+	(object Association "$UNNAMED$18"
+	    quid       	"4AA4CDCC021F"
+	    stereotype 	"supporto"
+	    roles      	(list role_list
+		(object Role "Visura Stato Di Famiglia Titolare"
+		    quid       	"4AA4CDCF01B4"
+		    label      	"Visura Stato Di Famiglia Titolare"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Visura Di Stato Di Famiglia::Visura Di Stato Di Famiglia"
+		    quidu      	"4985D127014E"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$19"
+		    quid       	"4AA4CDCF01B6"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio Di Abitazione"
+		    quidu      	"3F9BEB550223")))
+	(object Association "$UNNAMED$20"
+	    quid       	"4AA4DDE50287"
+	    stereotype 	"supporto"
+	    roles      	(list role_list
+		(object Role "Visura Anagrafica Personale Richiedente"
+		    quid       	"4AA4DDE60212"
+		    label      	"Visura Anagrafica Personale Richiedente"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Visura Anagrafica Personale::Visura Anagrafica Personale"
+		    quidu      	"49A7FE710200"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$21"
+		    quid       	"4AA4DDE60216"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio Di Abitazione"
+		    quidu      	"3F9BEB550223")))
+	(object Association "$UNNAMED$22"
+	    quid       	"509551A20277"
+	    roles      	(list role_list
+		(object Role "richiede"
+		    quid       	"509551A3034F"
+		    label      	"richiede"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio Di Abitazione"
+		    quidu      	"3F9BEB550223"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$23"
+		    quid       	"509551A30351"
+		    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Attori::Utente Servizi::Utente Autenticato"
+		    quidu      	"3F02928500C9")))
+	(object Class_Category "Cambio di Abitazione (Oggetti)"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNamespace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNamespaces"
+		    value      	"Demografici;OggettiCondivisi;")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpacePrefix"
+		    value      	"Demografici")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNameSpaces"
+		    value      	"Demografici;OggettiCondivisi;"))
+	    quid       	"40B89DE40036"
+	    stereotype 	"Business Analysis Model"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class "Richiesta Di Cambio Di Abitazione"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"Destinazione;Famiglia Ricevente;Terzo Trasferito Altro Comune;Familiare Trasferito;Richiedente;Titolare;Terzo Trasferito Stesso Comune;Veicolo Di Proprietà;Patente Intestata;")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"9")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"401FC02A0042")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"OggettiCondivisi:RichiestaDiServizioOffLineAllaPa")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNamespaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNamespace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"Only Ref")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"Demografici")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"401FC02A0042")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"OggettiCondivisi:RichiestaDiServizioOffLineAllaPa")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	""))
+		    quid       	"400E4CBA032E"
+		    stereotype 	"Modulo (Form)"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"402679BA022F"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Richiesta::Richiesta Di Servizio Off Line Alla Pa"
+			    quidu      	"401FC02A0042"))
+		    statemachine 	(object State_Machine "Richiesta di Cambio di Abitazione"
+			quid       	"4026536E02E7"
+			states     	(list States
+			    (object State "Predisposta"
+				quid       	"4027AF560103"
+				type       	"Normal")
+			    (object State "Completamente Compilata"
+				quid       	"4027B0470051"
+				type       	"Normal")
+			    (object State "Parzialmente Compilata"
+				quid       	"4027B05903DD"
+				type       	"Normal"))
+			partitions 	(list Partitions)
+			objects    	(list Objects)
+			transitions 	(list transition_list)
+			objectflows 	(list objectflow_list)
+			statediagrams 	(list StateDiagrams)))
+		(object Class "Ricevuta Di Cambio Di Abitazione"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"4027B5770014")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"OggettiCondivisi:Ricevuta")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNamespaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNamespace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"none")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"Demografici")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"4027B5770014")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"OggettiCondivisi:Ricevuta")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	""))
+		    quid       	"407BF8B90369"
+		    stereotype 	"Business Document"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"407BF8F90018"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Ricevuta::Ricevuta"
+			    quidu      	"4027B5770014")))
+		(object Association "$UNNAMED$24"
+		    attributes 	(list Attribute_Set)
+		    quid       	"400E50B401AF"
+		    roles      	(list role_list
+			(object Role "Destinazione"
+			    quid       	"400E50B50077"
+			    label      	"Destinazione"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Oggetti Relativi a Servizi::Indirizzo Abitativo::Indirizzo Abitativo"
+			    quidu      	"427A091002AD"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$25"
+			    quid       	"400E50B50079"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio di Abitazione (Oggetti)::Richiesta Di Cambio Di Abitazione"
+			    quidu      	"400E4CBA032E"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$26"
+		    attributes 	(list Attribute_Set)
+		    quid       	"400E58FB0382"
+		    roles      	(list role_list
+			(object Role "Famiglia Ricevente"
+			    quid       	"400E58FC02FF"
+			    label      	"Famiglia Ricevente"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Oggetti Relativi a Servizi::Persona::Estremi Della Persona"
+			    quidu      	"419B78F7027D"
+			    client_cardinality 	(value cardinality "0..1")
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$27"
+			    quid       	"400E58FC0309"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio di Abitazione (Oggetti)::Richiesta Di Cambio Di Abitazione"
+			    quidu      	"400E4CBA032E"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$28"
+		    attributes 	(list Attribute_Set)
+		    quid       	"400E58A70241"
+		    documentation 	"La classe di Link rappresenta il Comune di Provenienza"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$29"
+			    quid       	"400E58A90056"
+			    supplier   	"Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Servizi Anagrafici (Oggetti)::Servizi Demografici (Oggetti)::Servizi Anagrafici (Oggetti)::Terzo Trasferito Altro Comune::Terzo Trasferito Altro Comune"
+			    quidu      	"42CE5E9701AC"
+			    client_cardinality 	(value cardinality "0..*")
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$30"
+			    quid       	"400E58A9006A"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio di Abitazione (Oggetti)::Richiesta Di Cambio Di Abitazione"
+			    quidu      	"400E4CBA032E"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$31"
+		    attributes 	(list Attribute_Set)
+		    quid       	"40619DA001BD"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$32"
+			    quid       	"40619DA1007B"
+			    supplier   	"Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Servizi Anagrafici (Oggetti)::Servizi Demografici (Oggetti)::Servizi Anagrafici (Oggetti)::Familiare Trasferito::Familiare Trasferito"
+			    quidu      	"428A02D0025F"
+			    client_cardinality 	(value cardinality "0..*")
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$33"
+			    quid       	"40619DA100AD"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio di Abitazione (Oggetti)::Richiesta Di Cambio Di Abitazione"
+			    quidu      	"400E4CBA032E"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$34"
+		    attributes 	(list Attribute_Set)
+		    quid       	"407BF8EF00AC"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$35"
+			    quid       	"407BF8F00051"
+			    supplier   	"Use Case View::People::Contesti Tematici::Demografici::Servizi Demografici (BSL)::Documenti Ufficiali::Ricevuta di Cambio di Abitazione"
+			    quidu      	"407BF82C02D0"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$36"
+			    quid       	"407BF8F00053"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio di Abitazione (Oggetti)::Ricevuta Di Cambio Di Abitazione"
+			    quidu      	"407BF8B90369")))
+		(object Association "$UNNAMED$37"
+		    quid       	"417C2F59035C"
+		    roles      	(list role_list
+			(object Role "Richiedente"
+			    quid       	"417C2F5A0207"
+			    label      	"Richiedente"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Credenziali::Credenziali Certificate::Credenziali Utente Certificate::Credenziali Utente Certificate"
+			    quidu      	"417C2C860170"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$38"
+			    quid       	"417C2F5A0211"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio di Abitazione (Oggetti)::Richiesta Di Cambio Di Abitazione"
+			    quidu      	"400E4CBA032E"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$39"
+		    quid       	"417C2F5E0010"
+		    roles      	(list role_list
+			(object Role "Titolare"
+			    quid       	"417C2F5F0010"
+			    label      	"Titolare"
+			    supplier   	"Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Servizi Anagrafici (Oggetti)::Servizi Demografici (Oggetti)::Servizi Anagrafici (Oggetti)::Titolare Cambio di Abitazione/Immigrazione::Titolare Cambio Di Abitazione/Immigrazione"
+			    quidu      	"428A020503BC"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$40"
+			    quid       	"417C2F5F006A"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio di Abitazione (Oggetti)::Richiesta Di Cambio Di Abitazione"
+			    quidu      	"400E4CBA032E"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$41"
+		    quid       	"4289F5EB0202"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$42"
+			    quid       	"4289F5ED0189"
+			    supplier   	"Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Servizi Anagrafici (Oggetti)::Servizi Demografici (Oggetti)::Servizi Anagrafici (Oggetti)::Terzo Trasferito Stesso Comune::Terzo Trasferito Stesso Comune"
+			    quidu      	"42F2270A00A7"
+			    client_cardinality 	(value cardinality "0..*")
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$43"
+			    quid       	"4289F5ED019D"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio di Abitazione (Oggetti)::Richiesta Di Cambio Di Abitazione"
+			    quidu      	"400E4CBA032E"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$44"
+		    quid       	"4889EAEE03E9"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$45"
+			    quid       	"4889EAF0008D"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Oggetti Relativi a Servizi::Veicolo::Veicolo di Proprietà::Veicolo Di Proprietà"
+			    quidu      	"4889F19B038C"
+			    client_cardinality 	(value cardinality "0..*")
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$46"
+			    quid       	"4889EAF0008F"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio di Abitazione (Oggetti)::Richiesta Di Cambio Di Abitazione"
+			    quidu      	"400E4CBA032E"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$47"
+		    quid       	"4889EAF702F9"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$48"
+			    quid       	"4889EAF8030C"
+			    supplier   	"Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Servizi Anagrafici (Oggetti)::Servizi Demografici (Oggetti)::Servizi Anagrafici (Oggetti)::Patente::Patente Intestata::Patente Intestata"
+			    quidu      	"4889F59402BC"
+			    client_cardinality 	(value cardinality "0..*")
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$49"
+			    quid       	"4889EAF80316"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio di Abitazione (Oggetti)::Richiesta Di Cambio Di Abitazione"
+			    quidu      	"400E4CBA032E"
+			    is_aggregate 	TRUE))))
+	    logical_presentations 	(list unit_reference_list
+		(object ClassDiagram "Richiesta di Cambio di Abitazione-Definizione"
+		    quid       	"400E4CAD013B"
+		    title      	"Richiesta di Cambio di Abitazione-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	556
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Richiesta::Richiesta" @83
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4DBC5A1202A0"
+			    location   	(657, 1680)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1202A1"
+				Parent_View 	@83
+				location   	(657, 1903)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	2785
+				justify    	0
+				label      	"Richiesta")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"3F522B7F031D"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Richiesta::Richiesta Di Servizio Alla Pa" @84
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4DBC5A1202A4"
+			    location   	(1119, 1647)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1202A5"
+				Parent_View 	@84
+				location   	(1119, 1870)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	2785
+				justify    	0
+				label      	"Richiesta Di Servizio Alla Pa")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"401D135D0321"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Richiesta::Richiesta Di Servizio Off Line Alla Pa" @85
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4DBC5A1202A8"
+			    location   	(1680, 1488)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1202A9"
+				Parent_View 	@85
+				location   	(1680, 1711)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	2785
+				justify    	0
+				label      	"Richiesta Di Servizio Off Line Alla Pa")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"401FC02A0042"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @86
+			    quid       	"4DBC5A1202AC"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"497AE5680094"
+			    client     	@84
+			    supplier   	@83
+			    vertices   	(list Points
+				(997, 1653)
+				(777, 1667))
+			    line_style 	0)
+			(object InheritView "" @87
+			    quid       	"4DBC5A1202AE"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"497AE5680094"
+			    client     	@84
+			    supplier   	@83
+			    vertices   	(list Points
+				(997, 1653)
+				(777, 1667))
+			    line_style 	0)
+			(object InheritView "" @88
+			    quid       	"4DBC5A1202B0"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"401FC0A501EB"
+			    client     	@85
+			    supplier   	@84
+			    vertices   	(list Points
+				(1558, 1519)
+				(1239, 1610))
+			    line_style 	0)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Credenziali::Credenziali Certificate::Credenziali Utente Certificate::Credenziali Utente Certificate" @89
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4DBC5A1202B2"
+			    location   	(849, 912)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1202B3"
+				Parent_View 	@89
+				location   	(652, 841)
+				fill_color 	13434879
+				nlines     	2
+				max_width  	394
+				justify    	0
+				label      	"Credenziali Utente Certificate")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"417C2C860170"
+			    width      	412
+			    height     	167
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Oggetti Relativi a Servizi::Persona::Estremi Della Persona" @90
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1202B6"
+			    location   	(2769, 720)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1202B7"
+				Parent_View 	@90
+				location   	(2601, 649)
+				fill_color 	13434879
+				nlines     	2
+				max_width  	336
+				justify    	0
+				label      	"Estremi Della Persona")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"419B78F7027D"
+			    width      	354
+			    height     	167
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Oggetti Relativi a Servizi::Indirizzo Abitativo::Indirizzo Abitativo" @91
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1202BA"
+			    location   	(2337, 513)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1202BB"
+				Parent_View 	@91
+				location   	(2223, 442)
+				fill_color 	13434879
+				nlines     	2
+				max_width  	228
+				justify    	0
+				label      	"Indirizzo Abitativo")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"427A091002AD"
+			    width      	246
+			    height     	167
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Servizi Anagrafici (Oggetti)::Servizi Demografici (Oggetti)::Servizi Anagrafici (Oggetti)::Terzo Trasferito Stesso Comune::Terzo Trasferito Stesso Comune" @92
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1202BE"
+			    location   	(1425, 177)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1202BF"
+				Parent_View 	@92
+				location   	(1260, 106)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	330
+				justify    	0
+				label      	"Terzo Trasferito Stesso Comune")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"42F2270A00A7"
+			    width      	348
+			    height     	167
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Servizi Anagrafici (Oggetti)::Servizi Demografici (Oggetti)::Servizi Anagrafici (Oggetti)::Titolare Cambio di Abitazione/Immigrazione::Titolare Cambio Di Abitazione/Immigrazione" @93
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1202C2"
+			    location   	(783, 639)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1202C3"
+				Parent_View 	@93
+				location   	(545, 568)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	476
+				justify    	0
+				label      	"Titolare Cambio Di Abitazione/Immigrazione")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"428A020503BC"
+			    width      	494
+			    height     	167
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Servizi Anagrafici (Oggetti)::Servizi Demografici (Oggetti)::Servizi Anagrafici (Oggetti)::Familiare Trasferito::Familiare Trasferito" @94
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1202C6"
+			    location   	(1008, 321)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1202C7"
+				Parent_View 	@94
+				location   	(910, 250)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	196
+				justify    	0
+				label      	"Familiare Trasferito")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"428A02D0025F"
+			    width      	214
+			    height     	167
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Servizi Anagrafici (Oggetti)::Servizi Demografici (Oggetti)::Servizi Anagrafici (Oggetti)::Terzo Trasferito Altro Comune::Terzo Trasferito Altro Comune" @95
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1202CA"
+			    location   	(2031, 336)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1202CB"
+				Parent_View 	@95
+				location   	(1843, 265)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	376
+				justify    	0
+				label      	"Terzo Trasferito Altro Comune")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"42CE5E9701AC"
+			    width      	394
+			    height     	167
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Oggetti Relativi a Servizi::Veicolo::Veicolo di Proprietà::Veicolo Di Proprietà" @96
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1202CE"
+			    location   	(2544, 1104)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1202CF"
+				Parent_View 	@96
+				location   	(2419, 1033)
+				fill_color 	13434879
+				nlines     	2
+				max_width  	250
+				justify    	0
+				label      	"Veicolo Di Proprietà")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4889F19B038C"
+			    width      	268
+			    height     	167
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Servizi Anagrafici (Oggetti)::Servizi Demografici (Oggetti)::Servizi Anagrafici (Oggetti)::Patente::Patente Intestata::Patente Intestata" @97
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1202D2"
+			    location   	(2271, 1377)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1202D3"
+				Parent_View 	@97
+				location   	(2159, 1306)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	224
+				justify    	0
+				label      	"Patente Intestata")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4889F59402BC"
+			    width      	242
+			    height     	167
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio di Abitazione (Oggetti)::Richiesta Di Cambio Di Abitazione" @98
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4DBC5A1202D6"
+			    location   	(1680, 912)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1202D7"
+				Parent_View 	@98
+				location   	(1680, 1135)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	4124
+				justify    	0
+				label      	"Richiesta Di Cambio Di Abitazione")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"400E4CBA032E"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @99
+			    quid       	"4DBC5A1202DA"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"402679BA022F"
+			    client     	@98
+			    supplier   	@85
+			    vertices   	(list Points
+				(1680, 1160)
+				(1680, 1345))
+			    line_style 	0)
+			(object AssociationViewNew "$UNNAMED$37" @100
+			    quid       	"4DBC5A1202DC"
+			    location   	(1306, 912)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"417C2F59035C"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Richiedente" @101
+				    quid       	"4DBC5A1202DD"
+				    Parent_View 	@100
+				    location   	(266, -800)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @102
+					quid       	"4DBC5A1202DE"
+					Parent_View 	@101
+					location   	(1114, 1038)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	239
+					justify    	0
+					label      	"+Richiedente"
+					pctDist    	0.764957
+					height     	126
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"417C2F5A0207"
+				    client     	@100
+				    supplier   	@89
+				    vertices   	(list Points
+					(1306, 912)
+					(1055, 912))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$38" @103
+				    quid       	"4DBC5A1202E0"
+				    Parent_View 	@100
+				    location   	(266, -800)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"417C2F5A0211"
+				    client     	@100
+				    supplier   	@98
+				    vertices   	(list Points
+					(1306, 912)
+					(1558, 912))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$26" @104
+			    quid       	"4DBC5A1202E1"
+			    location   	(2195, 819)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"400E58FB0382"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$27" @105
+				    quid       	"4DBC5A1202E2"
+				    Parent_View 	@104
+				    location   	(1730, -1386)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @106
+					quid       	"4DBC5A1202E3"
+					Parent_View 	@105
+					location   	(1887, 915)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"400E58FC0309"
+				    client     	@104
+				    supplier   	@98
+				    vertices   	(list Points
+					(2195, 819)
+					(1800, 888))
+				    line_style 	0)
+				(object RoleView "Famiglia Ricevente" @107
+				    quid       	"4DBC5A1202E4"
+				    Parent_View 	@104
+				    location   	(1730, -1386)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @108
+					quid       	"4DBC5A1202E5"
+					Parent_View 	@107
+					location   	(2670, 861)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	435
+					justify    	0
+					label      	"+Famiglia Ricevente"
+					pctDist    	1.149937
+					height     	123
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"400E58FC02FF"
+				    client     	@104
+				    supplier   	@90
+				    vertices   	(list Points
+					(2195, 819)
+					(2591, 749))
+				    line_style 	0
+				    label      	(object SegLabel @109
+					quid       	"4DBC5A1202E7"
+					Parent_View 	@107
+					location   	(2653, 805)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..1"
+					pctDist    	1.131133
+					height     	65
+					orientation 	1))))
+			(object AssociationViewNew "$UNNAMED$24" @110
+			    quid       	"4DBC5A1202E8"
+			    location   	(2006, 710)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"400E50B401AF"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$25" @111
+				    quid       	"4DBC5A1202E9"
+				    Parent_View 	@110
+				    location   	(1661, -1150)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @112
+					quid       	"4DBC5A1202EA"
+					Parent_View 	@111
+					location   	(1863, 844)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"400E50B50079"
+				    client     	@110
+				    supplier   	@98
+				    vertices   	(list Points
+					(2006, 710)
+					(1800, 834))
+				    line_style 	0)
+				(object RoleView "Destinazione" @113
+				    quid       	"4DBC5A1202EB"
+				    Parent_View 	@110
+				    location   	(1661, -1150)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @114
+					quid       	"4DBC5A1202EC"
+					Parent_View 	@113
+					location   	(2116, 657)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	276
+					justify    	0
+					label      	"+Destinazione"
+					pctDist    	0.507280
+					height     	10
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"400E50B50077"
+				    client     	@110
+				    supplier   	@91
+				    vertices   	(list Points
+					(2006, 710)
+					(2213, 585))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$41" @115
+			    quid       	"4DBC5A1202EE"
+			    location   	(1540, 514)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4289F5EB0202"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$42" @116
+				    quid       	"4DBC5A1202EF"
+				    Parent_View 	@115
+				    location   	(276, -718)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @117
+					quid       	"4DBC5A1202F0"
+					Parent_View 	@116
+					location   	(1571, 375)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	60
+					justify    	0
+					label      	""
+					pctDist    	0.458409
+					height     	75
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4289F5ED0189"
+				    client     	@115
+				    supplier   	@92
+				    vertices   	(list Points
+					(1540, 514)
+					(1452, 260))
+				    line_style 	0
+				    label      	(object SegLabel @118
+					quid       	"4DBC5A1202F1"
+					Parent_View 	@116
+					location   	(1525, 305)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..*"
+					pctDist    	0.762888
+					height     	54
+					orientation 	1))
+				(object RoleView "$UNNAMED$43" @119
+				    quid       	"4DBC5A1202F2"
+				    Parent_View 	@115
+				    location   	(276, -718)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4289F5ED019D"
+				    client     	@115
+				    supplier   	@98
+				    vertices   	(list Points
+					(1540, 514)
+					(1627, 769))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$39" @120
+			    quid       	"4DBC5A1202F3"
+			    location   	(1294, 792)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"417C2F5E0010"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Titolare" @121
+				    quid       	"4DBC5A1202F4"
+				    Parent_View 	@120
+				    location   	(254, -920)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @122
+					quid       	"4DBC5A1202F5"
+					Parent_View 	@121
+					location   	(1072, 769)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	170
+					justify    	0
+					label      	"+Titolare"
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"417C2F5F0010"
+				    client     	@120
+				    supplier   	@93
+				    vertices   	(list Points
+					(1294, 792)
+					(1030, 712))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$40" @123
+				    quid       	"4DBC5A1202F7"
+				    Parent_View 	@120
+				    location   	(254, -920)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"417C2F5F006A"
+				    client     	@120
+				    supplier   	@98
+				    vertices   	(list Points
+					(1294, 792)
+					(1556, 869))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$31" @124
+			    quid       	"4DBC5A1202F8"
+			    location   	(1330, 604)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"40619DA001BD"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$33" @125
+				    quid       	"4DBC5A1202F9"
+				    Parent_View 	@124
+				    location   	(85, -1751)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @126
+					quid       	"4DBC5A1202FA"
+					Parent_View 	@125
+					location   	(1540, 733)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"40619DA100AD"
+				    client     	@124
+				    supplier   	@98
+				    vertices   	(list Points
+					(1330, 604)
+					(1558, 803))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$32" @127
+				    quid       	"4DBC5A1202FB"
+				    Parent_View 	@124
+				    location   	(85, -1751)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @128
+					quid       	"4DBC5A1202FC"
+					Parent_View 	@127
+					location   	(1213, 498)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	60
+					justify    	0
+					label      	""
+					pctDist    	0.524881
+					height     	3
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"40619DA1007B"
+				    client     	@124
+				    supplier   	@94
+				    vertices   	(list Points
+					(1330, 604)
+					(1104, 404))
+				    line_style 	0
+				    label      	(object SegLabel @129
+					quid       	"4DBC5A1202FD"
+					Parent_View 	@127
+					location   	(1077, 453)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..*"
+					pctDist    	0.960373
+					height     	54
+					orientation 	0))))
+			(object AssociationViewNew "$UNNAMED$28" @130
+			    quid       	"4DBC5A1202FE"
+			    location   	(1871, 594)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"400E58A70241"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$30" @131
+				    quid       	"4DBC5A1202FF"
+				    Parent_View 	@130
+				    location   	(626, -1761)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @132
+					quid       	"4DBC5A120300"
+					Parent_View 	@131
+					location   	(1821, 756)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"400E58A9006A"
+				    client     	@130
+				    supplier   	@98
+				    vertices   	(list Points
+					(1871, 594)
+					(1761, 769))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$29" @133
+				    quid       	"4DBC5A120301"
+				    Parent_View 	@130
+				    location   	(626, -1761)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @134
+					quid       	"4DBC5A120302"
+					Parent_View 	@133
+					location   	(1987, 496)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	60
+					justify    	0
+					label      	""
+					pctDist    	0.709004
+					height     	47
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"400E58A90056"
+				    client     	@130
+				    supplier   	@95
+				    vertices   	(list Points
+					(1871, 594)
+					(1978, 419))
+				    line_style 	0
+				    label      	(object SegLabel @135
+					quid       	"4DBC5A120303"
+					Parent_View 	@133
+					location   	(2009, 477)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..*"
+					pctDist    	0.836750
+					height     	56
+					orientation 	1))))
+			(object AssociationViewNew "$UNNAMED$44" @136
+			    quid       	"4DBC5A120304"
+			    location   	(2104, 1005)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4889EAEE03E9"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$45" @137
+				    quid       	"4DBC5A120305"
+				    Parent_View 	@136
+				    location   	(424, 93)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4889EAF0008D"
+				    client     	@136
+				    supplier   	@96
+				    vertices   	(list Points
+					(2104, 1005)
+					(2409, 1072))
+				    line_style 	0
+				    label      	(object SegLabel @138
+					quid       	"4DBC5A120306"
+					Parent_View 	@137
+					location   	(2288, 1117)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..*"
+					pctDist    	0.648622
+					height     	69
+					orientation 	1))
+				(object RoleView "$UNNAMED$46" @139
+				    quid       	"4DBC5A120307"
+				    Parent_View 	@136
+				    location   	(424, 93)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4889EAF0008F"
+				    client     	@136
+				    supplier   	@98
+				    vertices   	(list Points
+					(2104, 1005)
+					(1800, 935))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$47" @140
+			    quid       	"4DBC5A120308"
+			    location   	(1982, 1150)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4889EAF702F9"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$48" @141
+				    quid       	"4DBC5A120309"
+				    Parent_View 	@140
+				    location   	(302, 238)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4889EAF8030C"
+				    client     	@140
+				    supplier   	@97
+				    vertices   	(list Points
+					(1982, 1150)
+					(2165, 1293))
+				    line_style 	0
+				    label      	(object SegLabel @142
+					quid       	"4DBC5A12030A"
+					Parent_View 	@141
+					location   	(2180, 1237)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..*"
+					pctDist    	0.900000
+					height     	54
+					orientation 	0))
+				(object RoleView "$UNNAMED$49" @143
+				    quid       	"4DBC5A12030B"
+				    Parent_View 	@140
+				    location   	(302, 238)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4889EAF80316"
+				    client     	@140
+				    supplier   	@98
+				    vertices   	(list Points
+					(1982, 1150)
+					(1800, 1005))
+				    line_style 	0)))))
+		(object ClassDiagram "Ricevuta di Cambio di Abitazione-Definizione"
+		    quid       	"402654040352"
+		    title      	"Ricevuta di Cambio di Abitazione-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Di Business::Pubblica Amministrazione::PAL::Demografici::Servizi Anagrafici::Servizi Anagrafici (Servizi)::Cambio di Abitazione::Cambio di Abitazione (Oggetti)::Ricevuta Di Cambio Di Abitazione" @144
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A12030E"
+			    location   	(384, 273)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A12030F"
+				Parent_View 	@144
+				location   	(383, 489)
+				anchor_loc 	1
+				nlines     	1
+				max_width  	2784
+				justify    	0
+				label      	"Ricevuta Di Cambio Di Abitazione")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"407BF8B90369"
+			    width      	228
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::People::Contesti Tematici::Demografici::Servizi Demografici (BSL)::Documenti Ufficiali::Ricevuta di Cambio di Abitazione" @145
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4DBC5A120312"
+			    location   	(1473, 273)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A120313"
+				Parent_View 	@145
+				location   	(1472, 491)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	2215
+				justify    	0
+				label      	"Ricevuta di Cambio di Abitazione")
+			    icon       	"Documento Ufficiale"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"407BF82C02D0"
+			    width      	232
+			    height     	278
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$34" @146
+			    quid       	"4DBC5A120316"
+			    location   	(926, 273)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"407BF8EF00AC"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$36" @147
+				    quid       	"4DBC5A120317"
+				    Parent_View 	@146
+				    location   	(-1369, -852)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @148
+					quid       	"4DBC5A120318"
+					Parent_View 	@147
+					location   	(582, 232)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"407BF8F00053"
+				    client     	@146
+				    supplier   	@144
+				    vertices   	(list Points
+					(926, 273)
+					(495, 273))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$35" @149
+				    quid       	"4DBC5A120319"
+				    Parent_View 	@146
+				    location   	(-1369, -852)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @150
+					quid       	"4DBC5A12031A"
+					Parent_View 	@149
+					location   	(1271, 232)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"407BF8F00051"
+				    client     	@146
+				    supplier   	@145
+				    vertices   	(list Points
+					(926, 273)
+					(1358, 273))
+				    line_style 	0)))
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Ricevuta::Ricevuta" @151
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4DBC5A12031B"
+			    location   	(384, 960)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A12031C"
+				Parent_View 	@151
+				location   	(383, 1176)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	2476
+				justify    	0
+				label      	"Ricevuta")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4027B5770014"
+			    width      	228
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Documenti Ufficiali::Ricevuta" @152
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4DBC5A12031F"
+			    location   	(1473, 960)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A120320"
+				Parent_View 	@152
+				location   	(1472, 1178)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	3611
+				justify    	0
+				label      	"Ricevuta")
+			    icon       	"Documento Ufficiale"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"40091265017D"
+			    width      	232
+			    height     	278
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @153
+			    quid       	"4DBC5A120323"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"407BF9030103"
+			    client     	@145
+			    supplier   	@152
+			    vertices   	(list Points
+				(1473, 516)
+				(1473, 822))
+			    line_style 	0)
+			(object AssociationViewNew "" @154
+			    quid       	"4DBC5A120325"
+			    location   	(926, 960)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @155
+				quid       	"4DBC5A120326"
+				Parent_View 	@154
+				location   	(926, 841)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<derivato>>"
+				pctDist    	0.500000
+				height     	120
+				orientation 	0)
+			    line_color 	3342489
+			    quidu      	"40EE85DC0063"
+			    roleview_list 	(list RoleViews
+				(object RoleView "" @156
+				    quid       	"4DBC5A120328"
+				    Parent_View 	@154
+				    location   	(-914, 496)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @157
+					quid       	"4DBC5A120329"
+					Parent_View 	@156
+					location   	(582, 919)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"40EE85DD004E"
+				    client     	@154
+				    supplier   	@151
+				    vertices   	(list Points
+					(926, 960)
+					(495, 960))
+				    line_style 	0)
+				(object RoleView "" @158
+				    quid       	"4DBC5A12032B"
+				    Parent_View 	@154
+				    location   	(-914, 496)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @159
+					quid       	"4DBC5A12032C"
+					Parent_View 	@158
+					location   	(1271, 919)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"40EE85DC039F"
+				    client     	@154
+				    supplier   	@152
+				    vertices   	(list Points
+					(926, 960)
+					(1358, 960))
+				    line_style 	0)))
+			(object InheritView "" @160
+			    quid       	"4DBC5A12032E"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"407BF8F90018"
+			    client     	@144
+			    supplier   	@151
+			    vertices   	(list Points
+				(384, 514)
+				(384, 823))
+			    line_style 	0))))))
+    logical_presentations 	(list unit_reference_list))

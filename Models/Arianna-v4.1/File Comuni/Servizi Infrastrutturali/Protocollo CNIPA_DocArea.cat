@@ -1,0 +1,741 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 8.2.0311.2600"
+    charSet    	0)
+
+(object Class_Category "Protocollo CNIPA-DocArea"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    attributes 	(list Attribute_Set
+	(object Attribute
+	    tool       	"XSD"
+	    name       	"cg_style"
+	    value      	"Default")
+	(object Attribute
+	    tool       	"XSD"
+	    name       	"NamespacePrefix"
+	    value      	(value Text ""))
+	(object Attribute
+	    tool       	"XSD"
+	    name       	"NameSpacePrefix"
+	    value      	"CNIPA")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNameSpacePrefix"
+	    value      	"CNIPA")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNameSpace"
+	    value      	"")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"UsedNameSpaces"
+	    value      	"CNIPA;"))
+    quid       	"449A752A0011"
+    stereotype 	"Business Analysis Model"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class_Category "Informazioni per Protocollazione"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpacePrefix"
+		    value      	"CNIPA")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNameSpaces"
+		    value      	"CNIPA;"))
+	    quid       	"449A733202FB"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class "Informazioni per Protocollazione"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"3")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"none")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"CNIPA")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"Only Ref")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"Richiedente;Recapito;Titolare;Busta Spedizione;"))
+		    quid       	"449A72A5024E"
+		    documentation 	"Estensioni per la protocollazione a norma CNIPA fatta su un template G2G usato per rappresentare un'interazione C2G. La semantica di tale protocollazione non è espressa correttamente.")
+		(object Association "$UNNAMED$0"
+		    quid       	"449A739C031F"
+		    roles      	(list role_list
+			(object Role "Richiedente"
+			    quid       	"449A739D02E1"
+			    label      	"Richiedente"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Oggetti Relativi a Servizi::Persona::Estremi della Persona"
+			    quidu      	"419B78F7027D"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$1"
+			    quid       	"449A739D02FF"
+			    supplier   	"Use Case View::Servizi::Servizi Infrastrutturali::Servizi Infrastrutturali (Oggetti)::Protocollo CNIPA-DocArea::Informazioni per Protocollazione::Informazioni per Protocollazione"
+			    quidu      	"449A72A5024E"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$2"
+		    quid       	"449A73BA0051"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$3"
+			    quid       	"449A73BA0210"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Oggetti Relativi a Servizi::Recapito::Recapito"
+			    quidu      	"4012532202BE"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$4"
+			    quid       	"449A73BA0238"
+			    supplier   	"Use Case View::Servizi::Servizi Infrastrutturali::Servizi Infrastrutturali (Oggetti)::Protocollo CNIPA-DocArea::Informazioni per Protocollazione::Informazioni per Protocollazione"
+			    quidu      	"449A72A5024E"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$5"
+		    quid       	"449A765B013F"
+		    roles      	(list role_list
+			(object Role "Titolare"
+			    quid       	"449A765B03C7"
+			    label      	"Titolare"
+			    supplier   	"Use Case View::Servizi::Servizi Infrastrutturali::Servizi Infrastrutturali (Oggetti)::Protocollo CNIPA-DocArea::Titolare::Titolare"
+			    quidu      	"449A763A0243"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$6"
+			    quid       	"449A765B03D1"
+			    supplier   	"Use Case View::Servizi::Servizi Infrastrutturali::Servizi Infrastrutturali (Oggetti)::Protocollo CNIPA-DocArea::Informazioni per Protocollazione::Informazioni per Protocollazione"
+			    quidu      	"449A72A5024E"
+			    is_aggregate 	TRUE))))
+	    logical_presentations 	(list unit_reference_list
+		(object ClassDiagram "Informazioni per Protocollazione-Definizione"
+		    quid       	"449A734A03D2"
+		    title      	"Informazioni per Protocollazione-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Oggetti Relativi a Servizi::Persona::Estremi della Persona" @1
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(495, 543)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@1
+				location   	(326, 472)
+				fill_color 	13434879
+				nlines     	2
+				max_width  	338
+				justify    	0
+				label      	"Estremi della Persona")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"419B78F7027D"
+			    width      	356
+			    height     	167
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Oggetti Relativi a Servizi::Recapito::Recapito" @2
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(1008, 543)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@2
+				location   	(912, 492)
+				fill_color 	13434879
+				nlines     	2
+				max_width  	192
+				justify    	0
+				label      	"Recapito")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4012532202BE"
+			    width      	210
+			    height     	126
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Infrastrutturali::Servizi Infrastrutturali (Oggetti)::Protocollo CNIPA-DocArea::Titolare::Titolare" @3
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(1344, 417)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@3
+				location   	(1240, 371)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	208
+				justify    	0
+				label      	"Titolare")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"449A763A0243"
+			    width      	226
+			    height     	117
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Infrastrutturali::Servizi Infrastrutturali (Oggetti)::Protocollo CNIPA-DocArea::Informazioni per Protocollazione::Informazioni per Protocollazione" @4
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(639, 255)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@4
+				location   	(253, 209)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	772
+				justify    	0
+				label      	"Informazioni per Protocollazione")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"449A72A5024E"
+			    width      	790
+			    height     	117
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$0" @5
+			    location   	(572, 386)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"449A739C031F"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Richiedente" @6
+				    Parent_View 	@5
+				    location   	(-84, 130)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @7
+					Parent_View 	@6
+					location   	(507, 425)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	239
+					justify    	0
+					label      	"+Richiedente"
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"449A739D02E1"
+				    client     	@5
+				    supplier   	@1
+				    line_style 	0)
+				(object RoleView "$UNNAMED$1" @8
+				    Parent_View 	@5
+				    location   	(-84, 130)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"449A739D02FF"
+				    client     	@5
+				    supplier   	@4
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$2" @9
+			    location   	(819, 396)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"449A73BA0051"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$3" @10
+				    Parent_View 	@9
+				    location   	(163, 140)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"449A73BA0210"
+				    client     	@9
+				    supplier   	@2
+				    line_style 	0)
+				(object RoleView "$UNNAMED$4" @11
+				    Parent_View 	@9
+				    location   	(163, 140)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"449A73BA0238"
+				    client     	@9
+				    supplier   	@4
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$5" @12
+			    location   	(1063, 351)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"449A765B013F"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Titolare" @13
+				    Parent_View 	@12
+				    location   	(423, 95)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @14
+					Parent_View 	@13
+					location   	(1205, 342)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	170
+					justify    	0
+					label      	"+Titolare"
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"449A765B03C7"
+				    client     	@12
+				    supplier   	@3
+				    line_style 	0)
+				(object RoleView "$UNNAMED$6" @15
+				    Parent_View 	@12
+				    location   	(423, 95)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"449A765B03D1"
+				    client     	@12
+				    supplier   	@4
+				    line_style 	0)))))))
+	(object Class_Category "Titolare"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpacePrefix"
+		    value      	"CNIPA")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNameSpaces"
+		    value      	"CNIPA;"))
+	    quid       	"449A759D0265"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class "Titolare"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"choice")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"2")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"OggettiCondivisi:EstremiPersonaGiuridica;OggettiCondivisi:EstremidellaPersona;")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"425D283A001C;419B78F7027D;")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"none")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"CNIPA")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"none")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"Informazioni per Protocollazione;Informazioni per Verifica Delega;"))
+		    quid       	"449A763A0243"))
+	    logical_presentations 	(list unit_reference_list
+		(object ClassDiagram "Titolare-Definizione"
+		    quid       	"449A76410166"
+		    title      	"Titolare-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Infrastrutturali::Servizi Infrastrutturali (Oggetti)::Protocollo CNIPA-DocArea::Titolare::Titolare" @16
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(720, 96)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@16
+				location   	(616, 50)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	208
+				justify    	0
+				label      	"Titolare")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"449A763A0243"
+			    width      	226
+			    height     	117
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Oggetti Relativi a Servizi::Persona Giuridica::Estremi Persona Giuridica" @17
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(400, 432)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@17
+				location   	(70, 387)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	660
+				justify    	0
+				label      	"Estremi Persona Giuridica")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"425D283A001C"
+			    width      	678
+			    height     	114
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Oggetti Relativi a Servizi::Persona::Estremi della Persona" @18
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(1072, 416)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@18
+				location   	(790, 371)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	564
+				justify    	0
+				label      	"Estremi della Persona")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"419B78F7027D"
+			    width      	582
+			    height     	114
+			    autoResize 	TRUE)
+			(object RealizeView "" @19
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"449A769A01AA"
+			    client     	@17
+			    supplier   	@16
+			    line_style 	0)
+			(object RealizeView "" @20
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"449A769D0123"
+			    client     	@18
+			    supplier   	@16
+			    line_style 	0))))))
+    logical_presentations 	(list unit_reference_list))

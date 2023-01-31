@@ -1,0 +1,2094 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 8.2.0311.2600"
+    charSet    	0)
+
+(object Class_Category "Assegnazione Borsa Di Studio"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    attributes 	(list Attribute_Set
+	(object Attribute
+	    tool       	"ModelGen"
+	    name       	"TipoTy"
+	    value      	(list Attribute_Set
+		(object Attribute
+		    tool       	"ModelGen"
+		    name       	""
+		    value      	1)
+		(object Attribute
+		    tool       	"ModelGen"
+		    name       	"OnLine"
+		    value      	2)
+		(object Attribute
+		    tool       	"ModelGen"
+		    name       	"OffLine"
+		    value      	3)))
+	(object Attribute
+	    tool       	"ModelGen"
+	    name       	"NomeRichiesta"
+	    value      	"")
+	(object Attribute
+	    tool       	"ModelGen"
+	    name       	"NomeRisposta"
+	    value      	"Ricevuta Assegnazione Borsa di Studio")
+	(object Attribute
+	    tool       	"ModelGen"
+	    name       	"NomeComunicazione"
+	    value      	"")
+	(object Attribute
+	    tool       	"ModelGen"
+	    name       	"TipoComunicazioneTy"
+	    value      	(list Attribute_Set
+		(object Attribute
+		    tool       	"ModelGen"
+		    name       	""
+		    value      	1)
+		(object Attribute
+		    tool       	"ModelGen"
+		    name       	"Comunicazione"
+		    value      	2)
+		(object Attribute
+		    tool       	"ModelGen"
+		    name       	"Esito"
+		    value      	3)))
+	(object Attribute
+	    tool       	"ModelGen"
+	    name       	"RichiestaComplessa"
+	    value      	FALSE)
+	(object Attribute
+	    tool       	"ModelGen"
+	    name       	"SupportoAllaCompilazione"
+	    value      	FALSE)
+	(object Attribute
+	    tool       	"ModelGen"
+	    name       	"Tipo"
+	    value      	"OffLine")
+	(object Attribute
+	    tool       	"ModelGen"
+	    name       	"TipoComunicazione"
+	    value      	"")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNamespace"
+	    value      	"")
+	(object Attribute
+	    tool       	"e-gov"
+	    name       	"cg_style"
+	    value      	"Default")
+	(object Attribute
+	    tool       	"e-gov"
+	    name       	"Status"
+	    value      	("StatusTy" 2))
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"UsedNamespaces"
+	    value      	"Scuola;OggettiCondivisi;")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNameSpacePrefix"
+	    value      	"Scuola")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNameSpace"
+	    value      	"")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"UsedNameSpaces"
+	    value      	"Scuola;OggettiCondivisi;"))
+    quid       	"4152CAB0013A"
+    stereotype 	"Business System"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object UseCase "Assegnazione Borsa di Studio"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"RequisitePro"
+		    name       	"ReqProProjectPath"
+		    value      	"")
+		(object Attribute
+		    tool       	"RequisitePro"
+		    name       	"ReqProProjectGuid"
+		    value      	"")
+		(object Attribute
+		    tool       	"RequisitePro"
+		    name       	"ReqProDocumentName"
+		    value      	"")
+		(object Attribute
+		    tool       	"RequisitePro"
+		    name       	"ReqProDocumentGuid"
+		    value      	"")
+		(object Attribute
+		    tool       	"RequisitePro"
+		    name       	"ReqProDocType"
+		    value      	"")
+		(object Attribute
+		    tool       	"RequisitePro"
+		    name       	"ReqProReqType"
+		    value      	"")
+		(object Attribute
+		    tool       	"RequisitePro"
+		    name       	"ReqProRequirementId"
+		    value      	"")
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"cg_style"
+		    value      	"Default")
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"TipoDiCollaborazione"
+		    value      	("TipoDiCollaborazioneTy" 6))
+		(object Attribute
+		    tool       	"Arianna"
+		    name       	"ErogabileAncheSoloConPEC"
+		    value      	"True")
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"Ricevuta"
+		    value      	"Ricevuta Assegnazione Borsa di Studio")
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"Richiesta"
+		    value      	"Richiesta di Assegnazione Borsa di Studio")
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"TipoRichiesta"
+		    value      	"online")
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"Risposta"
+		    value      	"Comunicazione Esito Pratica Assegnazione Borsa di Studio"))
+	    quid       	"3F9F9ACB006D"
+	    stereotype 	"Business Use Case Realization"
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "Assegnazione Borsa di Studio"
+		    quid       	"4153E205035C"
+		    title      	"Assegnazione Borsa di Studio"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	1113
+		    origin_y   	88
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti Condivisi::Attori::Utente Autenticato::Utente Autenticato" @1
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(416, 1200)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@1
+				location   	(415, 1408)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	2624
+				justify    	0
+				label      	"Utente Autenticato")
+			    icon       	"Business Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"3F02928500C9"
+			    width      	202
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio (Oggetti)::Ricevuta Assegnazione Borsa di Studio" @2
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(1809, 1599)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@2
+				location   	(1808, 1815)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	3708
+				justify    	0
+				label      	"Ricevuta Assegnazione Borsa di Studio")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4153E2050180"
+			    width      	228
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio (Oggetti)::Comunicazione Esito Pratica Assegnazione Borsa di Studio" @3
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(1215, 2031)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@3
+				location   	(1214, 2247)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	3712
+				justify    	0
+				label      	"Comunicazione Esito Pratica Assegnazione Borsa di Studio")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"415400CA02CE"
+			    width      	228
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio (Oggetti)::Richiesta di Assegnazione Borsa di Studio" @4
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(1920, 717)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@4
+				location   	(1920, 940)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	4884
+				justify    	0
+				label      	"Richiesta di Assegnazione Borsa di Studio")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4153E20502EA"
+			    autoResize 	TRUE)
+			(object UseCaseView "Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio" @5
+			    location   	(1216, 1200)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@5
+				location   	(1215, 1376)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	879
+				justify    	0
+				label      	"Assegnazione Borsa di Studio")
+			    icon       	"Business Use Case Realization"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"3F9F9ACB006D"
+			    width      	306
+			    height     	194)
+			(object AssociationViewNew "Richiede" @6
+			    location   	(789, 1200)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @7
+				Parent_View 	@6
+				location   	(789, 1141)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"Richiede"
+				pctDist    	0.500000
+				height     	60
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4153E205036C"
+			    roleview_list 	(list RoleViews
+				(object RoleView "" @8
+				    Parent_View 	@6
+				    location   	(-219, 400)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @9
+					Parent_View 	@8
+					location   	(569, 1242)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4153E205036F"
+				    client     	@6
+				    supplier   	@1
+				    line_style 	0)
+				(object RoleView "" @10
+				    Parent_View 	@6
+				    location   	(-219, 400)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @11
+					Parent_View 	@10
+					location   	(1009, 1242)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4153E205036D"
+				    client     	@6
+				    supplier   	@5
+				    line_style 	0)))
+			(object AssociationViewNew "" @12
+			    location   	(1607, 1460)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4153E2060089"
+			    roleview_list 	(list RoleViews
+				(object RoleView "" @13
+				    Parent_View 	@12
+				    location   	(599, 660)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @14
+					Parent_View 	@13
+					location   	(1654, 1543)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4153E206008B"
+				    client     	@12
+				    supplier   	@2
+				    line_style 	0)
+				(object RoleView "" @15
+				    Parent_View 	@12
+				    location   	(599, 660)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @16
+					Parent_View 	@15
+					location   	(1514, 1448)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4153E206008A"
+				    client     	@12
+				    supplier   	@5
+				    line_style 	0)))
+			(object AssociationViewNew "" @17
+			    location   	(1214, 1648)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"41540F6101E1"
+			    roleview_list 	(list RoleViews
+				(object RoleView "" @18
+				    Parent_View 	@17
+				    location   	(206, 848)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"41540F620122"
+				    client     	@17
+				    supplier   	@3
+				    line_style 	0
+				    label      	(object SegLabel @19
+					Parent_View 	@18
+					location   	(1268, 1869)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..1"
+					pctDist    	0.900000
+					height     	54
+					orientation 	0))
+				(object RoleView "" @20
+				    Parent_View 	@17
+				    location   	(206, 848)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"41540F62012D"
+				    client     	@17
+				    supplier   	@5
+				    line_style 	0)))
+			(object AssociationViewNew "" @21
+			    location   	(1575, 950)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4153E2060093"
+			    roleview_list 	(list RoleViews
+				(object RoleView "" @22
+				    Parent_View 	@21
+				    location   	(567, 150)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @23
+					Parent_View 	@22
+					location   	(1730, 794)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4153E2060095"
+				    client     	@21
+				    supplier   	@4
+				    line_style 	0)
+				(object RoleView "" @24
+				    Parent_View 	@21
+				    location   	(567, 150)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @25
+					Parent_View 	@24
+					location   	(1374, 1038)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					hidden     	TRUE
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	""
+					pctDist    	0.800000
+					height     	42
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4153E2060094"
+				    client     	@21
+				    supplier   	@5
+				    line_style 	0)))))))
+	(object Association "$UNNAMED$0"
+	    quid       	"4153E2060089"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    quid       	"4153E206008A"
+		    supplier   	"Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio"
+		    quidu      	"3F9F9ACB006D")
+		(object Role "$UNNAMED$2"
+		    quid       	"4153E206008B"
+		    supplier   	"Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio (Oggetti)::Ricevuta Assegnazione Borsa di Studio"
+		    quidu      	"4153E2050180"
+		    is_navigable 	TRUE)))
+	(object Association "$UNNAMED$3"
+	    quid       	"4153E2060093"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$4"
+		    quid       	"4153E2060094"
+		    supplier   	"Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio"
+		    quidu      	"3F9F9ACB006D")
+		(object Role "$UNNAMED$5"
+		    quid       	"4153E2060095"
+		    supplier   	"Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio (Oggetti)::Richiesta di Assegnazione Borsa di Studio"
+		    quidu      	"4153E20502EA"
+		    is_navigable 	TRUE)))
+	(object Association "$UNNAMED$6"
+	    quid       	"41540F6101E1"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$7"
+		    quid       	"41540F620122"
+		    supplier   	"Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio (Oggetti)::Comunicazione Esito Pratica Assegnazione Borsa di Studio"
+		    quidu      	"415400CA02CE"
+		    client_cardinality 	(value cardinality "0..1")
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$8"
+		    quid       	"41540F62012D"
+		    supplier   	"Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio"
+		    quidu      	"3F9F9ACB006D")))
+	(object Class_Category "Assegnazione Borsa di Studio (Oggetti)"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNamespace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNamespaces"
+		    value      	"Scuola;OggettiCondivisi;")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpacePrefix"
+		    value      	"Scuola")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNameSpaces"
+		    value      	"Scuola;OggettiCondivisi;"))
+	    quid       	"4153E2050173"
+	    stereotype 	"Business Analysis Model"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class "Ricevuta Assegnazione Borsa di Studio"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"Ricevuta Assegnazione Borsa di Studio;Borsa di Studio;Allegato;Finanziamenti e/o Sussidi per gli Studi (BSL);")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"3")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"4027B5770014")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"OggettiCondivisi:Ricevuta")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNamespaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNamespace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"Only Ref")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"Scuola")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"4027B5770014")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"OggettiCondivisi:Ricevuta")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	""))
+		    quid       	"4153E2050180"
+		    stereotype 	"Business Document"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"4153E20502DE"
+			    supplier   	"Use Case View::Oggetti Condivisi::Concetti base::Ricevuta::Ricevuta"
+			    quidu      	"4027B5770014")))
+		(object Class "Comunicazione Apertura Pratica Assegnazione Borsa di Studio"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"Comunicazione Apertura Pratica Assegnazione Borsa di Studio;Estremi Pratica Assegnazione Borsa di Studio;")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"2")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"40BF6A9A0322")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"OggettiCondivisi:Comunicazione")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNamespaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNamespace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"Only Ref")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"Scuola")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"40BF6A9A0322")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"OggettiCondivisi:Comunicazione")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	""))
+		    quid       	"4154009C012E"
+		    stereotype 	"Business Document"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"4154012C0012"
+			    supplier   	"Use Case View::Oggetti Condivisi::Concetti base::Comunicazione::Comunicazione"
+			    quidu      	"40BF6A9A0322")))
+		(object Class "Comunicazione Esito Pratica Assegnazione Borsa di Studio"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"Comunicazione Esito Pratica Assegnazione Borsa di Studio;Esito Pratica Assegnazione Borsa di Studio;")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"2")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"40BF6A9A0322")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"OggettiCondivisi:Comunicazione")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNamespaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNamespace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"Only Ref")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"Scuola")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"40BF6A9A0322")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"OggettiCondivisi:Comunicazione")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	""))
+		    quid       	"415400CA02CE"
+		    stereotype 	"Business Document"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"4154032B0374"
+			    supplier   	"Use Case View::Oggetti Condivisi::Concetti base::Comunicazione::Comunicazione"
+			    quidu      	"40BF6A9A0322")))
+		(object Class "Richiesta di Assegnazione Borsa di Studio"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"Borsa di Studio;Richiedente;Titolare;Legame Parentela;Finanziamenti e/o Sussidi per gli Studi (FSL);")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"4")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"401FC02A0042")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"OggettiCondivisi:RichiestadiServizioOffLineallaPA")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNamespaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNamespace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"Only Ref")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"Scuola")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"401FC02A0042")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"OggettiCondivisi:RichiestadiServizioOffLineallaPA")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	""))
+		    quid       	"4153E20502EA"
+		    stereotype 	"Modulo (Form)"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"4153E205034B"
+			    supplier   	"Use Case View::Oggetti Condivisi::Concetti base::Richiesta::MetaRichiesta"
+			    quidu      	"3F522B7F031D"))
+		    statemachine 	(object State_Machine "Assegnazione Borsa di Studio"
+			quid       	"4153E2050357"
+			states     	(list States
+			    (object State "Predisposta"
+				quid       	"4153E2050359"
+				type       	"Normal")
+			    (object State "Parzialmente Compilata"
+				quid       	"4153E205035A"
+				type       	"Normal")
+			    (object State "Completamente Compilata"
+				quid       	"4153E205035B"
+				type       	"Normal"))
+			partitions 	(list Partitions)
+			objects    	(list Objects)
+			transitions 	(list transition_list)
+			objectflows 	(list objectflow_list)
+			statediagrams 	(list StateDiagrams)))
+		(object Association "$UNNAMED$9"
+		    quid       	"415401AC01B3"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$10"
+			    quid       	"415401AD0271"
+			    supplier   	"Use Case View::Studiare::Contesti Tematici::Scuola::Scuola (BSL)::Documenti Ufficiali::Comunicazione Apertura Pratica Assegnazione Borsa di Studio"
+			    quidu      	"415401840019"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$11"
+			    quid       	"415401AD0273"
+			    supplier   	"Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio (Oggetti)::Comunicazione Apertura Pratica Assegnazione Borsa di Studio"
+			    quidu      	"4154009C012E")))
+		(object Association "$UNNAMED$12"
+		    quid       	"4154022D0390"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$13"
+			    quid       	"4154022E0230"
+			    supplier   	"Use Case View::Studiare::Contesti Tematici::Scuola::Scuola (Oggetti)::Finanziamenti e/o Sussidi per gli Studi::Estremi Pratica Assegnazione Borsa di Studio::Estremi Pratica Assegnazione Borsa di Studio"
+			    quidu      	"415401DE025D"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$14"
+			    quid       	"4154022E023A"
+			    supplier   	"Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio (Oggetti)::Comunicazione Apertura Pratica Assegnazione Borsa di Studio"
+			    quidu      	"4154009C012E"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$15"
+		    quid       	"415403760130"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$16"
+			    quid       	"41540377020B"
+			    supplier   	"Use Case View::Studiare::Contesti Tematici::Scuola::Scuola (BSL)::Documenti Ufficiali::Comunicazione Esito Pratica Assegnazione Borsa di Studio"
+			    quidu      	"4154016E036A"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$17"
+			    quid       	"415403770215"
+			    supplier   	"Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio (Oggetti)::Comunicazione Esito Pratica Assegnazione Borsa di Studio"
+			    quidu      	"415400CA02CE")))
+		(object Association "$UNNAMED$18"
+		    quid       	"4154040C02C6"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$19"
+			    quid       	"4154040D0225"
+			    supplier   	"Use Case View::Studiare::Contesti Tematici::Scuola::Scuola (Oggetti)::Finanziamenti e/o Sussidi per gli Studi::Esito Pratica Assegnazione Borsa di Studio::Esito Pratica Assegnazione Borsa di Studio"
+			    quidu      	"415403F201D6"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$20"
+			    quid       	"4154040D0227"
+			    supplier   	"Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio (Oggetti)::Comunicazione Esito Pratica Assegnazione Borsa di Studio"
+			    quidu      	"415400CA02CE"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$21"
+		    quid       	"417F5CE0038B"
+		    roles      	(list role_list
+			(object Role "Richiedente"
+			    quid       	"417F5CE102F3"
+			    label      	"Richiedente"
+			    supplier   	"Use Case View::Oggetti Condivisi::Oggetti Relativi a Servizi::Persona::Estremi della Persona"
+			    quidu      	"419B78F7027D"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$22"
+			    quid       	"417F5CE103BB"
+			    supplier   	"Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio (Oggetti)::Richiesta di Assegnazione Borsa di Studio"
+			    quidu      	"4153E20502EA"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$23"
+		    quid       	"417F5CF700E6"
+		    roles      	(list role_list
+			(object Role "Titolare"
+			    quid       	"417F5CF7031E"
+			    label      	"Titolare"
+			    supplier   	"Use Case View::Oggetti Condivisi::Oggetti Relativi a Servizi::Persona Fisica::Persona Fisica"
+			    quidu      	"400E4FFE00BA"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$24"
+			    quid       	"417F5CF70396"
+			    supplier   	"Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio (Oggetti)::Richiesta di Assegnazione Borsa di Studio"
+			    quidu      	"4153E20502EA"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$25"
+		    quid       	"490F4F27029D"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$26"
+			    quid       	"490F4F280151"
+			    supplier   	"Use Case View::Oggetti Generali::Legame Parentela::Legame Parentela"
+			    quidu      	"490F4EED007F"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$27"
+			    quid       	"490F4F280153"
+			    supplier   	"Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio (Oggetti)::Richiesta di Assegnazione Borsa di Studio"
+			    quidu      	"4153E20502EA"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$28"
+		    quid       	"490F50F702B1"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$29"
+			    quid       	"490F50F80181"
+			    supplier   	"Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Oggetti)::Oggetti Condivisi::Informazioni Scolastiche::Informazioni Scolastiche"
+			    quidu      	"490F50CD00C0"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$30"
+			    quid       	"490F50F80184"
+			    supplier   	"Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio (Oggetti)::Richiesta di Assegnazione Borsa di Studio"
+			    quidu      	"4153E20502EA"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$31"
+		    quid       	"49102BA1019D"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$32"
+			    quid       	"49102BA103BB"
+			    supplier   	"Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Oggetti)::Oggetti Condivisi::Autocertificazione ISEE::Autocertificazione ISEE"
+			    quidu      	"49102B7000C4"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$33"
+			    quid       	"49102BA103BD"
+			    supplier   	"Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio (Oggetti)::Richiesta di Assegnazione Borsa di Studio"
+			    quidu      	"4153E20502EA"
+			    is_aggregate 	TRUE))))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "Ricevuta Assegnazione Borsa di Studio-Definizione"
+		    quid       	"4153E2050183"
+		    title      	"Ricevuta Assegnazione Borsa di Studio-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	719
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti Condivisi::Concetti base::Ricevuta::Ricevuta" @26
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(592, 1280)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@26
+				location   	(591, 1496)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	1354
+				justify    	0
+				label      	"Ricevuta")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4027B5770014"
+			    width      	228
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio (Oggetti)::Ricevuta Assegnazione Borsa di Studio" @27
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(591, 609)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@27
+				location   	(590, 825)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	3710
+				justify    	0
+				label      	"Ricevuta Assegnazione Borsa di Studio")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4153E2050180"
+			    width      	228
+			    autoResize 	TRUE)
+			(object InheritView "" @28
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4153E20502DE"
+			    client     	@27
+			    supplier   	@26
+			    line_style 	0)))
+		(object UseCaseDiagram "Richiesta di Assegnazione Borsa di Studio-Definizione"
+		    quid       	"4153E20502EC"
+		    title      	"Richiesta di Assegnazione Borsa di Studio-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	313
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti Condivisi::Concetti base::Richiesta::MetaRichiesta" @29
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(1275, 1662)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@29
+				location   	(1275, 1885)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	1305
+				justify    	0
+				label      	"MetaRichiesta")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"3F522B7F031D"
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti Condivisi::Oggetti Relativi a Servizi::Persona Fisica::Persona Fisica" @30
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(534, 672)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@30
+				location   	(406, 606)
+				fill_color 	13434879
+				nlines     	2
+				max_width  	256
+				justify    	0
+				label      	"Persona Fisica")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"400E4FFE00BA"
+			    width      	274
+			    height     	157
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti Generali::Legame Parentela::Legame Parentela" @31
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(927, 204)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@31
+				location   	(926, 360)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	434
+				justify    	0
+				label      	"Legame Parentela")
+			    icon       	"Domain"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"490F4EED007F"
+			    compartment 	(object Compartment
+				Parent_View 	@31
+				location   	(686, 445)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				icon_style 	"Icon"
+				anchor     	2
+				nlines     	5
+				max_width  	472
+				justify    	0)
+			    width      	154
+			    height     	154
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Oggetti)::Oggetti Condivisi::Informazioni Scolastiche::Informazioni Scolastiche" @32
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1434, 417)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@32
+				location   	(1231, 320)
+				fill_color 	13434879
+				nlines     	2
+				max_width  	407
+				justify    	0
+				label      	"Informazioni Scolastiche")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"490F50CD00C0"
+			    width      	425
+			    height     	218
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio (Oggetti)::Richiesta di Assegnazione Borsa di Studio" @33
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(1272, 1005)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@33
+				location   	(1272, 1228)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	4887
+				justify    	0
+				label      	"Richiesta di Assegnazione Borsa di Studio")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4153E20502EA"
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$23" @34
+			    location   	(910, 840)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"417F5CF700E6"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Titolare" @35
+				    Parent_View 	@34
+				    location   	(62, 280)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @36
+					Parent_View 	@35
+					location   	(702, 792)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	170
+					justify    	0
+					label      	"+Titolare"
+					pctDist    	0.800000
+					height     	42
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"417F5CF7031E"
+				    client     	@34
+				    supplier   	@30
+				    line_style 	0)
+				(object RoleView "$UNNAMED$24" @37
+				    Parent_View 	@34
+				    location   	(62, 280)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"417F5CF70396"
+				    client     	@34
+				    supplier   	@33
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$25" @38
+			    location   	(1171, 777)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"490F4F27029D"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$26" @39
+				    Parent_View 	@38
+				    location   	(167, 207)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"490F4F280151"
+				    client     	@38
+				    supplier   	@31
+				    line_style 	0)
+				(object RoleView "$UNNAMED$27" @40
+				    Parent_View 	@38
+				    location   	(167, 207)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"490F4F280153"
+				    client     	@38
+				    supplier   	@33
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$28" @41
+			    location   	(1356, 694)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"490F50F702B1"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$29" @42
+				    Parent_View 	@41
+				    location   	(329, -301)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"490F50F80181"
+				    client     	@41
+				    supplier   	@32
+				    line_style 	0)
+				(object RoleView "$UNNAMED$30" @43
+				    Parent_View 	@41
+				    location   	(329, -301)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"490F50F80184"
+				    client     	@41
+				    supplier   	@33
+				    line_style 	0)))
+			(object InheritView "" @44
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4153E205034B"
+			    client     	@33
+			    supplier   	@29
+			    line_style 	0)
+			(object ClassView "Class" "Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Oggetti)::Oggetti Condivisi::Autocertificazione ISEE::Autocertificazione ISEE" @45
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(1872, 765)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@45
+				location   	(1703, 694)
+				fill_color 	13434879
+				nlines     	2
+				max_width  	338
+				justify    	0
+				label      	"Autocertificazione ISEE")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"49102B7000C4"
+			    width      	356
+			    height     	167
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$31" @46
+			    location   	(1542, 893)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"49102BA1019D"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$32" @47
+				    Parent_View 	@46
+				    location   	(515, -102)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"49102BA103BB"
+				    client     	@46
+				    supplier   	@45
+				    line_style 	0)
+				(object RoleView "$UNNAMED$33" @48
+				    Parent_View 	@46
+				    location   	(515, -102)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"49102BA103BD"
+				    client     	@46
+				    supplier   	@33
+				    line_style 	0)))
+			(object ClassView "Class" "Use Case View::Oggetti Condivisi::Oggetti Relativi a Servizi::Persona::Estremi della Persona" @49
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(450, 1005)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@49
+				location   	(168, 956)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	564
+				justify    	0
+				label      	"Estremi della Persona")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"419B78F7027D"
+			    width      	582
+			    height     	122
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$21" @50
+			    location   	(945, 1005)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"417F5CE0038B"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Richiedente" @51
+				    Parent_View 	@50
+				    location   	(97, 445)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @52
+					Parent_View 	@51
+					location   	(897, 976)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	239
+					justify    	0
+					label      	"+Richiedente"
+					pctDist    	0.237249
+					height     	30
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"417F5CE102F3"
+				    client     	@50
+				    supplier   	@49
+				    line_style 	0)
+				(object RoleView "$UNNAMED$22" @53
+				    Parent_View 	@50
+				    location   	(97, 445)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"417F5CE103BB"
+				    client     	@50
+				    supplier   	@33
+				    line_style 	0)))))
+		(object ClassDiagram "Comunicazione Esito Pratica Assegnazione Borsa di Studio-Definizione"
+		    quid       	"415400E10336"
+		    title      	"Comunicazione Esito Pratica Assegnazione Borsa di Studio-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	244
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti Condivisi::Concetti base::Risposta::Risposta" @54
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(672, 2000)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@54
+				location   	(671, 2216)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	1237
+				justify    	0
+				label      	"Risposta")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"3EEDAE420055"
+			    width      	228
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti Condivisi::Concetti base::Comunicazione::Comunicazione" @55
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(672, 1408)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@55
+				location   	(671, 1624)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	1421
+				justify    	0
+				label      	"Comunicazione")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"40BF6A9A0322"
+			    width      	228
+			    autoResize 	TRUE)
+			(object InheritView "" @56
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"40BF6B8302CD"
+			    client     	@55
+			    supplier   	@54
+			    line_style 	0)
+			(object ClassView "Class" "Use Case View::Studiare::Contesti Tematici::Scuola::Scuola (Oggetti)::Finanziamenti e/o Sussidi per gli Studi::Esito Pratica Assegnazione Borsa di Studio::Esito Pratica Assegnazione Borsa di Studio" @57
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(672, 384)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@57
+				location   	(170, 339)
+				fill_color 	13434879
+				nlines     	2
+				max_width  	1004
+				justify    	0
+				label      	"Esito Pratica Assegnazione Borsa di Studio")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"415403F201D6"
+			    width      	1022
+			    height     	114)
+			(object ClassView "Class" "Use Case View::Servizi::Contesti Tematici::Scuola::Scuola (Servizi)::Finanziamenti E Sussidi::Assegnazione Borsa Di Studio::Assegnazione Borsa di Studio (Oggetti)::Comunicazione Esito Pratica Assegnazione Borsa di Studio" @58
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    location   	(672, 753)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@58
+				location   	(671, 969)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	3715
+				justify    	0
+				label      	"Comunicazione Esito Pratica Assegnazione Borsa di Studio")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"415400CA02CE"
+			    width      	228
+			    autoResize 	TRUE)
+			(object InheritView "" @59
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4154032B0374"
+			    client     	@58
+			    supplier   	@55
+			    line_style 	0)
+			(object AssociationViewNew "$UNNAMED$18" @60
+			    location   	(672, 529)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4154040C02C6"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$19" @61
+				    Parent_View 	@60
+				    location   	(0, -223)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4154040D0225"
+				    client     	@60
+				    supplier   	@57
+				    line_style 	0)
+				(object RoleView "$UNNAMED$20" @62
+				    Parent_View 	@60
+				    location   	(0, -223)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4154040D0227"
+				    client     	@60
+				    supplier   	@58
+				    line_style 	0))))))))
+    logical_presentations 	(list unit_reference_list))

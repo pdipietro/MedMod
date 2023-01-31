@@ -1,0 +1,407 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 8.2.0311.2600"
+    charSet    	0)
+
+(object Class_Category "Gestione Deleghe"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    attributes 	(list Attribute_Set
+	(object Attribute
+	    tool       	"XSD"
+	    name       	"cg_style"
+	    value      	"Default")
+	(object Attribute
+	    tool       	"XSD"
+	    name       	"NamespacePrefix"
+	    value      	(value Text ""))
+	(object Attribute
+	    tool       	"XSD"
+	    name       	"NameSpacePrefix"
+	    value      	"ServiziCondivisi")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNameSpacePrefix"
+	    value      	"ServiziCondivisi")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNameSpace"
+	    value      	"")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"UsedNameSpaces"
+	    value      	"ServiziCondivisi;"))
+    quid       	"449A76F700C8"
+    stereotype 	"Business Analysis Model"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "Informazioni per Verifica Delega"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"SelfDiscovery"
+		    value      	"complex")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"hasGroup"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealizedNo"
+		    value      	"0")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"InheritedNo"
+		    value      	"0")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"Realized"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealizedID"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"Inherited"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"InheritedID"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"AttributesNo"
+		    value      	"0")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"AssociationNo"
+		    value      	"2")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"Virtual"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"BaseClass"
+		    value      	"none")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"BaseClassID"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"BaseClassName"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"PureBaseClass"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"PureBaseClassID"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"PureBaseClassName"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"isDomain"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"isException"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"Lavorato"
+		    value      	"True")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNameSpaces"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpacePrefix"
+		    value      	"ServiziCondivisi")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"HasReferences"
+		    value      	"Only Ref")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"HasConst"
+		    value      	"False")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"Attributes"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"Abstract"
+		    value      	"False")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"AttributeNames"
+		    value      	"Contesto Servizio;Titolare;Busta Spedizione;"))
+	    quid       	"449A72E601ED")
+	(object Association "$UNNAMED$0"
+	    quid       	"449A786C0280"
+	    documentation 	
+|Rappresenta il nome del servizo nell'ambito del quale è stato invocato il servizio oggetto di verifica della delega. Ad esempio "Visualizzazione Cespiti Attivi ICI per Anno" invocato come servizio di supporto di "Dichiarazione di Variazione ICI"
+	    
+	    roles      	(list role_list
+		(object Role "Contesto Servizio"
+		    quid       	"449A786D006B"
+		    label      	"Contesto Servizio"
+		    supplier   	"Use Case View::Oggetti Condivisi::Dominii::Tipi Dati di Base::Testo::Testo"
+		    quidu      	"4006E1450246"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$1"
+		    quid       	"449A786D01AC"
+		    supplier   	"Use Case View::Arianna::Infrastruttura::Servizi Infrastrutturali::Servizi Infrastrutturali (Oggetti)::Gestione Deleghe::Informazioni per Verifica Delega"
+		    quidu      	"449A72E601ED"
+		    is_aggregate 	TRUE)))
+	(object Association "$UNNAMED$2"
+	    quid       	"449A7B4E0173"
+	    roles      	(list role_list
+		(object Role "Titolare"
+		    quid       	"449A7B4F00DB"
+		    label      	"Titolare"
+		    supplier   	"Use Case View::Arianna::Infrastruttura::Servizi Infrastrutturali::Servizi Infrastrutturali (Oggetti)::Protocollo CNIPA-DocArea::Titolare::Titolare"
+		    quidu      	"449A763A0243"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$3"
+		    quid       	"449A7B4F00DD"
+		    supplier   	"Use Case View::Arianna::Infrastruttura::Servizi Infrastrutturali::Servizi Infrastrutturali (Oggetti)::Gestione Deleghe::Informazioni per Verifica Delega"
+		    quidu      	"449A72E601ED"
+		    is_aggregate 	TRUE))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "Informazioni per Verifica Delega"
+	    quid       	"449A77CC0114"
+	    title      	"Informazioni per Verifica Delega"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Use Case View::Oggetti Condivisi::Dominii::Tipi Dati di Base::Testo::Testo" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressAttribute 	TRUE
+		    SuppressOperation 	TRUE
+		    location   	(512, 608)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(416, 563)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	192
+			justify    	0
+			label      	"Testo")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4006E1450246"
+		    width      	210
+		    height     	114
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Use Case View::Arianna::Infrastruttura::Servizi Infrastrutturali::Servizi Infrastrutturali (Oggetti)::Protocollo CNIPA-DocArea::Titolare::Titolare" @2
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressAttribute 	TRUE
+		    SuppressOperation 	TRUE
+		    location   	(944, 576)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@2
+			location   	(848, 530)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	192
+			justify    	0
+			label      	"Titolare")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"449A763A0243"
+		    width      	210
+		    height     	117
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Use Case View::Arianna::Infrastruttura::Servizi Infrastrutturali::Servizi Infrastrutturali (Oggetti)::Gestione Deleghe::Informazioni per Verifica Delega" @3
+		    ShowCompartmentStereotypes 	TRUE
+		    SuppressAttribute 	TRUE
+		    SuppressOperation 	TRUE
+		    location   	(672, 320)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(310, 274)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	724
+			justify    	0
+			label      	"Informazioni per Verifica Delega")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"449A72E601ED"
+		    width      	742
+		    height     	117
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$0" @4
+		    location   	(591, 464)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"449A786C0280"
+		    roleview_list 	(list RoleViews
+			(object RoleView "Contesto Servizio" @5
+			    Parent_View 	@4
+			    location   	(-81, 144)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @6
+				Parent_View 	@5
+				location   	(535, 500)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	382
+				justify    	0
+				label      	"+Contesto Servizio"
+				pctDist    	0.589741
+				height     	33
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"449A786D006B"
+			    client     	@4
+			    supplier   	@1
+			    line_style 	0)
+			(object RoleView "$UNNAMED$1" @7
+			    Parent_View 	@4
+			    location   	(-81, 144)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"449A786D01AC"
+			    client     	@4
+			    supplier   	@3
+			    line_style 	0)))
+		(object AssociationViewNew "$UNNAMED$2" @8
+		    location   	(807, 447)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"449A7B4E0173"
+		    roleview_list 	(list RoleViews
+			(object RoleView "Titolare" @9
+			    Parent_View 	@8
+			    location   	(135, 127)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @10
+				Parent_View 	@9
+				location   	(855, 473)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	170
+				justify    	0
+				label      	"+Titolare"
+				pctDist    	0.516518
+				height     	15
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"449A7B4F00DB"
+			    client     	@8
+			    supplier   	@2
+			    line_style 	0)
+			(object RoleView "$UNNAMED$3" @11
+			    Parent_View 	@8
+			    location   	(135, 127)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"449A7B4F00DD"
+			    client     	@8
+			    supplier   	@3
+			    line_style 	0)))))))

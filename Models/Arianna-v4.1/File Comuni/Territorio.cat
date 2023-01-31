@@ -1,0 +1,5592 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	0)
+
+(object Class_Category "Territorio"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    attributes 	(list Attribute_Set
+	(object Attribute
+	    tool       	"XSD"
+	    name       	"cg_style"
+	    value      	"Default")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNamespace"
+	    value      	"")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"cg_style"
+	    value      	"Default")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"UsedNamespaces"
+	    value      	"OggettiCondivisi;SIT;")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNameSpacePrefix"
+	    value      	"OggettiCondivisi")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNameSpace"
+	    value      	"")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"UsedNameSpaces"
+	    value      	"OggettiCondivisi;"))
+    quid       	"3FFB2B3A0163"
+    stereotype 	"Business Domain"
+    visible_categories 	(list visibility_relationship_list
+	(object Visibility_Relationship
+	    quid       	"40425ED50167"
+	    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale"
+	    quidu      	"403921310257")
+	(object Visibility_Relationship
+	    quid       	"40425ED601E1"
+	    supplier   	"Use Case View::Sigmater::SIT::SIT (Oggetti)::Identificativo Parziale Particella"
+	    quidu      	"403924990160")
+	(object Visibility_Relationship
+	    quid       	"40425ED8008F"
+	    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Partita Catastale"
+	    quidu      	"4039288A0359")
+	(object Visibility_Relationship
+	    quid       	"40425ED90290"
+	    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Protocollo Catastale"
+	    quidu      	"403929CD02F2")
+	(object Visibility_Relationship
+	    quid       	"468B5C7D0293"
+	    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Reddito Dominicale"
+	    quidu      	"468B5C6502FB")
+	(object Visibility_Relationship
+	    quid       	"468B5CA1008C"
+	    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Valore Rivalutato"
+	    quidu      	"468B5C8402FD"))
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class_Category "Informazione Catastale"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNamespace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNamespaces"
+		    value      	"OggettiCondivisi;")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpacePrefix"
+		    value      	"OggettiCondivisi")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNameSpaces"
+		    value      	"OggettiCondivisi;"))
+	    quid       	"403921310257"
+	    stereotype 	"Business Analysis Model"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class "Informazione Catastale"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSD"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"choice")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"2")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"OggettiCondivisi:InformazioneCatastaleTerreni;OggettiCondivisi:InformazioneCatastaleFabbricati;")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"403922410353;403921FE02F5;")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"none")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNamespaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNamespace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"none")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"OggettiCondivisi")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	""))
+		    quid       	"403921610166"
+		    documentation 	"MOLTEPLICITA': Qualora si tratti di un'Area o di un Immobile (termine piuttosto generico), potrebbe avere più identificativi catastali (Ad esempio: un Fabbricato è un insieme di Unità locabili)"
+		    abstract   	TRUE)
+		(object Class_Category "Informazione Catastale Fabbricati"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNamespace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNamespaces"
+			    value      	"OggettiCondivisi;")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"OggettiCondivisi")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	"OggettiCondivisi;"))
+		    quid       	"403921D0037A"
+		    stereotype 	"Business Analysis Model"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list
+			(object Class "Informazione Catastale Fabbricati"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"XSD"
+				    name       	"SelfDiscovery"
+				    value      	"complex")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Abstract"
+				    value      	"False")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealNameSpace"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"AttributeNames"
+				    value      	"Rendita Catastale;Valore Rivalutato;Protocollo Catastale;Classamento;Rendita;")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"SelfDiscovery"
+				    value      	"complex")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealizedNo"
+				    value      	"0")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Realized"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealizedID"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"InheritedNo"
+				    value      	"0")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Inherited"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"InheritedID"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"AttributesNo"
+				    value      	"0")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"AssociationNo"
+				    value      	"5")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"BaseClass"
+				    value      	"none")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"BaseClassID"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"BaseClassName"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"UsedNamespaces"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealNamespace"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"HasReferences"
+				    value      	"Only Ref")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"HasConst"
+				    value      	"False")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Lavorato"
+				    value      	"True")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"hasGroup"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Virtual"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"isDomain"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"isException"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Attributes"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealNameSpacePrefix"
+				    value      	"OggettiCondivisi")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"PureBaseClass"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"PureBaseClassID"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"PureBaseClassName"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"UsedNameSpaces"
+				    value      	""))
+			    quid       	"403921FE02F5"
+			    realized_interfaces 	(list realize_rel_list
+				(object Realize_Relationship
+				    quid       	"40E865A9029C"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale"
+				    quidu      	"403921610166")))
+			(object Class "Categoria Catastale"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"XSD"
+				    name       	"SelfDiscovery"
+				    value      	"domain")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Abstract"
+				    value      	"False")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealNameSpace"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"AttributeNames"
+				    value      	"Classamento;")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"SelfDiscovery"
+				    value      	"domain")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealizedNo"
+				    value      	"0")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Realized"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealizedID"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"InheritedNo"
+				    value      	"0")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Inherited"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"InheritedID"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"AttributesNo"
+				    value      	"0")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"AssociationNo"
+				    value      	"0")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"BaseClass"
+				    value      	"none")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"BaseClassID"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"BaseClassName"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"UsedNamespaces"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealNamespace"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"HasReferences"
+				    value      	"none")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"HasConst"
+				    value      	"False")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Lavorato"
+				    value      	"True")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"hasGroup"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Virtual"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"isDomain"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"isException"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Attributes"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealNameSpacePrefix"
+				    value      	"OggettiCondivisi")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"PureBaseClass"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"PureBaseClassID"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"PureBaseClassName"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"UsedNameSpaces"
+				    value      	""))
+			    quid       	"403926BE00A4"
+			    stereotype 	"domain")
+			(object Class "Consistenza"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"XSD"
+				    name       	"cg_style"
+				    value      	"Default")
+				(object Attribute
+				    tool       	"XSD"
+				    name       	"CifreDecimali"
+				    value      	1)
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"SelfDiscovery"
+				    value      	"simple")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"hasGroup"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealizedNo"
+				    value      	"0")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"InheritedNo"
+				    value      	"0")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Realized"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealizedID"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Inherited"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"InheritedID"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"AttributesNo"
+				    value      	"0")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"AssociationNo"
+				    value      	"0")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Virtual"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"BaseClass"
+				    value      	"simple")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"BaseClassID"
+				    value      	"40084190030D")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"BaseClassName"
+				    value      	"Decimale")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"PureBaseClass"
+				    value      	"simple")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"PureBaseClassID"
+				    value      	"40084190030D")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"PureBaseClassName"
+				    value      	"Decimale")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"isDomain"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"isException"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Lavorato"
+				    value      	"True")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"UsedNameSpaces"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealNameSpace"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealNameSpacePrefix"
+				    value      	"OggettiCondivisi")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"HasReferences"
+				    value      	"none")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"HasConst"
+				    value      	"False")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Attributes"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Abstract"
+				    value      	"False")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"AttributeNames"
+				    value      	"Classamento;"))
+			    quid       	"44CF64A2032A"
+			    superclasses 	(list inheritance_relationship_list
+				(object Inheritance_Relationship
+				    quid       	"44CF64B90156"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Numeri::Decimale"
+				    quidu      	"40084190030D")))
+			(object Association "$UNNAMED$0"
+			    attributes 	(list Attribute_Set)
+			    quid       	"403925010114"
+			    roles      	(list role_list
+				(object Role "$UNNAMED$1"
+				    quid       	"40392501039F"
+				    supplier   	"Use Case View::Sigmater::SIT::SIT (Oggetti)::Identificativo Parziale Particella Fabbricati::Identificativo Parziale Particella Fabbricati"
+				    quidu      	"4716179D03DE"
+				    is_navigable 	TRUE)
+				(object Role "$UNNAMED$2"
+				    quid       	"4039250103A9"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Informazione Catastale Fabbricati"
+				    quidu      	"403921FE02F5"
+				    is_aggregate 	TRUE)))
+			(object Association "$UNNAMED$3"
+			    quid       	"429AD84800B9"
+			    roles      	(list role_list
+				(object Role "Rendita Catastale"
+				    quid       	"429AD8490022"
+				    label      	"Rendita Catastale"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Importo::Importo"
+				    quidu      	"4007CC5D022D"
+				    client_cardinality 	(value cardinality "0..1")
+				    is_navigable 	TRUE)
+				(object Role "$UNNAMED$4"
+				    quid       	"429AD849007D"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Informazione Catastale Fabbricati"
+				    quidu      	"403921FE02F5"
+				    is_aggregate 	TRUE)))
+			(object Association "$UNNAMED$5"
+			    quid       	"429AD9CA0105"
+			    roles      	(list role_list
+				(object Role "Valore Rivalutato"
+				    quid       	"429AD9CA0379"
+				    label      	"Valore Rivalutato"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Importo::Importo"
+				    quidu      	"4007CC5D022D"
+				    client_cardinality 	(value cardinality "0..1")
+				    is_navigable 	TRUE)
+				(object Role "$UNNAMED$6"
+				    quid       	"429AD9CA03D3"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Informazione Catastale Fabbricati"
+				    quidu      	"403921FE02F5"
+				    is_aggregate 	TRUE)))
+			(object Association "$UNNAMED$7"
+			    quid       	"446B014102BD"
+			    roles      	(list role_list
+				(object Role "$UNNAMED$8"
+				    quid       	"446B01420190"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Protocollo Catastale::Protocollo Catastale"
+				    quidu      	"403929E203C5"
+				    client_cardinality 	(value cardinality "0..1")
+				    is_navigable 	TRUE)
+				(object Role "$UNNAMED$9"
+				    quid       	"446B0142019A"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Informazione Catastale Fabbricati"
+				    quidu      	"403921FE02F5"
+				    is_aggregate 	TRUE)))
+			(object Association "$UNNAMED$10"
+			    quid       	"4694B2B00125"
+			    roles      	(list role_list
+				(object Role "$UNNAMED$11"
+				    quid       	"4694B2B10246"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Classamento::Classamento"
+				    quidu      	"4694B1C6019B"
+				    is_navigable 	TRUE)
+				(object Role "$UNNAMED$12"
+				    quid       	"4694B2B10250"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Informazione Catastale Fabbricati"
+				    quidu      	"403921FE02F5"
+				    is_aggregate 	TRUE)))
+			(object Association "$UNNAMED$13"
+			    quid       	"4694B36802AF"
+			    roles      	(list role_list
+				(object Role "$UNNAMED$14"
+				    quid       	"4694B36901A9"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Rendita::Rendita"
+				    quidu      	"4694B34E02D6"
+				    client_cardinality 	(value cardinality "0..1")
+				    is_navigable 	TRUE)
+				(object Role "$UNNAMED$15"
+				    quid       	"4694B36901AB"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Informazione Catastale Fabbricati"
+				    quidu      	"403921FE02F5"
+				    is_aggregate 	TRUE)))
+			(object Class_Category "Classamento"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealNameSpacePrefix"
+				    value      	"OggettiCondivisi")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealNameSpace"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"UsedNameSpaces"
+				    value      	"OggettiCondivisi;"))
+			    quid       	"4694B1B303CA"
+			    stereotype 	"Business Analysis Model"
+			    exportControl 	"Public"
+			    logical_models 	(list unit_reference_list
+				(object Class "Classamento"
+				    attributes 	(list Attribute_Set
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"SelfDiscovery"
+					    value      	"complex")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"hasGroup"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"RealizedNo"
+					    value      	"0")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"InheritedNo"
+					    value      	"0")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"Realized"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"RealizedID"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"Inherited"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"InheritedID"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"AttributesNo"
+					    value      	"0")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"AssociationNo"
+					    value      	"6")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"Virtual"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"BaseClass"
+					    value      	"none")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"BaseClassID"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"BaseClassName"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"PureBaseClass"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"PureBaseClassID"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"PureBaseClassName"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"isDomain"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"isException"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"Lavorato"
+					    value      	"True")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"UsedNameSpaces"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"RealNameSpace"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"RealNameSpacePrefix"
+					    value      	"OggettiCondivisi")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"HasReferences"
+					    value      	"Only Ref")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"HasConst"
+					    value      	"False")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"Attributes"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"Abstract"
+					    value      	"False")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"AttributeNames"
+					    value      	"Informazione Catastale Fabbricati;Classe Catastale;Zona Censuaria;Consistenza;Categoria Catastale;Superficie;Rendita;"))
+				    quid       	"4694B1C6019B")
+				(object Class "Classe Catastale"
+				    attributes 	(list Attribute_Set
+					(object Attribute
+					    tool       	"XSD"
+					    name       	"SelfDiscovery"
+					    value      	"Domain")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"Abstract"
+					    value      	"False")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"RealNameSpace"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"AttributeNames"
+					    value      	"Classamento;")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"SelfDiscovery"
+					    value      	"domain")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"RealizedNo"
+					    value      	"0")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"Realized"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"RealizedID"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"InheritedNo"
+					    value      	"0")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"Inherited"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"InheritedID"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"AttributesNo"
+					    value      	"0")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"AssociationNo"
+					    value      	"0")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"BaseClass"
+					    value      	"none")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"BaseClassID"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"BaseClassName"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"UsedNamespaces"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"RealNamespace"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"HasReferences"
+					    value      	"none")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"HasConst"
+					    value      	"False")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"Lavorato"
+					    value      	"True")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"hasGroup"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"Virtual"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"isDomain"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"isException"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"Attributes"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"RealNameSpacePrefix"
+					    value      	"OggettiCondivisi")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"PureBaseClass"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"PureBaseClassID"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"PureBaseClassName"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"UsedNameSpaces"
+					    value      	""))
+				    quid       	"403927880044"
+				    stereotype 	"Domain")
+				(object Association "$UNNAMED$16"
+				    quid       	"4694B1EA027A"
+				    roles      	(list role_list
+					(object Role "$UNNAMED$17"
+					    quid       	"4694B1EB00D4"
+					    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Classamento::Classe Catastale"
+					    quidu      	"403927880044"
+					    is_navigable 	TRUE)
+					(object Role "$UNNAMED$18"
+					    quid       	"4694B1EB00D6"
+					    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Classamento::Classamento"
+					    quidu      	"4694B1C6019B"
+					    is_aggregate 	TRUE)))
+				(object Association "$UNNAMED$19"
+				    quid       	"4694B1FE0272"
+				    roles      	(list role_list
+					(object Role "$UNNAMED$20"
+					    quid       	"4694B1FF0112"
+					    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Zona Censuaria::Zona Censuaria"
+					    quidu      	"406445FF01D1"
+					    client_cardinality 	(value cardinality "0..1")
+					    is_navigable 	TRUE)
+					(object Role "$UNNAMED$21"
+					    quid       	"4694B1FF011C"
+					    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Classamento::Classamento"
+					    quidu      	"4694B1C6019B"
+					    is_aggregate 	TRUE)))
+				(object Association "$UNNAMED$22"
+				    quid       	"4694B225026B"
+				    roles      	(list role_list
+					(object Role "$UNNAMED$23"
+					    quid       	"4694B2260093"
+					    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Consistenza"
+					    quidu      	"44CF64A2032A"
+					    client_cardinality 	(value cardinality "0..1")
+					    is_navigable 	TRUE)
+					(object Role "$UNNAMED$24"
+					    quid       	"4694B226009D"
+					    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Classamento::Classamento"
+					    quidu      	"4694B1C6019B"
+					    is_aggregate 	TRUE)))
+				(object Association "$UNNAMED$25"
+				    quid       	"4694B25202E3"
+				    roles      	(list role_list
+					(object Role "$UNNAMED$26"
+					    quid       	"4694B25301C9"
+					    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Categoria Catastale"
+					    quidu      	"403926BE00A4"
+					    is_navigable 	TRUE)
+					(object Role "$UNNAMED$27"
+					    quid       	"4694B25301D3"
+					    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Classamento::Classamento"
+					    quidu      	"4694B1C6019B"
+					    is_aggregate 	TRUE)))
+				(object Association "$UNNAMED$28"
+				    quid       	"4694B28D0203"
+				    roles      	(list role_list
+					(object Role "$UNNAMED$29"
+					    quid       	"4694B28E028D"
+					    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Unità di Misura::Superficie::Superficie"
+					    quidu      	"40531F500182"
+					    client_cardinality 	(value cardinality "0..1")
+					    is_navigable 	TRUE)
+					(object Role "$UNNAMED$30"
+					    quid       	"4694B28E028F"
+					    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Classamento::Classamento"
+					    quidu      	"4694B1C6019B"
+					    is_aggregate 	TRUE)))
+				(object Association "$UNNAMED$31"
+				    quid       	"471723B70090"
+				    roles      	(list role_list
+					(object Role "Rendita"
+					    quid       	"471723B80047"
+					    label      	"Rendita"
+					    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Importo::Importo"
+					    quidu      	"4007CC5D022D"
+					    client_cardinality 	(value cardinality "0..1")
+					    is_navigable 	TRUE)
+					(object Role "$UNNAMED$32"
+					    quid       	"471723B80083"
+					    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Classamento::Classamento"
+					    quidu      	"4694B1C6019B"
+					    is_aggregate 	TRUE))))
+			    logical_presentations 	(list unit_reference_list
+				(object ClassDiagram "Classamento-Definizione"
+				    quid       	"4694B1CC03D2"
+				    title      	"Classamento-Definizione"
+				    zoom       	100
+				    max_height 	28350
+				    max_width  	21600
+				    origin_x   	0
+				    origin_y   	0
+				    items      	(list diagram_item_list
+					(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Numeri::Decimale" @1
+					    ShowCompartmentStereotypes 	TRUE
+					    SuppressAttribute 	TRUE
+					    SuppressOperation 	TRUE
+					    quid       	"49E5EB60024D"
+					    location   	(1023, 63)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"49E5EB60024E"
+						Parent_View 	@1
+						location   	(915, 17)
+						fill_color 	13434879
+						nlines     	1
+						max_width  	216
+						justify    	0
+						label      	"Decimale")
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"40084190030D"
+					    width      	234
+					    height     	117
+					    autoResize 	TRUE)
+					(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Classamento::Classe Catastale" @2
+					    ShowCompartmentStereotypes 	TRUE
+					    SuppressOperation 	TRUE
+					    IncludeAttribute 	TRUE
+					    quid       	"49E5EB600251"
+					    location   	(207, 687)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"49E5EB600252"
+						Parent_View 	@2
+						location   	(206, 843)
+						anchor_loc 	1
+						nlines     	1
+						max_width  	431
+						justify    	0
+						label      	"Classe Catastale")
+					    icon       	"Domain"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"403927880044"
+					    width      	154
+					    height     	154)
+					(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Zona Censuaria::Zona Censuaria" @3
+					    ShowCompartmentStereotypes 	TRUE
+					    SuppressAttribute 	TRUE
+					    SuppressOperation 	TRUE
+					    quid       	"49E5EB600255"
+					    location   	(720, 753)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"49E5EB600256"
+						Parent_View 	@3
+						location   	(558, 707)
+						fill_color 	13434879
+						nlines     	1
+						max_width  	324
+						justify    	0
+						label      	"Zona Censuaria")
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"406445FF01D1"
+					    width      	342
+					    height     	117
+					    autoResize 	TRUE)
+					(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Consistenza" @4
+					    ShowCompartmentStereotypes 	TRUE
+					    SuppressAttribute 	TRUE
+					    SuppressOperation 	TRUE
+					    quid       	"49E5EB600259"
+					    location   	(1023, 321)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"49E5EB60025A"
+						Parent_View 	@4
+						location   	(893, 275)
+						fill_color 	13434879
+						nlines     	1
+						max_width  	260
+						justify    	0
+						label      	"Consistenza")
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"44CF64A2032A"
+					    width      	278
+					    height     	117
+					    autoResize 	TRUE)
+					(object InheritView "" @5
+					    quid       	"49E5EB60025D"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"44CF64B90156"
+					    client     	@4
+					    supplier   	@1
+					    vertices   	(list Points
+						(1023, 262)
+						(1023, 121))
+					    line_style 	0)
+					(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Categoria Catastale" @6
+					    ShowCompartmentStereotypes 	TRUE
+					    SuppressOperation 	TRUE
+					    IncludeAttribute 	TRUE
+					    quid       	"49E5EB60025F"
+					    location   	(177, 111)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"49E5EB600260"
+						Parent_View 	@6
+						location   	(176, 267)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	427
+						justify    	0
+						label      	"Categoria Catastale")
+					    icon       	"domain"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"403926BE00A4"
+					    width      	154
+					    height     	154
+					    autoResize 	TRUE)
+					(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Unità di Misura::Superficie::Superficie" @7
+					    ShowCompartmentStereotypes 	TRUE
+					    SuppressAttribute 	TRUE
+					    SuppressOperation 	TRUE
+					    quid       	"49E5EB600263"
+					    location   	(1089, 561)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"49E5EB600264"
+						Parent_View 	@7
+						location   	(986, 515)
+						fill_color 	13434879
+						nlines     	1
+						max_width  	206
+						justify    	0
+						label      	"Superficie")
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"40531F500182"
+					    width      	224
+					    height     	117
+					    autoResize 	TRUE)
+					(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Importo::Importo" @8
+					    ShowCompartmentStereotypes 	TRUE
+					    SuppressAttribute 	TRUE
+					    SuppressOperation 	TRUE
+					    quid       	"49E5EB600267"
+					    location   	(672, 129)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"49E5EB600268"
+						Parent_View 	@8
+						location   	(585, 83)
+						fill_color 	13434879
+						nlines     	1
+						max_width  	174
+						justify    	0
+						label      	"Importo")
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"4007CC5D022D"
+					    width      	192
+					    height     	117
+					    autoResize 	TRUE)
+					(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Classamento::Classamento" @9
+					    ShowCompartmentStereotypes 	TRUE
+					    SuppressAttribute 	TRUE
+					    SuppressOperation 	TRUE
+					    quid       	"49E5EB60026B"
+					    location   	(528, 447)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"49E5EB60026C"
+						Parent_View 	@9
+						location   	(388, 401)
+						fill_color 	13434879
+						nlines     	1
+						max_width  	280
+						justify    	0
+						label      	"Classamento")
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"4694B1C6019B"
+					    width      	298
+					    height     	117
+					    autoResize 	TRUE)
+					(object AssociationViewNew "$UNNAMED$16" @10
+					    quid       	"49E5EB60026F"
+					    location   	(365, 567)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"4694B1EA027A"
+					    roleview_list 	(list RoleViews
+						(object RoleView "$UNNAMED$17" @11
+						    quid       	"49E5EB600270"
+						    Parent_View 	@10
+						    location   	(-131, 231)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4694B1EB00D4"
+						    client     	@10
+						    supplier   	@2
+						    vertices   	(list Points
+							(365, 567)
+							(281, 629))
+						    line_style 	0)
+						(object RoleView "$UNNAMED$18" @12
+						    quid       	"49E5EB600271"
+						    Parent_View 	@10
+						    location   	(-131, 231)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4694B1EB00D6"
+						    client     	@10
+						    supplier   	@9
+						    vertices   	(list Points
+							(365, 567)
+							(449, 505))
+						    line_style 	0)))
+					(object AssociationViewNew "$UNNAMED$19" @13
+					    quid       	"49E5EB600272"
+					    location   	(623, 599)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"4694B1FE0272"
+					    roleview_list 	(list RoleViews
+						(object RoleView "$UNNAMED$20" @14
+						    quid       	"49E5EB600273"
+						    Parent_View 	@13
+						    location   	(127, 263)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4694B1FF0112"
+						    client     	@13
+						    supplier   	@3
+						    vertices   	(list Points
+							(623, 599)
+							(683, 694))
+						    line_style 	0
+						    label      	(object SegLabel @15
+							quid       	"49E5EB600274"
+							Parent_View 	@14
+							location   	(723, 656)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor     	2
+							anchor_loc 	1
+							nlines     	1
+							max_width  	15
+							justify    	0
+							label      	"0..1"
+							pctDist    	0.900000
+							height     	54
+							orientation 	0))
+						(object RoleView "$UNNAMED$21" @16
+						    quid       	"49E5EB600275"
+						    Parent_View 	@13
+						    location   	(127, 263)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4694B1FF011C"
+						    client     	@13
+						    supplier   	@9
+						    vertices   	(list Points
+							(623, 599)
+							(564, 505))
+						    line_style 	0)))
+					(object AssociationViewNew "$UNNAMED$22" @17
+					    quid       	"49E5EB600276"
+					    location   	(780, 382)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"4694B225026B"
+					    roleview_list 	(list RoleViews
+						(object RoleView "$UNNAMED$23" @18
+						    quid       	"49E5EB600277"
+						    Parent_View 	@17
+						    location   	(332, 62)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4694B2260093"
+						    client     	@17
+						    supplier   	@4
+						    vertices   	(list Points
+							(780, 382)
+							(883, 356))
+						    line_style 	0
+						    label      	(object SegLabel @19
+							quid       	"49E5EB600278"
+							Parent_View 	@18
+							location   	(842, 407)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor     	2
+							anchor_loc 	1
+							nlines     	1
+							max_width  	15
+							justify    	0
+							label      	"0..1"
+							pctDist    	0.505837
+							height     	39
+							orientation 	1))
+						(object RoleView "$UNNAMED$24" @20
+						    quid       	"49E5EB600279"
+						    Parent_View 	@17
+						    location   	(332, 62)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4694B226009D"
+						    client     	@17
+						    supplier   	@9
+						    vertices   	(list Points
+							(780, 382)
+							(677, 408))
+						    line_style 	0)))
+					(object AssociationViewNew "$UNNAMED$25" @21
+					    quid       	"49E5EB60027A"
+					    location   	(412, 336)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"4694B25202E3"
+					    roleview_list 	(list RoleViews
+						(object RoleView "$UNNAMED$26" @22
+						    quid       	"49E5EB60027B"
+						    Parent_View 	@21
+						    location   	(-36, 16)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4694B25301C9"
+						    client     	@21
+						    supplier   	@6
+						    vertices   	(list Points
+							(412, 336)
+							(359, 284))
+						    line_style 	0)
+						(object RoleView "$UNNAMED$27" @23
+						    quid       	"49E5EB60027C"
+						    Parent_View 	@21
+						    location   	(-36, 16)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4694B25301D3"
+						    client     	@21
+						    supplier   	@9
+						    vertices   	(list Points
+							(412, 336)
+							(466, 388))
+						    line_style 	0)))
+					(object AssociationViewNew "$UNNAMED$28" @24
+					    quid       	"49E5EB60027D"
+					    location   	(826, 506)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"4694B28D0203"
+					    roleview_list 	(list RoleViews
+						(object RoleView "$UNNAMED$29" @25
+						    quid       	"49E5EB60027E"
+						    Parent_View 	@24
+						    location   	(314, 122)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4694B28E028D"
+						    client     	@24
+						    supplier   	@7
+						    vertices   	(list Points
+							(826, 506)
+							(976, 537))
+						    line_style 	0
+						    label      	(object SegLabel @26
+							quid       	"49E5EB60027F"
+							Parent_View 	@25
+							location   	(932, 586)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor     	2
+							anchor_loc 	1
+							nlines     	1
+							max_width  	15
+							justify    	0
+							label      	"0..1"
+							pctDist    	0.779999
+							height     	57
+							orientation 	1))
+						(object RoleView "$UNNAMED$30" @27
+						    quid       	"49E5EB600280"
+						    Parent_View 	@24
+						    location   	(314, 122)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4694B28E028F"
+						    client     	@24
+						    supplier   	@9
+						    vertices   	(list Points
+							(826, 506)
+							(677, 476))
+						    line_style 	0)))
+					(object AssociationViewNew "$UNNAMED$31" @28
+					    quid       	"49E5EB600281"
+					    location   	(599, 287)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"471723B70090"
+					    roleview_list 	(list RoleViews
+						(object RoleView "Rendita" @29
+						    quid       	"49E5EB600282"
+						    Parent_View 	@28
+						    location   	(71, -161)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @30
+							quid       	"49E5EB600283"
+							Parent_View 	@29
+							location   	(600, 254)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor     	1
+							anchor_loc 	1
+							nlines     	1
+							max_width  	176
+							justify    	0
+							label      	"+Rendita"
+							pctDist    	0.293205
+							height     	14
+							orientation 	0)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"471723B80047"
+						    client     	@28
+						    supplier   	@8
+						    vertices   	(list Points
+							(599, 287)
+							(645, 187))
+						    line_style 	0
+						    label      	(object SegLabel @31
+							quid       	"49E5EB600285"
+							Parent_View 	@29
+							location   	(689, 221)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor     	2
+							anchor_loc 	1
+							nlines     	1
+							max_width  	15
+							justify    	0
+							label      	"0..1"
+							pctDist    	0.900000
+							height     	54
+							orientation 	1))
+						(object RoleView "$UNNAMED$32" @32
+						    quid       	"49E5EB600286"
+						    Parent_View 	@28
+						    location   	(71, -161)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"471723B80083"
+						    client     	@28
+						    supplier   	@9
+						    vertices   	(list Points
+							(599, 287)
+							(554, 388))
+						    line_style 	0)))))))
+			(object Class_Category "Rendita"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealNameSpacePrefix"
+				    value      	"OggettiCondivisi")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealNameSpace"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"UsedNameSpaces"
+				    value      	"OggettiCondivisi;"))
+			    quid       	"4694B33D0100"
+			    stereotype 	"Business Analysis Model"
+			    exportControl 	"Public"
+			    logical_models 	(list unit_reference_list
+				(object Class "Rendita"
+				    attributes 	(list Attribute_Set
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"SelfDiscovery"
+					    value      	"complex")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"hasGroup"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"RealizedNo"
+					    value      	"0")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"InheritedNo"
+					    value      	"0")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"Realized"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"RealizedID"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"Inherited"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"InheritedID"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"AttributesNo"
+					    value      	"0")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"AssociationNo"
+					    value      	"2")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"Virtual"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"BaseClass"
+					    value      	"none")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"BaseClassID"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"BaseClassName"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"PureBaseClass"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"PureBaseClassID"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"PureBaseClassName"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"isDomain"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"isException"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"Lavorato"
+					    value      	"True")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"UsedNameSpaces"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"RealNameSpace"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"RealNameSpacePrefix"
+					    value      	"OggettiCondivisi")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"HasReferences"
+					    value      	"Only Ref")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"HasConst"
+					    value      	"False")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"Attributes"
+					    value      	"")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"Abstract"
+					    value      	"False")
+					(object Attribute
+					    tool       	"XSDGen"
+					    name       	"AttributeNames"
+					    value      	"Informazione Catastale Fabbricati;Valore Rivalutato;Rendita Catastale;"))
+				    quid       	"4694B34E02D6")
+				(object Association "$UNNAMED$33"
+				    quid       	"4694B37F02FA"
+				    roles      	(list role_list
+					(object Role "Valore Rivalutato"
+					    quid       	"4694B38000FB"
+					    label      	"Valore Rivalutato"
+					    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Importo::Importo"
+					    quidu      	"4007CC5D022D"
+					    is_navigable 	TRUE)
+					(object Role "$UNNAMED$34"
+					    quid       	"4694B3800105"
+					    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Rendita::Rendita"
+					    quidu      	"4694B34E02D6"
+					    is_aggregate 	TRUE)))
+				(object Association "$UNNAMED$35"
+				    quid       	"4694B38200A6"
+				    roles      	(list role_list
+					(object Role "Rendita Catastale"
+					    quid       	"4694B38202D3"
+					    label      	"Rendita Catastale"
+					    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Importo::Importo"
+					    quidu      	"4007CC5D022D"
+					    is_navigable 	TRUE)
+					(object Role "$UNNAMED$36"
+					    quid       	"4694B38202F1"
+					    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Rendita::Rendita"
+					    quidu      	"4694B34E02D6"
+					    is_aggregate 	TRUE))))
+			    logical_presentations 	(list unit_reference_list
+				(object ClassDiagram "Rendita-Definizione"
+				    quid       	"4694B355037E"
+				    title      	"Rendita-Definizione"
+				    zoom       	100
+				    max_height 	28350
+				    max_width  	21600
+				    origin_x   	0
+				    origin_y   	0
+				    items      	(list diagram_item_list
+					(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Importo::Importo" @33
+					    ShowCompartmentStereotypes 	TRUE
+					    SuppressAttribute 	TRUE
+					    SuppressOperation 	TRUE
+					    quid       	"49E5EB600296"
+					    location   	(144, 399)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"49E5EB600297"
+						Parent_View 	@33
+						location   	(57, 353)
+						fill_color 	13434879
+						nlines     	1
+						max_width  	174
+						justify    	0
+						label      	"Importo")
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"4007CC5D022D"
+					    width      	192
+					    height     	117
+					    autoResize 	TRUE)
+					(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Importo::Importo" @34
+					    ShowCompartmentStereotypes 	TRUE
+					    SuppressAttribute 	TRUE
+					    SuppressOperation 	TRUE
+					    quid       	"49E5EB60029A"
+					    location   	(591, 369)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"49E5EB60029B"
+						Parent_View 	@34
+						location   	(504, 323)
+						fill_color 	13434879
+						nlines     	1
+						max_width  	174
+						justify    	0
+						label      	"Importo")
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"4007CC5D022D"
+					    width      	192
+					    height     	117
+					    autoResize 	TRUE)
+					(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Rendita::Rendita" @35
+					    ShowCompartmentStereotypes 	TRUE
+					    SuppressAttribute 	TRUE
+					    SuppressOperation 	TRUE
+					    quid       	"49E5EB60029E"
+					    location   	(321, 111)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"49E5EB60029F"
+						Parent_View 	@35
+						location   	(235, 65)
+						fill_color 	13434879
+						nlines     	1
+						max_width  	172
+						justify    	0
+						label      	"Rendita")
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"4694B34E02D6"
+					    width      	190
+					    height     	117
+					    autoResize 	TRUE)
+					(object AssociationViewNew "$UNNAMED$33" @36
+					    quid       	"49E5EB6002A2"
+					    location   	(231, 254)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"4694B37F02FA"
+					    roleview_list 	(list RoleViews
+						(object RoleView "Valore Rivalutato" @37
+						    quid       	"49E5EB6002A3"
+						    Parent_View 	@36
+						    location   	(-57, 46)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @38
+							quid       	"49E5EB6002A4"
+							Parent_View 	@37
+							location   	(189, 293)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor     	1
+							anchor_loc 	1
+							nlines     	1
+							max_width  	379
+							justify    	0
+							label      	"+Valore Rivalutato"
+							pctDist    	0.551790
+							height     	18
+							orientation 	1)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4694B38000FB"
+						    client     	@36
+						    supplier   	@33
+						    vertices   	(list Points
+							(231, 254)
+							(179, 340))
+						    line_style 	0)
+						(object RoleView "$UNNAMED$34" @39
+						    quid       	"49E5EB6002A6"
+						    Parent_View 	@36
+						    location   	(-57, 46)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4694B3800105"
+						    client     	@36
+						    supplier   	@35
+						    vertices   	(list Points
+							(231, 254)
+							(284, 169))
+						    line_style 	0)))
+					(object AssociationViewNew "$UNNAMED$35" @40
+					    quid       	"49E5EB6002A7"
+					    location   	(455, 239)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"4694B38200A6"
+					    roleview_list 	(list RoleViews
+						(object RoleView "Rendita Catastale" @41
+						    quid       	"49E5EB6002A8"
+						    Parent_View 	@40
+						    location   	(167, 31)
+						    font       	(object Font
+							size       	10
+							face       	"Arial"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    label      	(object SegLabel @42
+							quid       	"49E5EB6002A9"
+							Parent_View 	@41
+							location   	(520, 254)
+							font       	(object Font
+							    size       	10
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							anchor     	1
+							anchor_loc 	1
+							nlines     	1
+							max_width  	375
+							justify    	0
+							label      	"+Rendita Catastale"
+							pctDist    	0.565461
+							height     	34
+							orientation 	0)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4694B38202D3"
+						    client     	@40
+						    supplier   	@34
+						    vertices   	(list Points
+							(455, 239)
+							(529, 310))
+						    line_style 	0)
+						(object RoleView "$UNNAMED$36" @43
+						    quid       	"49E5EB6002AB"
+						    Parent_View 	@40
+						    location   	(167, 31)
+						    stereotype 	TRUE
+						    line_color 	3342489
+						    quidu      	"4694B38202F1"
+						    client     	@40
+						    supplier   	@35
+						    vertices   	(list Points
+							(455, 239)
+							(381, 169))
+						    line_style 	0))))))))
+		    logical_presentations 	(list unit_reference_list
+			(object ClassDiagram "§Informazione Catastale Fabbricati-Definizione"
+			    quid       	"403922220179"
+			    title      	"§Informazione Catastale Fabbricati-Definizione"
+			    zoom       	100
+			    max_height 	28350
+			    max_width  	21600
+			    origin_x   	0
+			    origin_y   	0
+			    items      	(list diagram_item_list
+				(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Importo::Importo" @44
+				    ShowCompartmentStereotypes 	TRUE
+				    SuppressAttribute 	TRUE
+				    SuppressOperation 	TRUE
+				    quid       	"49E5EB6002AE"
+				    location   	(1809, 351)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					quid       	"49E5EB6002AF"
+					Parent_View 	@44
+					location   	(1722, 305)
+					fill_color 	13434879
+					nlines     	1
+					max_width  	174
+					justify    	0
+					label      	"Importo")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"4007CC5D022D"
+				    width      	192
+				    height     	117
+				    autoResize 	TRUE)
+				(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Importo::Importo" @45
+				    ShowCompartmentStereotypes 	TRUE
+				    SuppressAttribute 	TRUE
+				    SuppressOperation 	TRUE
+				    quid       	"49E5EB6002B2"
+				    location   	(1329, 81)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					quid       	"49E5EB6002B3"
+					Parent_View 	@45
+					location   	(1242, 35)
+					fill_color 	13434879
+					nlines     	1
+					max_width  	174
+					justify    	0
+					label      	"Importo")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"4007CC5D022D"
+				    width      	192
+				    height     	117
+				    autoResize 	TRUE)
+				(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Protocollo Catastale::Protocollo Catastale" @46
+				    ShowCompartmentStereotypes 	TRUE
+				    SuppressAttribute 	TRUE
+				    SuppressOperation 	TRUE
+				    quid       	"49E5EB6002B6"
+				    location   	(1425, 672)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					quid       	"49E5EB6002B7"
+					Parent_View 	@46
+					location   	(1208, 626)
+					fill_color 	13434879
+					nlines     	1
+					max_width  	434
+					justify    	0
+					label      	"Protocollo Catastale")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"403929E203C5"
+				    width      	452
+				    height     	117
+				    autoResize 	TRUE)
+				(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Classamento::Classamento" @47
+				    ShowCompartmentStereotypes 	TRUE
+				    SuppressAttribute 	TRUE
+				    SuppressOperation 	TRUE
+				    quid       	"49E5EB6002BA"
+				    location   	(561, 720)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					quid       	"49E5EB6002BB"
+					Parent_View 	@47
+					location   	(421, 674)
+					fill_color 	13434879
+					nlines     	1
+					max_width  	280
+					justify    	0
+					label      	"Classamento")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"4694B1C6019B"
+				    width      	298
+				    height     	117
+				    autoResize 	TRUE)
+				(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Rendita::Rendita" @48
+				    ShowCompartmentStereotypes 	TRUE
+				    SuppressAttribute 	TRUE
+				    SuppressOperation 	TRUE
+				    quid       	"49E5EB6002BE"
+				    location   	(447, 96)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					quid       	"49E5EB6002BF"
+					Parent_View 	@48
+					location   	(361, 50)
+					fill_color 	13434879
+					nlines     	1
+					max_width  	172
+					justify    	0
+					label      	"Rendita")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"4694B34E02D6"
+				    width      	190
+				    height     	117
+				    autoResize 	TRUE)
+				(object ClassView "Class" "Use Case View::Sigmater::SIT::SIT (Oggetti)::Identificativo Parziale Particella Fabbricati::Identificativo Parziale Particella Fabbricati" @49
+				    ShowCompartmentStereotypes 	TRUE
+				    SuppressAttribute 	TRUE
+				    SuppressOperation 	TRUE
+				    quid       	"49E5EB6002C2"
+				    location   	(960, 1008)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					quid       	"49E5EB6002C3"
+					Parent_View 	@49
+					location   	(556, 962)
+					fill_color 	13434879
+					nlines     	1
+					max_width  	808
+					justify    	0
+					label      	"Identificativo Parziale Particella Fabbricati")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"4716179D03DE"
+				    width      	826
+				    height     	117
+				    autoResize 	TRUE)
+				(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Informazione Catastale Fabbricati" @50
+				    ShowCompartmentStereotypes 	TRUE
+				    SuppressAttribute 	TRUE
+				    SuppressOperation 	TRUE
+				    quid       	"49E5EB6002C6"
+				    location   	(960, 351)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					quid       	"49E5EB6002C7"
+					Parent_View 	@50
+					location   	(644, 305)
+					fill_color 	13434879
+					nlines     	1
+					max_width  	632
+					justify    	0
+					label      	"Informazione Catastale Fabbricati")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"403921FE02F5"
+				    width      	650
+				    height     	117
+				    annotation 	8
+				    autoResize 	TRUE)
+				(object AssociationViewNew "$UNNAMED$3" @51
+				    quid       	"49E5EB6002CA"
+				    location   	(1498, 351)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"429AD84800B9"
+				    roleview_list 	(list RoleViews
+					(object RoleView "Rendita Catastale" @52
+					    quid       	"49E5EB6002CB"
+					    Parent_View 	@51
+					    location   	(506, 79)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @53
+						quid       	"49E5EB6002CC"
+						Parent_View 	@52
+						location   	(1686, 261)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor     	1
+						anchor_loc 	1
+						nlines     	1
+						max_width  	375
+						justify    	0
+						label      	"+Rendita Catastale"
+						pctDist    	0.876405
+						height     	91
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"429AD8490022"
+					    client     	@51
+					    supplier   	@44
+					    vertices   	(list Points
+						(1498, 351)
+						(1712, 351))
+					    line_style 	0
+					    label      	(object SegLabel @54
+						quid       	"49E5EB6002CE"
+						Parent_View 	@52
+						location   	(1653, 405)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor     	2
+						anchor_loc 	1
+						nlines     	1
+						max_width  	15
+						justify    	0
+						label      	"0..1"
+						pctDist    	0.724719
+						height     	54
+						orientation 	1))
+					(object RoleView "$UNNAMED$4" @55
+					    quid       	"49E5EB6002CF"
+					    Parent_View 	@51
+					    location   	(506, 79)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"429AD849007D"
+					    client     	@51
+					    supplier   	@50
+					    vertices   	(list Points
+						(1498, 351)
+						(1285, 351))
+					    line_style 	0)))
+				(object AssociationViewNew "$UNNAMED$5" @56
+				    quid       	"49E5EB6002D0"
+				    location   	(1142, 215)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"429AD9CA0105"
+				    roleview_list 	(list RoleViews
+					(object RoleView "Valore Rivalutato" @57
+					    quid       	"49E5EB6002D1"
+					    Parent_View 	@56
+					    location   	(134, -473)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @58
+						quid       	"49E5EB6002D2"
+						Parent_View 	@57
+						location   	(1159, 220)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor     	1
+						anchor_loc 	1
+						nlines     	1
+						max_width  	379
+						justify    	0
+						label      	"+Valore Rivalutato"
+						pctDist    	0.086154
+						height     	14
+						orientation 	1)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"429AD9CA0379"
+					    client     	@56
+					    supplier   	@45
+					    vertices   	(list Points
+						(1142, 215)
+						(1247, 139))
+					    line_style 	0
+					    label      	(object SegLabel @59
+						quid       	"49E5EB6002D4"
+						Parent_View 	@57
+						location   	(1268, 191)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor     	2
+						anchor_loc 	1
+						nlines     	1
+						max_width  	15
+						justify    	0
+						label      	"0..1"
+						pctDist    	0.900000
+						height     	54
+						orientation 	1))
+					(object RoleView "$UNNAMED$6" @60
+					    quid       	"49E5EB6002D5"
+					    Parent_View 	@56
+					    location   	(134, -473)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"429AD9CA03D3"
+					    client     	@56
+					    supplier   	@50
+					    vertices   	(list Points
+						(1142, 215)
+						(1038, 292))
+					    line_style 	0)))
+				(object AssociationViewNew "$UNNAMED$7" @61
+				    quid       	"49E5EB6002D6"
+				    location   	(1193, 511)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"446B014102BD"
+				    roleview_list 	(list RoleViews
+					(object RoleView "$UNNAMED$8" @62
+					    quid       	"49E5EB6002D7"
+					    Parent_View 	@61
+					    location   	(233, 159)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"446B01420190"
+					    client     	@61
+					    supplier   	@46
+					    vertices   	(list Points
+						(1193, 511)
+						(1341, 613))
+					    line_style 	0
+					    label      	(object SegLabel @63
+						quid       	"49E5EB6002D8"
+						Parent_View 	@62
+						location   	(1367, 557)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor     	2
+						anchor_loc 	1
+						nlines     	1
+						max_width  	15
+						justify    	0
+						label      	"0..1"
+						pctDist    	0.938001
+						height     	62
+						orientation 	0))
+					(object RoleView "$UNNAMED$9" @64
+					    quid       	"49E5EB6002D9"
+					    Parent_View 	@61
+					    location   	(233, 159)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"446B0142019A"
+					    client     	@61
+					    supplier   	@50
+					    vertices   	(list Points
+						(1193, 511)
+						(1045, 409))
+					    line_style 	0)))
+				(object AssociationViewNew "$UNNAMED$10" @65
+				    quid       	"49E5EB6002DA"
+				    location   	(758, 535)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4694B2B00125"
+				    roleview_list 	(list RoleViews
+					(object RoleView "$UNNAMED$11" @66
+					    quid       	"49E5EB6002DB"
+					    Parent_View 	@65
+					    location   	(-202, 183)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"4694B2B10246"
+					    client     	@65
+					    supplier   	@47
+					    vertices   	(list Points
+						(758, 535)
+						(621, 661))
+					    line_style 	0)
+					(object RoleView "$UNNAMED$12" @67
+					    quid       	"49E5EB6002DC"
+					    Parent_View 	@65
+					    location   	(-202, 183)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"4694B2B10250"
+					    client     	@65
+					    supplier   	@50
+					    vertices   	(list Points
+						(758, 535)
+						(895, 409))
+					    line_style 	0)))
+				(object AssociationViewNew "$UNNAMED$13" @68
+				    quid       	"49E5EB6002DD"
+				    location   	(692, 217)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4694B36802AF"
+				    roleview_list 	(list RoleViews
+					(object RoleView "$UNNAMED$14" @69
+					    quid       	"49E5EB6002DE"
+					    Parent_View 	@68
+					    location   	(-268, -135)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"4694B36901A9"
+					    client     	@68
+					    supplier   	@48
+					    vertices   	(list Points
+						(692, 217)
+						(542, 142))
+					    line_style 	0
+					    label      	(object SegLabel @70
+						quid       	"49E5EB6002DF"
+						Parent_View 	@69
+						location   	(581, 102)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor     	2
+						anchor_loc 	1
+						nlines     	1
+						max_width  	15
+						justify    	0
+						label      	"0..1"
+						pctDist    	0.900000
+						height     	54
+						orientation 	1))
+					(object RoleView "$UNNAMED$15" @71
+					    quid       	"49E5EB6002E0"
+					    Parent_View 	@68
+					    location   	(-268, -135)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"4694B36901AB"
+					    client     	@68
+					    supplier   	@50
+					    vertices   	(list Points
+						(692, 217)
+						(842, 292))
+					    line_style 	0)))
+				(object AssociationViewNew "$UNNAMED$0" @72
+				    quid       	"49E5EB6002E1"
+				    location   	(960, 679)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"403925010114"
+				    roleview_list 	(list RoleViews
+					(object RoleView "$UNNAMED$1" @73
+					    quid       	"49E5EB6002E2"
+					    Parent_View 	@72
+					    location   	(-160, 391)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40392501039F"
+					    client     	@72
+					    supplier   	@49
+					    vertices   	(list Points
+						(960, 679)
+						(960, 949))
+					    line_style 	0)
+					(object RoleView "$UNNAMED$2" @74
+					    quid       	"49E5EB6002E3"
+					    Parent_View 	@72
+					    location   	(-160, 391)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"4039250103A9"
+					    client     	@72
+					    supplier   	@50
+					    vertices   	(list Points
+						(960, 679)
+						(960, 409))
+					    line_style 	0)))))))
+		(object Class_Category "Informazione Catastale Terreni"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNamespace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNamespaces"
+			    value      	"OggettiCondivisi;")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"OggettiCondivisi")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	"OggettiCondivisi;"))
+		    quid       	"403921E902A4"
+		    stereotype 	"Business Analysis Model"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list
+			(object Class "Informazione Catastale Terreni"
+			    attributes 	(list Attribute_Set
+				(object Attribute
+				    tool       	"XSD"
+				    name       	"SelfDiscovery"
+				    value      	"complex")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Abstract"
+				    value      	"False")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealNameSpace"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"AttributeNames"
+				    value      	"Partita Catastale;Protocollo Catastale;Reddito Dominicale;Valore Rivalutato;")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"SelfDiscovery"
+				    value      	"complex")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealizedNo"
+				    value      	"0")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Realized"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealizedID"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"InheritedNo"
+				    value      	"0")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Inherited"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"InheritedID"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"AttributesNo"
+				    value      	"0")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"AssociationNo"
+				    value      	"4")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"BaseClass"
+				    value      	"none")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"BaseClassID"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"BaseClassName"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"UsedNamespaces"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealNamespace"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"HasReferences"
+				    value      	"Only Ref")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"HasConst"
+				    value      	"False")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Lavorato"
+				    value      	"True")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"hasGroup"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Virtual"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"isDomain"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"isException"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"Attributes"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"RealNameSpacePrefix"
+				    value      	"OggettiCondivisi")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"PureBaseClass"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"PureBaseClassID"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"PureBaseClassName"
+				    value      	"")
+				(object Attribute
+				    tool       	"XSDGen"
+				    name       	"UsedNameSpaces"
+				    value      	""))
+			    quid       	"403922410353"
+			    realized_interfaces 	(list realize_rel_list
+				(object Realize_Relationship
+				    quid       	"40E865A50246"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale"
+				    quidu      	"403921610166")))
+			(object Association "$UNNAMED$37"
+			    attributes 	(list Attribute_Set)
+			    quid       	"403929AF0028"
+			    roles      	(list role_list
+				(object Role "$UNNAMED$38"
+				    quid       	"403929AF0245"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Partita Catastale::Partita Catastale"
+				    quidu      	"403928A00117"
+				    client_cardinality 	(value cardinality "0..1")
+				    is_navigable 	TRUE)
+				(object Role "$UNNAMED$39"
+				    quid       	"403929AF0247"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Terreni::Informazione Catastale Terreni"
+				    quidu      	"403922410353"
+				    is_aggregate 	TRUE)))
+			(object Association "$UNNAMED$40"
+			    attributes 	(list Attribute_Set)
+			    quid       	"40392A9401AE"
+			    roles      	(list role_list
+				(object Role "$UNNAMED$41"
+				    quid       	"40392A950065"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Protocollo Catastale::Protocollo Catastale"
+				    quidu      	"403929E203C5"
+				    client_cardinality 	(value cardinality "0..1")
+				    is_navigable 	TRUE)
+				(object Role "$UNNAMED$42"
+				    quid       	"40392A95006F"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Terreni::Informazione Catastale Terreni"
+				    quidu      	"403922410353"
+				    is_aggregate 	TRUE)))
+			(object Association "$UNNAMED$43"
+			    attributes 	(list Attribute_Set)
+			    quid       	"40392AC80004"
+			    roles      	(list role_list
+				(object Role "$UNNAMED$44"
+				    quid       	"40392AC8027B"
+				    supplier   	"Use Case View::Sigmater::SIT::SIT (Oggetti)::Identificativo Parziale Particella Terreni::Identificativo Parziale Particella Terreni"
+				    quidu      	"4716165500A9"
+				    is_navigable 	TRUE)
+				(object Role "$UNNAMED$45"
+				    quid       	"40392AC8028F"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Terreni::Informazione Catastale Terreni"
+				    quidu      	"403922410353"
+				    is_aggregate 	TRUE)))
+			(object Association "$UNNAMED$46"
+			    quid       	"429AD37F013B"
+			    roles      	(list role_list
+				(object Role "$UNNAMED$47"
+				    quid       	"429AD37F03AF"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Reddito Dominicale::Reddito Dominicale"
+				    quidu      	"44FC47BB030F"
+				    client_cardinality 	(value cardinality "0..1")
+				    is_navigable 	TRUE)
+				(object Role "$UNNAMED$48"
+				    quid       	"429AD380002B"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Terreni::Informazione Catastale Terreni"
+				    quidu      	"403922410353"
+				    is_aggregate 	TRUE)))
+			(object Association "$UNNAMED$49"
+			    quid       	"429AD38300DD"
+			    roles      	(list role_list
+				(object Role "$UNNAMED$50"
+				    quid       	"429AD3840135"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Valore Rivalutato::Valore Rivalutato"
+				    quidu      	"44FC481202EC"
+				    client_cardinality 	(value cardinality "0..1")
+				    is_navigable 	TRUE)
+				(object Role "$UNNAMED$51"
+				    quid       	"429AD3840199"
+				    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Terreni::Informazione Catastale Terreni"
+				    quidu      	"403922410353"
+				    is_aggregate 	TRUE))))
+		    logical_presentations 	(list unit_reference_list
+			(object ClassDiagram "Informazione Catastale Terreni-Definizione"
+			    quid       	"40392256033F"
+			    title      	"Informazione Catastale Terreni-Definizione"
+			    zoom       	100
+			    max_height 	28350
+			    max_width  	21600
+			    origin_x   	0
+			    origin_y   	0
+			    items      	(list diagram_item_list
+				(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Partita Catastale::Partita Catastale" @75
+				    ShowCompartmentStereotypes 	TRUE
+				    SuppressAttribute 	TRUE
+				    SuppressOperation 	TRUE
+				    IncludeAttribute 	TRUE
+				    IncludeOperation 	TRUE
+				    quid       	"49E5EB600304"
+				    location   	(528, 465)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					quid       	"49E5EB600305"
+					Parent_View 	@75
+					location   	(341, 411)
+					fill_color 	13434879
+					nlines     	1
+					max_width  	374
+					justify    	0
+					label      	"Partita Catastale")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"403928A00117"
+				    width      	392
+				    height     	132
+				    annotation 	8
+				    autoResize 	TRUE)
+				(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Protocollo Catastale::Protocollo Catastale" @76
+				    ShowCompartmentStereotypes 	TRUE
+				    SuppressAttribute 	TRUE
+				    SuppressOperation 	TRUE
+				    IncludeAttribute 	TRUE
+				    IncludeOperation 	TRUE
+				    quid       	"49E5EB600308"
+				    location   	(720, 720)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					quid       	"49E5EB600309"
+					Parent_View 	@76
+					location   	(496, 666)
+					fill_color 	13434879
+					nlines     	1
+					max_width  	448
+					justify    	0
+					label      	"Protocollo Catastale")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"403929E203C5"
+				    width      	466
+				    height     	132
+				    annotation 	8
+				    autoResize 	TRUE)
+				(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Reddito Dominicale::Reddito Dominicale" @77
+				    ShowCompartmentStereotypes 	TRUE
+				    SuppressAttribute 	TRUE
+				    SuppressOperation 	TRUE
+				    quid       	"49E5EB60030C"
+				    location   	(1488, 768)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					quid       	"49E5EB60030D"
+					Parent_View 	@77
+					location   	(1289, 722)
+					fill_color 	13434879
+					nlines     	1
+					max_width  	398
+					justify    	0
+					label      	"Reddito Dominicale")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"44FC47BB030F"
+				    width      	416
+				    height     	117
+				    autoResize 	TRUE)
+				(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Valore Rivalutato::Valore Rivalutato" @78
+				    ShowCompartmentStereotypes 	TRUE
+				    SuppressAttribute 	TRUE
+				    SuppressOperation 	TRUE
+				    quid       	"49E5EB600310"
+				    location   	(1728, 447)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					quid       	"49E5EB600311"
+					Parent_View 	@78
+					location   	(1544, 401)
+					fill_color 	13434879
+					nlines     	1
+					max_width  	368
+					justify    	0
+					label      	"Valore Rivalutato")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"44FC481202EC"
+				    width      	386
+				    height     	117
+				    autoResize 	TRUE)
+				(object ClassView "Class" "Use Case View::Sigmater::SIT::SIT (Oggetti)::Identificativo Parziale Particella Terreni::Identificativo Parziale Particella Terreni" @79
+				    ShowCompartmentStereotypes 	TRUE
+				    SuppressAttribute 	TRUE
+				    SuppressOperation 	TRUE
+				    quid       	"49E5EB600314"
+				    location   	(1089, 1008)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					quid       	"49E5EB600315"
+					Parent_View 	@79
+					location   	(706, 962)
+					fill_color 	13434879
+					nlines     	1
+					max_width  	766
+					justify    	0
+					label      	"Identificativo Parziale Particella Terreni")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"4716165500A9"
+				    width      	784
+				    height     	117
+				    autoResize 	TRUE)
+				(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Terreni::Informazione Catastale Terreni" @80
+				    ShowCompartmentStereotypes 	TRUE
+				    SuppressAttribute 	TRUE
+				    SuppressOperation 	TRUE
+				    IncludeAttribute 	TRUE
+				    IncludeOperation 	TRUE
+				    quid       	"49E5EB600318"
+				    location   	(1089, 192)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					quid       	"49E5EB600319"
+					Parent_View 	@80
+					location   	(794, 146)
+					fill_color 	13434879
+					nlines     	1
+					max_width  	590
+					justify    	0
+					label      	"Informazione Catastale Terreni")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"403922410353"
+				    width      	608
+				    height     	117
+				    annotation 	8
+				    autoResize 	TRUE)
+				(object AssociationViewNew "$UNNAMED$37" @81
+				    quid       	"49E5EB60031C"
+				    location   	(814, 324)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"403929AF0028"
+				    roleview_list 	(list RoleViews
+					(object RoleView "$UNNAMED$38" @82
+					    quid       	"49E5EB60031D"
+					    Parent_View 	@81
+					    location   	(-322, -44)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"403929AF0245"
+					    client     	@81
+					    supplier   	@75
+					    vertices   	(list Points
+						(814, 324)
+						(662, 398))
+					    line_style 	0
+					    label      	(object SegLabel @83
+						quid       	"49E5EB60031E"
+						Parent_View 	@82
+						location   	(637, 375)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor     	2
+						anchor_loc 	1
+						nlines     	1
+						max_width  	15
+						justify    	0
+						label      	"0..1"
+						pctDist    	1.082721
+						height     	33
+						orientation 	1))
+					(object RoleView "$UNNAMED$39" @84
+					    quid       	"49E5EB60031F"
+					    Parent_View 	@81
+					    location   	(-322, -44)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"403929AF0247"
+					    client     	@81
+					    supplier   	@80
+					    vertices   	(list Points
+						(814, 324)
+						(967, 250))
+					    line_style 	0)))
+				(object AssociationViewNew "$UNNAMED$40" @85
+				    quid       	"49E5EB600320"
+				    location   	(906, 451)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"40392A9401AE"
+				    roleview_list 	(list RoleViews
+					(object RoleView "$UNNAMED$41" @86
+					    quid       	"49E5EB600321"
+					    Parent_View 	@85
+					    location   	(-198, 275)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40392A950065"
+					    client     	@85
+					    supplier   	@76
+					    vertices   	(list Points
+						(906, 451)
+						(766, 653))
+					    line_style 	0
+					    label      	(object SegLabel @87
+						quid       	"49E5EB600322"
+						Parent_View 	@86
+						location   	(714, 617)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor     	2
+						anchor_loc 	1
+						nlines     	1
+						max_width  	15
+						justify    	0
+						label      	"0..1"
+						pctDist    	1.005400
+						height     	65
+						orientation 	1))
+					(object RoleView "$UNNAMED$42" @88
+					    quid       	"49E5EB600323"
+					    Parent_View 	@85
+					    location   	(-198, 275)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40392A95006F"
+					    client     	@85
+					    supplier   	@80
+					    vertices   	(list Points
+						(906, 451)
+						(1046, 250))
+					    line_style 	0)))
+				(object AssociationViewNew "$UNNAMED$46" @89
+				    quid       	"49E5EB600324"
+				    location   	(1287, 479)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"429AD37F013B"
+				    roleview_list 	(list RoleViews
+					(object RoleView "$UNNAMED$47" @90
+					    quid       	"49E5EB600325"
+					    Parent_View 	@89
+					    location   	(311, 287)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @91
+						quid       	"49E5EB600326"
+						Parent_View 	@90
+						location   	(1407, 588)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						hidden     	TRUE
+						anchor     	1
+						anchor_loc 	1
+						nlines     	1
+						max_width  	60
+						justify    	0
+						label      	""
+						pctDist    	0.565495
+						height     	37
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"429AD37F03AF"
+					    client     	@89
+					    supplier   	@77
+					    vertices   	(list Points
+						(1287, 479)
+						(1447, 709))
+					    line_style 	0
+					    label      	(object SegLabel @92
+						quid       	"49E5EB600327"
+						Parent_View 	@90
+						location   	(1474, 655)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor     	2
+						anchor_loc 	1
+						nlines     	1
+						max_width  	15
+						justify    	0
+						label      	"0..1"
+						pctDist    	0.900000
+						height     	54
+						orientation 	0))
+					(object RoleView "$UNNAMED$48" @93
+					    quid       	"49E5EB600328"
+					    Parent_View 	@89
+					    location   	(311, 287)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"429AD380002B"
+					    client     	@89
+					    supplier   	@80
+					    vertices   	(list Points
+						(1287, 479)
+						(1128, 250))
+					    line_style 	0)))
+				(object AssociationViewNew "$UNNAMED$49" @94
+				    quid       	"49E5EB600329"
+				    location   	(1408, 319)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"429AD38300DD"
+				    roleview_list 	(list RoleViews
+					(object RoleView "$UNNAMED$50" @95
+					    quid       	"49E5EB60032A"
+					    Parent_View 	@94
+					    location   	(432, 127)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @96
+						quid       	"49E5EB60032B"
+						Parent_View 	@95
+						location   	(1493, 319)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						hidden     	TRUE
+						anchor     	1
+						anchor_loc 	1
+						nlines     	1
+						max_width  	60
+						justify    	0
+						label      	""
+						pctDist    	0.426252
+						height     	32
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"429AD3840135"
+					    client     	@94
+					    supplier   	@78
+					    vertices   	(list Points
+						(1408, 319)
+						(1582, 388))
+					    line_style 	0
+					    label      	(object SegLabel @97
+						quid       	"49E5EB60032C"
+						Parent_View 	@95
+						location   	(1611, 346)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor     	2
+						anchor_loc 	1
+						nlines     	1
+						max_width  	15
+						justify    	0
+						label      	"0..1"
+						pctDist    	1.059349
+						height     	51
+						orientation 	0))
+					(object RoleView "$UNNAMED$51" @98
+					    quid       	"49E5EB60032D"
+					    Parent_View 	@94
+					    location   	(432, 127)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"429AD3840199"
+					    client     	@94
+					    supplier   	@80
+					    vertices   	(list Points
+						(1408, 319)
+						(1235, 250))
+					    line_style 	0)))
+				(object AssociationViewNew "$UNNAMED$43" @99
+				    quid       	"49E5EB60032E"
+				    location   	(1089, 599)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"40392AC80004"
+				    roleview_list 	(list RoleViews
+					(object RoleView "$UNNAMED$44" @100
+					    quid       	"49E5EB60032F"
+					    Parent_View 	@99
+					    location   	(-15, 423)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40392AC8027B"
+					    client     	@99
+					    supplier   	@79
+					    vertices   	(list Points
+						(1089, 599)
+						(1089, 949))
+					    line_style 	0)
+					(object RoleView "$UNNAMED$45" @101
+					    quid       	"49E5EB600330"
+					    Parent_View 	@99
+					    location   	(-15, 423)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40392AC8028F"
+					    client     	@99
+					    supplier   	@80
+					    vertices   	(list Points
+						(1089, 599)
+						(1089, 250))
+					    line_style 	0))))))))
+	    logical_presentations 	(list unit_reference_list
+		(object ClassDiagram "Informazione Catastale-Definizione"
+		    quid       	"403921730393"
+		    title      	"Informazione Catastale-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Terreni::Informazione Catastale Terreni" @102
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"49E5EB600333"
+			    location   	(417, 447)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"49E5EB600334"
+				Parent_View 	@102
+				location   	(113, 393)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	608
+				justify    	0
+				label      	"Informazione Catastale Terreni")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"403922410353"
+			    width      	626
+			    height     	132
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale Fabbricati::Informazione Catastale Fabbricati" @103
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"49E5EB600337"
+			    location   	(1200, 447)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"49E5EB600338"
+				Parent_View 	@103
+				location   	(884, 393)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	632
+				justify    	0
+				label      	"Informazione Catastale Fabbricati")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"403921FE02F5"
+			    width      	650
+			    height     	132
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale::Informazione Catastale" @104
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"49E5EB60033B"
+			    location   	(831, 159)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"49E5EB60033C"
+				Parent_View 	@104
+				location   	(587, 113)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	488
+				justify    	0
+				label      	"Informazione Catastale")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"403921610166"
+			    width      	506
+			    height     	117
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object RealizeView "" @105
+			    quid       	"49E5EB60033F"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"40E865A50246"
+			    client     	@102
+			    supplier   	@104
+			    vertices   	(list Points
+				(511, 380)
+				(746, 217))
+			    line_style 	0)
+			(object RealizeView "" @106
+			    quid       	"49E5EB600341"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"40E865A9029C"
+			    client     	@103
+			    supplier   	@104
+			    vertices   	(list Points
+				(1114, 380)
+				(905, 217))
+			    line_style 	0)))))
+	(object Class_Category "Partita Catastale"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNamespace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"cg_style"
+		    value      	"Default")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNamespaces"
+		    value      	"OggettiCondivisi;")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpacePrefix"
+		    value      	"OggettiCondivisi")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNameSpaces"
+		    value      	"OggettiCondivisi;"))
+	    quid       	"4039288A0359"
+	    stereotype 	"Business Analysis Model"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class "Partita Catastale"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSD"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"Informazione Catastale Terreni;Anno;Numero;")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"2")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"none")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNamespaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNamespace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"Only Ref")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"OggettiCondivisi")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	""))
+		    quid       	"403928A00117")
+		(object Association "$UNNAMED$52"
+		    attributes 	(list Attribute_Set)
+		    quid       	"403929190381"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$53"
+			    quid       	"4039291A0219"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Data::Anno"
+			    quidu      	"401D0E1400A0"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$54"
+			    quid       	"4039291A0223"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Partita Catastale::Partita Catastale"
+			    quidu      	"403928A00117"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$55"
+		    attributes 	(list Attribute_Set)
+		    quid       	"4039296C02F3"
+		    roles      	(list role_list
+			(object Role "Numero"
+			    quid       	"4039296E0039"
+			    label      	"Numero"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Numeri::Intero Positivo"
+			    quidu      	"400840D203E3"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$56"
+			    quid       	"4039296E0043"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Partita Catastale::Partita Catastale"
+			    quidu      	"403928A00117"
+			    is_aggregate 	TRUE))))
+	    logical_presentations 	(list unit_reference_list
+		(object ClassDiagram "Partita Catastale-Definizione"
+		    quid       	"403928BA01BF"
+		    title      	"Partita Catastale-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Data::Anno" @107
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"49E5EB600352"
+			    location   	(417, 447)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"49E5EB600353"
+				Parent_View 	@107
+				location   	(328, 393)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	178
+				justify    	0
+				label      	"Anno")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"401D0E1400A0"
+			    width      	196
+			    height     	132
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Numeri::Intero Positivo" @108
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"49E5EB600356"
+			    location   	(849, 465)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"49E5EB600357"
+				Parent_View 	@108
+				location   	(691, 411)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	316
+				justify    	0
+				label      	"Intero Positivo")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"400840D203E3"
+			    width      	334
+			    height     	132
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Partita Catastale::Partita Catastale" @109
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"49E5EB60035A"
+			    location   	(609, 159)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"49E5EB60035B"
+				Parent_View 	@109
+				location   	(435, 113)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	348
+				justify    	0
+				label      	"Partita Catastale")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"403928A00117"
+			    width      	366
+			    height     	117
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$52" @110
+			    quid       	"49E5EB60035E"
+			    location   	(515, 298)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"403929190381"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$53" @111
+				    quid       	"49E5EB60035F"
+				    Parent_View 	@110
+				    location   	(-589, -54)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4039291A0219"
+				    client     	@110
+				    supplier   	@107
+				    vertices   	(list Points
+					(515, 298)
+					(461, 380))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$54" @112
+				    quid       	"49E5EB600360"
+				    Parent_View 	@110
+				    location   	(-589, -54)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4039291A0223"
+				    client     	@110
+				    supplier   	@109
+				    vertices   	(list Points
+					(515, 298)
+					(570, 217))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$55" @113
+			    quid       	"49E5EB600361"
+			    location   	(725, 307)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"4039296C02F3"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Numero" @114
+				    quid       	"49E5EB600362"
+				    Parent_View 	@113
+				    location   	(-459, 83)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @115
+					quid       	"49E5EB600363"
+					Parent_View 	@114
+					location   	(883, 339)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	171
+					justify    	0
+					label      	"+Numero"
+					pctDist    	1.054363
+					height     	105
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4039296E0039"
+				    client     	@113
+				    supplier   	@108
+				    vertices   	(list Points
+					(725, 307)
+					(797, 398))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$56" @116
+				    quid       	"49E5EB600365"
+				    Parent_View 	@113
+				    location   	(-459, 83)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"4039296E0043"
+				    client     	@113
+				    supplier   	@109
+				    vertices   	(list Points
+					(725, 307)
+					(654, 217))
+				    line_style 	0)))))))
+	(object Class_Category "Protocollo Catastale"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNamespace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNamespaces"
+		    value      	"OggettiCondivisi;")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpacePrefix"
+		    value      	"OggettiCondivisi")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNameSpaces"
+		    value      	"OggettiCondivisi;"))
+	    quid       	"403929CD02F2"
+	    stereotype 	"Business Analysis Model"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class "Protocollo Catastale"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSD"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"Informazione Catastale Fabbricati;Informazione Catastale Terreni;Anno;Numero;")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"2")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"none")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNamespaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNamespace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"Only Ref")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"OggettiCondivisi")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	""))
+		    quid       	"403929E203C5")
+		(object Association "$UNNAMED$57"
+		    attributes 	(list Attribute_Set)
+		    quid       	"40392A35003F"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$58"
+			    quid       	"40392A36004A"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Data::Anno"
+			    quidu      	"401D0E1400A0"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$59"
+			    quid       	"40392A36005E"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Protocollo Catastale::Protocollo Catastale"
+			    quidu      	"403929E203C5"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$60"
+		    attributes 	(list Attribute_Set)
+		    quid       	"40392A370132"
+		    roles      	(list role_list
+			(object Role "Numero"
+			    quid       	"40392A3702B8"
+			    label      	"Numero"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Numeri::Intero Positivo"
+			    quidu      	"400840D203E3"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$61"
+			    quid       	"40392A3702C2"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Protocollo Catastale::Protocollo Catastale"
+			    quidu      	"403929E203C5"
+			    is_aggregate 	TRUE))))
+	    logical_presentations 	(list unit_reference_list
+		(object ClassDiagram "Protocollo Catastale-Definizione"
+		    quid       	"403929FB0154"
+		    title      	"Protocollo Catastale-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Data::Anno" @117
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"49E5EB600375"
+			    location   	(321, 528)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"49E5EB600376"
+				Parent_View 	@117
+				location   	(232, 474)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	178
+				justify    	0
+				label      	"Anno")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"401D0E1400A0"
+			    width      	196
+			    height     	132
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Numeri::Intero Positivo" @118
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"49E5EB600379"
+			    location   	(735, 528)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"49E5EB60037A"
+				Parent_View 	@118
+				location   	(577, 474)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	316
+				justify    	0
+				label      	"Intero Positivo")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"400840D203E3"
+			    width      	334
+			    height     	132
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Protocollo Catastale::Protocollo Catastale" @119
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"49E5EB60037D"
+			    location   	(495, 225)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"49E5EB60037E"
+				Parent_View 	@119
+				location   	(271, 179)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	448
+				justify    	0
+				label      	"Protocollo Catastale")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"403929E203C5"
+			    width      	466
+			    height     	117
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$57" @120
+			    quid       	"49E5EB600381"
+			    location   	(409, 372)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"40392A35003F"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$58" @121
+				    quid       	"49E5EB600382"
+				    Parent_View 	@120
+				    location   	(-823, 132)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"40392A36004A"
+				    client     	@120
+				    supplier   	@117
+				    vertices   	(list Points
+					(409, 372)
+					(358, 461))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$59" @122
+				    quid       	"49E5EB600383"
+				    Parent_View 	@120
+				    location   	(-823, 132)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"40392A36005E"
+				    client     	@120
+				    supplier   	@119
+				    vertices   	(list Points
+					(409, 372)
+					(460, 283))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$60" @123
+			    quid       	"49E5EB600384"
+			    location   	(611, 372)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"40392A370132"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Numero" @124
+				    quid       	"49E5EB600385"
+				    Parent_View 	@123
+				    location   	(-621, 132)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @125
+					quid       	"49E5EB600386"
+					Parent_View 	@124
+					location   	(717, 372)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	171
+					justify    	0
+					label      	"+Numero"
+					pctDist    	0.578908
+					height     	83
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"40392A3702B8"
+				    client     	@123
+				    supplier   	@118
+				    vertices   	(list Points
+					(611, 372)
+					(682, 461))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$61" @126
+				    quid       	"49E5EB600388"
+				    Parent_View 	@123
+				    location   	(-621, 132)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"40392A3702C2"
+				    client     	@123
+				    supplier   	@119
+				    vertices   	(list Points
+					(611, 372)
+					(541, 283))
+				    line_style 	0)))))))
+	(object Class_Category "Zona Censuaria"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNamespace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNamespaces"
+		    value      	"OggettiCondivisi;")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpacePrefix"
+		    value      	"OggettiCondivisi")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNameSpaces"
+		    value      	"OggettiCondivisi;"))
+	    quid       	"4064464A02DE"
+	    stereotype 	"Business Analysis Model"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class "Zona Censuaria"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSD"
+			    name       	"SelfDiscovery"
+			    value      	"simple")
+			(object Attribute
+			    tool       	"XSD"
+			    name       	"cg_style"
+			    value      	"Default")
+			(object Attribute
+			    tool       	"XSD"
+			    name       	"Lunghezza"
+			    value      	3)
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"Classamento;")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"simple")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"simple")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"4006E1450246")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"Testo")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNamespaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNamespace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"none")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"OggettiCondivisi")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"simple")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"4006E1450246")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"Testo")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	""))
+		    quid       	"406445FF01D1"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    attributes 	(list Attribute_Set)
+			    quid       	"406447850162"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Testo::Testo"
+			    quidu      	"4006E1450246"))
+		    realized_interfaces 	(list realize_rel_list
+			(object Realize_Relationship
+			    quid       	"406F2D7B0027"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Oggetti Relativi a Servizi::Luogo::Zona::Zona"
+			    quidu      	"406444BE0140"))))
+	    logical_presentations 	(list unit_reference_list
+		(object ClassDiagram "Zona Censuaria-Definizione"
+		    quid       	"4064475D011E"
+		    title      	"Zona Censuaria-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Zona Censuaria::Zona Censuaria" @127
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"49E5EB600392"
+			    location   	(879, 591)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"49E5EB600393"
+				Parent_View 	@127
+				location   	(706, 545)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	346
+				justify    	0
+				label      	"Zona Censuaria")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"406445FF01D1"
+			    width      	364
+			    height     	117
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Testo::Testo" @128
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"49E5EB600396"
+			    location   	(879, 144)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"49E5EB600397"
+				Parent_View 	@128
+				location   	(781, 90)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	196
+				justify    	0
+				label      	"Testo")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4006E1450246"
+			    width      	214
+			    height     	132
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object InheritView "" @129
+			    quid       	"49E5EB60039A"
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"406447850162"
+			    client     	@127
+			    supplier   	@128
+			    vertices   	(list Points
+				(879, 532)
+				(879, 210))
+			    line_style 	0)))))
+	(object Class_Category "Reddito Dominicale"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpacePrefix"
+		    value      	"OggettiCondivisi")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNameSpaces"
+		    value      	"OggettiCondivisi;"))
+	    quid       	"468B5C6502FB"
+	    stereotype 	"Business Analysis Model"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class "Reddito Dominicale"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"4007CC5D022D")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"Importo")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"4007CC5D022D")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"Importo")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"OggettiCondivisi")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"none")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"Informazione Catastale Terreni;"))
+		    quid       	"44FC47BB030F"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"44FC480501E9"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Importo::Importo"
+			    quidu      	"4007CC5D022D"))
+		    realized_interfaces 	(list realize_rel_list
+			(object Realize_Relationship
+			    quid       	"44FC47C90002"
+			    supplier   	"Use Case View::People::Contesti Tematici::Fiscali::Servizi Fiscali (Oggetti)::Servizi ICI (Oggetti)::Elaborazioni ICI (Oggetti)::Calcolo ICI Terreno Agricolo::Calcolo ICI Terreno Agricolo"
+			    quidu      	"44FC47700068"))))
+	    logical_presentations 	(list unit_reference_list
+		(object ClassDiagram "Reddito Dominicale-Definizione"
+		    quid       	"468B5CBB026F"
+		    title      	"Reddito Dominicale-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Reddito Dominicale::Reddito Dominicale" @130
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"49E5EB6003A5"
+			    location   	(369, 465)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"49E5EB6003A6"
+				Parent_View 	@130
+				location   	(159, 419)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	420
+				justify    	0
+				label      	"Reddito Dominicale")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"44FC47BB030F"
+			    width      	438
+			    height     	117
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Importo::Importo" @131
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"49E5EB6003A9"
+			    location   	(369, 111)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"49E5EB6003AA"
+				Parent_View 	@131
+				location   	(282, 65)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	174
+				justify    	0
+				label      	"Importo")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4007CC5D022D"
+			    width      	192
+			    height     	117
+			    autoResize 	TRUE)
+			(object InheritView "" @132
+			    quid       	"49E5EB6003AD"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"44FC480501E9"
+			    client     	@130
+			    supplier   	@131
+			    vertices   	(list Points
+				(369, 406)
+				(369, 169))
+			    line_style 	0)))))
+	(object Class_Category "Valore Rivalutato"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpacePrefix"
+		    value      	"OggettiCondivisi")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNameSpaces"
+		    value      	"OggettiCondivisi;"))
+	    quid       	"468B5C8402FD"
+	    stereotype 	"Business Analysis Model"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class "Valore Rivalutato"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"4007CC5D022D")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"Importo")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"4007CC5D022D")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"Importo")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"OggettiCondivisi")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"none")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"Informazione Catastale Terreni;"))
+		    quid       	"44FC481202EC"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"44FC482602B9"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Importo::Importo"
+			    quidu      	"4007CC5D022D"))
+		    realized_interfaces 	(list realize_rel_list
+			(object Realize_Relationship
+			    quid       	"44FC48230387"
+			    supplier   	"Use Case View::People::Contesti Tematici::Fiscali::Servizi Fiscali (Oggetti)::Servizi ICI (Oggetti)::Elaborazioni ICI (Oggetti)::Calcolo ICI Terreno Agricolo::Calcolo ICI Terreno Agricolo"
+			    quidu      	"44FC47700068"))))
+	    logical_presentations 	(list unit_reference_list
+		(object ClassDiagram "Valore Rivalutato-Definizione"
+		    quid       	"468B5CF2026D"
+		    title      	"Valore Rivalutato-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Valore Rivalutato::Valore Rivalutato" @133
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"49E5EB6003B8"
+			    location   	(273, 447)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"49E5EB6003B9"
+				Parent_View 	@133
+				location   	(89, 401)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	368
+				justify    	0
+				label      	"Valore Rivalutato")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"44FC481202EC"
+			    width      	386
+			    height     	117
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Importo::Importo" @134
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"49E5EB6003BC"
+			    location   	(273, 96)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"49E5EB6003BD"
+				Parent_View 	@134
+				location   	(186, 50)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	174
+				justify    	0
+				label      	"Importo")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4007CC5D022D"
+			    width      	192
+			    height     	117
+			    autoResize 	TRUE)
+			(object InheritView "" @135
+			    quid       	"49E5EB6003C0"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"44FC482602B9"
+			    client     	@133
+			    supplier   	@134
+			    vertices   	(list Points
+				(273, 388)
+				(273, 154))
+			    line_style 	0))))))
+    logical_presentations 	(list unit_reference_list
+	(object UseCaseDiagram "Territorio"
+	    quid       	"40425EAB036F"
+	    title      	"Territorio"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	921
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object CategoryView "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Informazione Catastale" @136
+		    quid       	"49E5EB6003C4"
+		    location   	(624, 1023)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			quid       	"49E5EB6003C5"
+			Parent_View 	@136
+			location   	(624, 1255)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	1025
+			justify    	0
+			label      	"Informazione Catastale")
+		    icon       	"Business Analysis Model"
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"403921310257"
+		    width      	324
+		    height     	314)
+		(object CategoryView "Use Case View::Sigmater::SIT::SIT (Oggetti)::Identificativo Parziale Particella" @137
+		    quid       	"49E5EB6003C7"
+		    location   	(1184, 896)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			quid       	"49E5EB6003C8"
+			Parent_View 	@137
+			location   	(1184, 1128)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	1053
+			justify    	0
+			label      	"Identificativo Parziale Particella")
+		    icon       	"Business Analysis Model"
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"403924990160"
+		    width      	324
+		    height     	314)
+		(object CategoryView "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Partita Catastale" @138
+		    quid       	"49E5EB6003CA"
+		    location   	(1743, 960)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			quid       	"49E5EB6003CB"
+			Parent_View 	@138
+			location   	(1743, 1192)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	1031
+			justify    	0
+			label      	"Partita Catastale")
+		    icon       	"Business Analysis Model"
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"4039288A0359"
+		    width      	324
+		    height     	314)
+		(object CategoryView "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Protocollo Catastale" @139
+		    quid       	"49E5EB6003CD"
+		    location   	(1968, 417)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			quid       	"49E5EB6003CE"
+			Parent_View 	@139
+			location   	(1968, 649)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	1034
+			justify    	0
+			label      	"Protocollo Catastale")
+		    icon       	"Business Analysis Model"
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"403929CD02F2"
+		    width      	324
+		    height     	314)
+		(object CategoryView "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio" @140
+		    quid       	"49E5EB6003D0"
+		    location   	(1089, 177)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			quid       	"49E5EB6003D1"
+			Parent_View 	@140
+			location   	(1089, 379)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	724
+			justify    	0
+			label      	"Territorio")
+		    icon       	"Business Domain"
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"3FFB2B3A0163"
+		    width      	252
+		    height     	254)
+		(object ImportView "" @141
+		    quid       	"49E5EB6003D3"
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"40425ED50167"
+		    client     	@140
+		    supplier   	@136
+		    vertices   	(list Points
+			(963, 405)
+			(705, 870))
+		    line_style 	0)
+		(object ImportView "" @142
+		    quid       	"49E5EB6003D5"
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"40425ED601E1"
+		    client     	@140
+		    supplier   	@137
+		    vertices   	(list Points
+			(1118, 405)
+			(1162, 744))
+		    line_style 	0)
+		(object ImportView "" @143
+		    quid       	"49E5EB6003D7"
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"40425ED8008F"
+		    client     	@140
+		    supplier   	@138
+		    vertices   	(list Points
+			(1279, 405)
+			(1613, 807))
+		    line_style 	0)
+		(object ImportView "" @144
+		    quid       	"49E5EB6003D9"
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"40425ED90290"
+		    client     	@140
+		    supplier   	@139
+		    vertices   	(list Points
+			(1209, 208)
+			(1809, 370))
+		    line_style 	0)
+		(object CategoryView "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Reddito Dominicale" @145
+		    quid       	"49E5EB6003DB"
+		    location   	(321, 687)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			quid       	"49E5EB6003DC"
+			Parent_View 	@145
+			location   	(321, 919)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	1066
+			justify    	0
+			label      	"Reddito Dominicale")
+		    icon       	"Business Analysis Model"
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"468B5C6502FB"
+		    width      	324
+		    height     	314)
+		(object ImportView "" @146
+		    quid       	"49E5EB6003DE"
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"468B5C7D0293"
+		    client     	@140
+		    supplier   	@145
+		    vertices   	(list Points
+			(744, 405)
+			(477, 580))
+		    line_style 	0)
+		(object CategoryView "Use Case View::Oggetti::Oggetti Condivisi::Enti::Centrali::Economia::Territorio::Valore Rivalutato" @147
+		    quid       	"49E5EB6003E0"
+		    location   	(225, 240)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			quid       	"49E5EB6003E1"
+			Parent_View 	@147
+			location   	(225, 472)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	1069
+			justify    	0
+			label      	"Valore Rivalutato")
+		    icon       	"Business Analysis Model"
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"468B5C8402FD"
+		    width      	324
+		    height     	314)
+		(object ImportView "" @148
+		    quid       	"49E5EB6003E3"
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"468B5CA1008C"
+		    client     	@140
+		    supplier   	@147
+		    vertices   	(list Points
+			(968, 184)
+			(381, 225))
+		    line_style 	0)))))

@@ -1,0 +1,1785 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	0)
+
+(object Class_Category "Valida Via"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    attributes 	(list Attribute_Set
+	(object Attribute
+	    tool       	"e-gov"
+	    name       	"cg_style"
+	    value      	"Default")
+	(object Attribute
+	    tool       	"e-gov"
+	    name       	"DaPubblicare"
+	    value      	TRUE)
+	(object Attribute
+	    tool       	"e-gov"
+	    name       	"Status"
+	    value      	("StatusTy" 2))
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNameSpacePrefix"
+	    value      	"ServiziCondivisi")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNameSpace"
+	    value      	"")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"UsedNameSpaces"
+	    value      	"ServiziCondivisi;OggettiCondivisi;"))
+    quid       	"43F219190021"
+    stereotype 	"Business System"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object UseCase "Valida Via"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"cg_style"
+		    value      	"Default")
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"TipoDiCollaborazione"
+		    value      	("TipoDiCollaborazioneTy" 9))
+		(object Attribute
+		    tool       	"Arianna"
+		    name       	"Condiviso"
+		    value      	"True")
+		(object Attribute
+		    tool       	"Arianna"
+		    name       	"SoloSupporto"
+		    value      	"True")
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"Richiesta"
+		    value      	0)
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"TipoRichiesta"
+		    value      	"online")
+		(object Attribute
+		    tool       	"e-gov"
+		    name       	"Risposta"
+		    value      	"Cartella Toponimi"))
+	    quid       	"43F2194201D8"
+	    stereotype 	"use-case realization"
+	    statemachine 	(object State_Machine "Valida Via"
+		quid       	"43F21FC700C0"
+		states     	(list States
+		    (object ActivityState "Richiesta di Valida Via"
+			quid       	"43F21FEB02CA"
+			stereotype 	"Business Activity"
+			statemachine 	(object State_Machine "Richiesta di Valida Via"
+			    quid       	"43F22038027B"
+			    states     	(list States
+				(object State "$UNNAMED$0"
+				    quid       	"43F220900386"
+				    type       	"StartState")
+				(object ActivityState "$UNNAMED$1"
+				    quid       	"43F30F140176"
+				    stereotype 	"And"))
+			    partitions 	(list Partitions
+				(object Partition "Richiedente"
+				    quid       	"43F2207B017D"
+				    class      	"Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Richiesta::Richiedente::Richiedente"
+				    quidu      	"401C23EC00CE"
+				    persistence 	"Transient"
+				    creationObj 	FALSE
+				    multi      	FALSE)
+				(object Partition "FSL"
+				    quid       	"43F30167024E"
+				    class      	"Use Case View::Architettura applicativa::Front-End Service Layer (FSL)::FSL"
+				    quidu      	"40164CDB0010"
+				    persistence 	"Transient"
+				    creationObj 	FALSE
+				    multi      	FALSE))
+			    objects    	(list Objects
+				(object Object "Richiesta di Valida Via"
+				    quid       	"43F301B30352"
+				    class      	"Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via (Oggetti)::Richiesta Di Valida Via"
+				    quidu      	"43F21CEA03A1"
+				    persistence 	"Transient"
+				    creationObj 	FALSE
+				    multi      	FALSE)
+				(object Object "Cartella Toponimi"
+				    quid       	"43F30FC40075"
+				    class      	"Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via (Oggetti)::Cartella Toponimi"
+				    quidu      	"43F21D4F039C"
+				    persistence 	"Transient"
+				    creationObj 	FALSE
+				    multi      	FALSE))
+			    transitions 	(list transition_list
+				(object State_Transition
+				    quid       	"43F3019C0287"
+				    label      	""
+				    supplier   	""
+				    supplier_quidu 	"401E49E003BF"
+				    client     	"$UNNAMED$0"
+				    client_quidu 	"43F220900386"
+				    Event      	(object Event "Richiede il servizio Valida Via"
+					quid       	"43F3019C0288")
+				    sendEvent  	(object sendEvent
+					quid       	"43F3019C028A"))
+				(object State_Transition
+				    quid       	"43F30F230308"
+				    supplier   	"$UNNAMED$1"
+				    supplier_quidu 	"43F30F140176"
+				    client     	"Use Case View::Processi::Pattern Di Processo::MetaModello di Erogazione dei Servizi::Richiedente::Compilazione della Richiesta::Compilazione della Richiesta::Compilazione della Richiesta"
+				    client_quidu 	"401F9CD50325"
+				    sendEvent  	(object sendEvent
+					quid       	"43F30F23030B"))
+				(object State_Transition
+				    quid       	"43F30F3C00B5"
+				    supplier   	"Use Case View::Processi::Pattern Di Processo::MetaModello di Erogazione dei Servizi::Richiedente::Inoltro della Richiesta::Inoltro della Richiesta::Inoltro della Richiesta"
+				    supplier_quidu 	"4023B4F30228"
+				    client     	"$UNNAMED$1"
+				    client_quidu 	"43F30F140176"
+				    sendEvent  	(object sendEvent
+					quid       	"43F30F3C00B8")))
+			    objectflows 	(list objectflow_list
+				(object Object_Flow
+				    quid       	"43F30E2203D1"
+				    supplier   	"Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via::Valida Via::Richiesta di Valida Via::Richiesta di Valida Via::Richiesta di Valida Via"
+				    supplier_quidu 	"43F301B30352"
+				    client     	""
+				    client_quidu 	"401E49E003BF"
+				    State      	"Predisposta"
+				    quidstate  	"43F30E580310")
+				(object Object_Flow
+				    quid       	"43F30EF20087"
+				    supplier   	"Use Case View::Processi::Pattern Di Processo::MetaModello di Erogazione dei Servizi::Richiedente::Compilazione della Richiesta::Compilazione della Richiesta::Compilazione della Richiesta"
+				    supplier_quidu 	"401F9CD50325"
+				    client     	"Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via::Valida Via::Richiesta di Valida Via::Richiesta di Valida Via::Richiesta di Valida Via"
+				    client_quidu 	"43F301B30352"
+				    State      	"Completamente Compilata"
+				    quidstate  	"43F30EC70338")
+				(object Object_Flow
+				    quid       	"43F30F0A02BC"
+				    supplier   	"Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via::Valida Via::Richiesta di Valida Via::Richiesta di Valida Via::Richiesta di Valida Via"
+				    supplier_quidu 	"43F301B30352"
+				    client     	"Use Case View::Processi::Pattern Di Processo::MetaModello di Erogazione dei Servizi::Richiedente::Compilazione della Richiesta::Compilazione della Richiesta::Compilazione della Richiesta"
+				    client_quidu 	"401F9CD50325"
+				    State      	"Completamente Compilata"
+				    quidstate  	"43F30EC70338")
+				(object Object_Flow
+				    quid       	"43F30F20017D"
+				    supplier   	"$UNNAMED$1"
+				    supplier_quidu 	"43F30F140176"
+				    client     	"Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via::Valida Via::Richiesta di Valida Via::Richiesta di Valida Via::Richiesta di Valida Via"
+				    client_quidu 	"43F301B30352"
+				    State      	"Completamente Compilata"
+				    quidstate  	"43F30EC70338")
+				(object Object_Flow
+				    quid       	"43F30FC802D3"
+				    supplier   	"Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via::Valida Via::Richiesta di Valida Via::Richiesta di Valida Via::Cartella Toponimi"
+				    supplier_quidu 	"43F30FC40075"
+				    client     	""
+				    client_quidu 	"40250DC50357"))
+			    statediagrams 	(list StateDiagrams
+				(object ActivityDiagram "Richiesta di Valida Via-WF"
+				    quid       	"43F2203802A3"
+				    title      	"Richiesta di Valida Via-WF"
+				    zoom       	90
+				    max_height 	28350
+				    max_width  	21600
+				    origin_x   	0
+				    origin_y   	2098
+				    items      	(list diagram_item_list
+					(object Swimlane "Richiedente" @1
+					    quid       	"4DBC5A1205A7"
+					    line_color 	3342489
+					    quidu      	"43F2207B017D"
+					    width      	3584)
+					(object StateView "StartState" "$UNNAMED$0" @2
+					    quid       	"4DBC5A1205A8"
+					    Parent_View 	@1
+					    location   	(304, 144)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @3
+						quid       	"4DBC5A1205A9"
+						Parent_View 	@2
+						location   	(346, 114)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	TRUE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						hidden     	TRUE
+						nlines     	2
+						max_width  	174
+						justify    	1
+						label      	""
+						pctDist    	1.000000
+						height     	0
+						orientation 	0)
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    quidu      	"43F220900386"
+					    autoResize 	TRUE)
+					(object ObjectView "Richiesta di Valida Via" @4
+					    quid       	"4DBC5A1205AA"
+					    Parent_View 	@1
+					    location   	(576, 560)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A1205AB"
+						Parent_View 	@4
+						location   	(576, 783)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	5893
+						justify    	0
+						label      	"Richiesta di Valida Via")
+					    icon       	"Modulo (Form)"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"43F301B30352"
+					    compartment 	(object Compartment
+						quid       	"4DBC5A1205AD"
+						Parent_View 	@4
+						location   	(456, 825)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						icon_style 	"Icon"
+						anchor     	2
+						nlines     	1
+						max_width  	254
+						justify    	0
+						compartmentItems 	(list Compartment
+						    "[Predisposta]"))
+					    annotation 	4
+					    autoResize 	TRUE
+					    subobjects 	0
+					    x_offset   	0.000000
+					    y_offset   	0.000000
+					    State      	"Predisposta"
+					    quidstate  	"43F30E580310")
+					(object ActivityStateView "Compilazione della Richiesta" @5
+					    quid       	"4DBC5A1205AF"
+					    Parent_View 	@1
+					    location   	(576, 1440)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A1205B0"
+						Parent_View 	@5
+						location   	(576, 1584)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	874
+						justify    	0
+						label      	"Compilazione della Richiesta")
+					    icon       	"Business Activity"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"401F9CD50325"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object Object_Flow_View "" @6
+					    quid       	"4DBC5A1205B2"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"43F30EF20087"
+					    client     	@4
+					    supplier   	@5
+					    vertices   	(list Points
+						(576, 874)
+						(576, 1375))
+					    line_style 	0)
+					(object ObjectView "Richiesta di Valida Via" @7
+					    quid       	"4DBC5A1205B4"
+					    Parent_View 	@1
+					    location   	(1552, 1792)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A1205B5"
+						Parent_View 	@7
+						location   	(1552, 2015)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	5896
+						justify    	0
+						label      	"Richiesta di Valida Via")
+					    icon       	"Modulo (Form)"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"43F301B30352"
+					    compartment 	(object Compartment
+						quid       	"4DBC5A1205B7"
+						Parent_View 	@7
+						location   	(1287, 2057)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						icon_style 	"Icon"
+						anchor     	2
+						nlines     	1
+						max_width  	538
+						justify    	0
+						compartmentItems 	(list Compartment
+						    "[Completamente Compilata]"))
+					    annotation 	4
+					    autoResize 	TRUE
+					    subobjects 	0
+					    x_offset   	0.000000
+					    y_offset   	0.000000
+					    State      	"Completamente Compilata"
+					    quidstate  	"43F30EC70338")
+					(object Object_Flow_View "" @8
+					    quid       	"4DBC5A1205B9"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"43F30F0A02BC"
+					    client     	@5
+					    supplier   	@7
+					    vertices   	(list Points
+						(718, 1490)
+						(1430, 1746))
+					    line_style 	0)
+					(object ActivityStateView "$UNNAMED$1" @9
+					    quid       	"4DBC5A1205BB"
+					    Parent_View 	@1
+					    location   	(432, 2175)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A1205BC"
+						Parent_View 	@9
+						location   	(432, 2312)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	354
+						justify    	0
+						label      	"")
+					    icon       	"And"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"43F30F140176"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object Object_Flow_View "" @10
+					    quid       	"4DBC5A1205BD"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"43F30F20017D"
+					    client     	@7
+					    supplier   	@9
+					    vertices   	(list Points
+						(1428, 1831)
+						(489, 2153))
+					    line_style 	0)
+					(object TransView "" @11
+					    quid       	"4DBC5A1205BF"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"43F30F230308"
+					    client     	@5
+					    supplier   	@9
+					    vertices   	(list Points
+						(561, 1503)
+						(441, 2118))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object ActivityStateView "Inoltro della Richiesta" @12
+					    quid       	"4DBC5A1205C1"
+					    Parent_View 	@1
+					    location   	(432, 2624)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A1205C2"
+						Parent_View 	@12
+						location   	(432, 2768)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	874
+						justify    	0
+						label      	"Inoltro della Richiesta")
+					    icon       	"Business Activity"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"4023B4F30228"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object TransView "" @13
+					    quid       	"4DBC5A1205C4"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"43F30F3C00B5"
+					    client     	@9
+					    supplier   	@12
+					    vertices   	(list Points
+						(432, 2231)
+						(432, 2560))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object ObjectView "Cartella Toponimi" @14
+					    quid       	"4DBC5A1205C6"
+					    Parent_View 	@1
+					    location   	(2192, 2960)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A1205C7"
+						Parent_View 	@14
+						location   	(2191, 3176)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	5388
+						justify    	0
+						label      	"Cartella Toponimi")
+					    icon       	"Business Document"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"43F30FC40075"
+					    width      	228
+					    annotation 	4
+					    autoResize 	TRUE
+					    subobjects 	0
+					    x_offset   	0.000000
+					    y_offset   	0.000000)
+					(object Swimlane "FSL" @15
+					    quid       	"4DBC5A1205C9"
+					    location   	(3584, 0)
+					    line_color 	3342489
+					    quidu      	"43F30167024E"
+					    width      	1214)
+					(object ActivityStateView "Predisposizione del Modulo di Richiesta" @16
+					    quid       	"4DBC5A1205CA"
+					    Parent_View 	@15
+					    location   	(4272, 144)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A1205CB"
+						Parent_View 	@16
+						location   	(4272, 288)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	872
+						justify    	0
+						label      	"Predisposizione del Modulo di Richiesta")
+					    icon       	"Business Activity"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"401E49E003BF"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object TransView "" @17
+					    quid       	"4DBC5A1205CD"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object SegLabel @18
+						quid       	"4DBC5A1205CE"
+						Parent_View 	@17
+						location   	(2232, 100)
+						font       	(object Font
+						    size       	10
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						anchor_loc 	1
+						nlines     	1
+						max_width  	558
+						justify    	0
+						label      	"Richiede il servizio Valida Via"
+						pctDist    	0.500000
+						height     	45
+						orientation 	0)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"43F3019C0287"
+					    client     	@2
+					    supplier   	@16
+					    vertices   	(list Points
+						(334, 144)
+						(4130, 144))
+					    line_style 	0
+					    x_offset   	FALSE)
+					(object Object_Flow_View "" @19
+					    quid       	"4DBC5A1205D0"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"43F30E2203D1"
+					    client     	@16
+					    supplier   	@4
+					    vertices   	(list Points
+						(4130, 158)
+						(696, 542))
+					    line_style 	0)
+					(object ActivityStateView "Processa la Richiesta" @20
+					    quid       	"4DBC5A1205D2"
+					    Parent_View 	@15
+					    location   	(3952, 2624)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    label      	(object ItemLabel
+						quid       	"4DBC5A1205D3"
+						Parent_View 	@20
+						location   	(3952, 2778)
+						anchor_loc 	1
+						nlines     	2
+						max_width  	1023
+						justify    	0
+						label      	"Processa la Richiesta")
+					    icon       	"Business Transaction"
+					    icon_style 	"Icon"
+					    line_color 	3342489
+					    fill_color 	13434879
+					    quidu      	"40250DC50357"
+					    annotation 	1
+					    autoResize 	TRUE)
+					(object Swimlane "" @21
+					    quid       	"4DBC5A1205D5"
+					    location   	(4798, 0)
+					    line_color 	3342489
+					    width      	450)
+					(object Object_Flow_View "" @22
+					    quid       	"4DBC5A1205D6"
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"43F30FC802D3"
+					    client     	@20
+					    supplier   	@14
+					    vertices   	(list Points
+						(3784, 2654)
+						(2303, 2935))
+					    line_style 	0)
+					(object TransView "" @23
+					    quid       	"4DBC5A1205D8"
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	FALSE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    stereotype 	TRUE
+					    line_color 	3342489
+					    quidu      	"40F2A002038E"
+					    client     	@12
+					    supplier   	@20
+					    vertices   	(list Points
+						(574, 2624)
+						(3785, 2624))
+					    line_style 	0
+					    x_offset   	FALSE)))))))
+		partitions 	(list Partitions)
+		objects    	(list Objects)
+		transitions 	(list transition_list)
+		objectflows 	(list objectflow_list)
+		statediagrams 	(list StateDiagrams))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "Valida Via"
+		    quid       	"43F21E8C0239"
+		    title      	"Valida Via"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via (Oggetti)::Richiesta Di Valida Via" @24
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1205DC"
+			    location   	(1377, 303)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1205DD"
+				Parent_View 	@24
+				location   	(1377, 526)
+				anchor_loc 	1
+				nlines     	1
+				max_width  	5490
+				justify    	0
+				label      	"Richiesta Di Valida Via")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"43F21CEA03A1"
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via (Oggetti)::Cartella Toponimi" @25
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1205E0"
+			    location   	(1329, 1041)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1205E1"
+				Parent_View 	@25
+				location   	(1328, 1257)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	4417
+				justify    	0
+				label      	"Cartella Toponimi")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"43F21D4F039C"
+			    width      	228
+			    autoResize 	TRUE)
+			(object UseCaseView "Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via" @26
+			    quid       	"4DBC5A1205E4"
+			    location   	(927, 735)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1205E5"
+				Parent_View 	@26
+				location   	(927, 876)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	648
+				justify    	0
+				label      	"Valida Via")
+			    icon       	"use-case realization"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"43F2194201D8")
+			(object AssociationViewNew "" @27
+			    quid       	"4DBC5A1205E7"
+			    location   	(1074, 592)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"43F21EAF0034"
+			    roleview_list 	(list RoleViews
+				(object RoleView "" @28
+				    quid       	"4DBC5A1205E9"
+				    Parent_View 	@27
+				    location   	(322, -144)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"43F21EAF024E"
+				    client     	@27
+				    supplier   	@24
+				    vertices   	(list Points
+					(1074, 592)
+					(1163, 510))
+				    line_style 	0)
+				(object RoleView "" @29
+				    quid       	"4DBC5A1205EB"
+				    Parent_View 	@27
+				    location   	(322, -144)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"43F21EAF0258"
+				    client     	@27
+				    supplier   	@26
+				    vertices   	(list Points
+					(1074, 592)
+					(986, 674))
+				    line_style 	0)))
+			(object AssociationViewNew "" @30
+			    quid       	"4DBC5A1205ED"
+			    location   	(1120, 880)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"43F21EB10267"
+			    roleview_list 	(list RoleViews
+				(object RoleView "" @31
+				    quid       	"4DBC5A1205EF"
+				    Parent_View 	@30
+				    location   	(368, 144)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"43F21EB201C6"
+				    client     	@30
+				    supplier   	@25
+				    vertices   	(list Points
+					(1120, 880)
+					(1216, 953))
+				    line_style 	0)
+				(object RoleView "" @32
+				    quid       	"4DBC5A1205F1"
+				    Parent_View 	@30
+				    location   	(368, 144)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"43F21EB201C8"
+				    client     	@30
+				    supplier   	@26
+				    vertices   	(list Points
+					(1120, 880)
+					(1024, 808))
+				    line_style 	0)))
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Attori::Service Layer Non Autenticato" @33
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A1205F3"
+			    location   	(321, 735)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A1205F4"
+				Parent_View 	@33
+				location   	(320, 908)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	1356
+				justify    	0
+				label      	"Service Layer Non Autenticato")
+			    icon       	"Resource"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"43560E2F0330"
+			    width      	310
+			    height     	188
+			    autoResize 	TRUE)
+			(object AssociationViewNew "Richiede" @34
+			    quid       	"4DBC5A1205F7"
+			    location   	(643, 735)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @35
+				quid       	"4DBC5A1205F8"
+				Parent_View 	@34
+				location   	(643, 676)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	TRUE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"Richiede"
+				pctDist    	0.500000
+				height     	60
+				orientation 	0)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"43F21EE00341"
+			    roleview_list 	(list RoleViews
+				(object RoleView "" @36
+				    quid       	"4DBC5A1205FA"
+				    Parent_View 	@34
+				    location   	(323, -1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"43F21EE1030E"
+				    client     	@34
+				    supplier   	@26
+				    vertices   	(list Points
+					(643, 735)
+					(814, 735))
+				    line_style 	0)
+				(object RoleView "" @37
+				    quid       	"4DBC5A1205FC"
+				    Parent_View 	@34
+				    location   	(323, -1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"43F21EE10310"
+				    client     	@34
+				    supplier   	@33
+				    vertices   	(list Points
+					(643, 735)
+					(473, 735))
+				    line_style 	0)))))))
+	(object Association "$UNNAMED$2"
+	    quid       	"43F21EAF0034"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$3"
+		    quid       	"43F21EAF024E"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via (Oggetti)::Richiesta Di Valida Via"
+		    quidu      	"43F21CEA03A1"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$4"
+		    quid       	"43F21EAF0258"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via"
+		    quidu      	"43F2194201D8")))
+	(object Association "$UNNAMED$5"
+	    quid       	"43F21EB10267"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$6"
+		    quid       	"43F21EB201C6"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via (Oggetti)::Cartella Toponimi"
+		    quidu      	"43F21D4F039C"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$7"
+		    quid       	"43F21EB201C8"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via"
+		    quidu      	"43F2194201D8")))
+	(object Association "Richiede"
+	    quid       	"43F21EE00341"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$8"
+		    quid       	"43F21EE1030E"
+		    supplier   	"Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via"
+		    quidu      	"43F2194201D8"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$9"
+		    quid       	"43F21EE10310"
+		    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Attori::Service Layer Non Autenticato"
+		    quidu      	"43560E2F0330")))
+	(object Class_Category "Valida Via (Oggetti)"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpacePrefix"
+		    value      	"ServiziCondivisi")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNameSpaces"
+		    value      	"ServiziCondivisi;OggettiCondivisi;"))
+	    quid       	"43F21B080131"
+	    stereotype 	"Business Analysis Model"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class "Richiesta Di Valida Via"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"2")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"43560BFE03DE")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"OggettiCondivisi:RichiestaSenzaAutenticazione")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"43560BFE03DE")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"OggettiCondivisi:RichiestaSenzaAutenticazione")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"ServiziCondivisi")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"Only Ref")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"Dug;Denominazione;"))
+		    quid       	"43F21CEA03A1"
+		    stereotype 	"Modulo (Form)"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"43F21F3000C3"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Richiesta senza Autenticazione::Richiesta Senza Autenticazione"
+			    quidu      	"43560BFE03DE"))
+		    statemachine 	(object State_Machine "Richiesta di Valida Via"
+			quid       	"43F30E4301D0"
+			states     	(list States
+			    (object State "Predisposta"
+				quid       	"43F30E580310"
+				type       	"Normal")
+			    (object State "Completamente Compilata"
+				quid       	"43F30EC70338"
+				type       	"Normal"))
+			partitions 	(list Partitions)
+			objects    	(list Objects)
+			transitions 	(list transition_list)
+			objectflows 	(list objectflow_list)
+			statediagrams 	(list StateDiagrams)))
+		(object Class "Cartella Toponimi"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"1")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"3EEDAE420055")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"OggettiCondivisi:Risposta")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"complex")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"3EEDAE420055")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"OggettiCondivisi:Risposta")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"ServiziCondivisi")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"Only Ref")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"Toponimo;"))
+		    quid       	"43F21D4F039C"
+		    stereotype 	"Business Document"
+		    superclasses 	(list inheritance_relationship_list
+			(object Inheritance_Relationship
+			    quid       	"43F21F900233"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Risposta::Risposta"
+			    quidu      	"3EEDAE420055")))
+		(object Association "$UNNAMED$10"
+		    quid       	"43F21E3B036C"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$11"
+			    quid       	"43F21E3C0298"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Oggetti Relativi a Servizi::Indirizzo::Indirizzo Italiano::Toponimo::Dug"
+			    quidu      	"40B765A7028A"
+			    client_cardinality 	(value cardinality "0..1")
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$12"
+			    quid       	"43F21E3C02A2"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via (Oggetti)::Richiesta Di Valida Via"
+			    quidu      	"43F21CEA03A1"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$13"
+		    quid       	"43F21E6101FE"
+		    roles      	(list role_list
+			(object Role "Denominazione"
+			    quid       	"43F21E620030"
+			    label      	"Denominazione"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Testo::Testo"
+			    quidu      	"4006E1450246"
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$14"
+			    quid       	"43F21E62013E"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via (Oggetti)::Richiesta Di Valida Via"
+			    quidu      	"43F21CEA03A1"
+			    is_aggregate 	TRUE)))
+		(object Association "$UNNAMED$15"
+		    quid       	"43F21F7802AA"
+		    roles      	(list role_list
+			(object Role "$UNNAMED$16"
+			    quid       	"43F21F7901FE"
+			    supplier   	"Use Case View::Oggetti::Oggetti Condivisi::Oggetti Relativi a Servizi::Indirizzo::Indirizzo Italiano::Toponimo::Toponimo"
+			    quidu      	"4064409E03E1"
+			    client_cardinality 	(value cardinality "0..*")
+			    is_navigable 	TRUE)
+			(object Role "$UNNAMED$17"
+			    quid       	"43F21F790208"
+			    supplier   	"Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via (Oggetti)::Cartella Toponimi"
+			    quidu      	"43F21D4F039C"
+			    is_aggregate 	TRUE))))
+	    logical_presentations 	(list unit_reference_list
+		(object ClassDiagram "Richiesta di Valida Via-Definizione"
+		    quid       	"43F21D28033C"
+		    title      	"Richiesta di Valida Via-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Oggetti Relativi a Servizi::Indirizzo::Indirizzo Italiano::Toponimo::Dug" @38
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    quid       	"4DBC5A12062B"
+			    location   	(207, 225)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A12062C"
+				Parent_View 	@38
+				location   	(206, 381)
+				anchor_loc 	1
+				nlines     	1
+				max_width  	423
+				justify    	0
+				label      	"Dug")
+			    icon       	"Domain"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"40B765A7028A"
+			    width      	154
+			    height     	154)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Dominii::Tipi Dati di Base::Testo::Testo" @39
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A12062F"
+			    location   	(1056, 144)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A120630"
+				Parent_View 	@39
+				location   	(975, 98)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	162
+				justify    	0
+				label      	"Testo")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4006E1450246"
+			    height     	117
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via (Oggetti)::Richiesta Di Valida Via" @40
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A120633"
+			    location   	(639, 465)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A120634"
+				Parent_View 	@40
+				location   	(639, 688)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	5546
+				justify    	0
+				label      	"Richiesta Di Valida Via")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"43F21CEA03A1"
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$10" @41
+			    quid       	"4DBC5A120637"
+			    location   	(398, 328)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"43F21E3B036C"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$11" @42
+				    quid       	"4DBC5A120638"
+				    Parent_View 	@41
+				    location   	(-34, -216)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"43F21E3C0298"
+				    client     	@41
+				    supplier   	@38
+				    vertices   	(list Points
+					(398, 328)
+					(281, 264))
+				    line_style 	0
+				    label      	(object SegLabel @43
+					quid       	"4DBC5A120639"
+					Parent_View 	@42
+					location   	(362, 227)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..1"
+					pctDist    	0.610338
+					height     	72
+					orientation 	1))
+				(object RoleView "$UNNAMED$12" @44
+				    quid       	"4DBC5A12063A"
+				    Parent_View 	@41
+				    location   	(-34, -216)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"43F21E3C02A2"
+				    client     	@41
+				    supplier   	@40
+				    vertices   	(list Points
+					(398, 328)
+					(515, 392))
+				    line_style 	0)))
+			(object AssociationViewNew "$UNNAMED$13" @45
+			    quid       	"4DBC5A12063B"
+			    location   	(868, 285)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"43F21E6101FE"
+			    roleview_list 	(list RoleViews
+				(object RoleView "Denominazione" @46
+				    quid       	"4DBC5A12063C"
+				    Parent_View 	@45
+				    location   	(228, -179)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @47
+					quid       	"4DBC5A12063D"
+					Parent_View 	@46
+					location   	(934, 238)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	1
+					anchor_loc 	1
+					nlines     	1
+					max_width  	300
+					justify    	0
+					label      	"+Denominazione"
+					pctDist    	0.594526
+					height     	2
+					orientation 	1)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"43F21E620030"
+				    client     	@45
+				    supplier   	@39
+				    vertices   	(list Points
+					(868, 285)
+					(978, 202))
+				    line_style 	0)
+				(object RoleView "$UNNAMED$14" @48
+				    quid       	"4DBC5A12063F"
+				    Parent_View 	@45
+				    location   	(228, -179)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"43F21E62013E"
+				    client     	@45
+				    supplier   	@40
+				    vertices   	(list Points
+					(868, 285)
+					(759, 369))
+				    line_style 	0)))
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Richiesta senza Autenticazione::Richiesta Senza Autenticazione" @49
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A120640"
+			    location   	(639, 1143)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A120641"
+				Parent_View 	@49
+				location   	(639, 1366)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	5546
+				justify    	0
+				label      	"Richiesta Senza Autenticazione")
+			    icon       	"Modulo (Form)"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"43560BFE03DE"
+			    autoResize 	TRUE)
+			(object InheritView "" @50
+			    quid       	"4DBC5A120644"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"43F21F3000C3"
+			    client     	@40
+			    supplier   	@49
+			    vertices   	(list Points
+				(639, 713)
+				(639, 998))
+			    line_style 	0)))
+		(object ClassDiagram "Cartella Toponimi-Definizione"
+		    quid       	"43F21D75017A"
+		    title      	"Cartella Toponimi-Definizione"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Oggetti Relativi a Servizi::Indirizzo::Indirizzo Italiano::Toponimo::Toponimo" @51
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A120648"
+			    location   	(417, 225)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A120649"
+				Parent_View 	@51
+				location   	(314, 179)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	206
+				justify    	0
+				label      	"Toponimo")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"4064409E03E1"
+			    width      	224
+			    height     	117
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Servizi::Servizi Di Business::Servizi Condivisi::Servizi Condivisi (Servizi)::Valida Via::Valida Via (Oggetti)::Cartella Toponimi" @52
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A12064C"
+			    location   	(417, 657)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A12064D"
+				Parent_View 	@52
+				location   	(416, 873)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	4420
+				justify    	0
+				label      	"Cartella Toponimi")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"43F21D4F039C"
+			    width      	228
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "$UNNAMED$15" @53
+			    quid       	"4DBC5A120650"
+			    location   	(417, 402)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"43F21F7802AA"
+			    roleview_list 	(list RoleViews
+				(object RoleView "$UNNAMED$16" @54
+				    quid       	"4DBC5A120651"
+				    Parent_View 	@53
+				    location   	(1, -254)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"43F21F7901FE"
+				    client     	@53
+				    supplier   	@51
+				    vertices   	(list Points
+					(417, 402)
+					(417, 283))
+				    line_style 	0
+				    label      	(object SegLabel @55
+					quid       	"4DBC5A120652"
+					Parent_View 	@54
+					location   	(487, 317)
+					font       	(object Font
+					    size       	10
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor     	2
+					anchor_loc 	1
+					nlines     	1
+					max_width  	15
+					justify    	0
+					label      	"0..*"
+					pctDist    	0.714286
+					height     	70
+					orientation 	1))
+				(object RoleView "$UNNAMED$17" @56
+				    quid       	"4DBC5A120653"
+				    Parent_View 	@53
+				    location   	(1, -254)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"43F21F790208"
+				    client     	@53
+				    supplier   	@52
+				    vertices   	(list Points
+					(417, 402)
+					(417, 521))
+				    line_style 	0)))
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Risposta::Risposta" @57
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    quid       	"4DBC5A120654"
+			    location   	(417, 1215)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	TRUE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4DBC5A120655"
+				Parent_View 	@57
+				location   	(416, 1431)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	1351
+				justify    	0
+				label      	"Risposta")
+			    icon       	"Business Document"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"3EEDAE420055"
+			    width      	228
+			    autoResize 	TRUE)
+			(object InheritView "" @58
+			    quid       	"4DBC5A120658"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"43F21F900233"
+			    client     	@52
+			    supplier   	@57
+			    vertices   	(list Points
+				(417, 898)
+				(417, 1079))
+			    line_style 	0))))))
+    logical_presentations 	(list unit_reference_list))

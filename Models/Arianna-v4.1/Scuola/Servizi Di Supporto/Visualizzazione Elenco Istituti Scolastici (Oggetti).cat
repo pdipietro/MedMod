@@ -1,0 +1,386 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	0)
+
+(object Class_Category "Visualizzazione Elenco Istituti Scolastici"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    attributes 	(list Attribute_Set
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNameSpacePrefix"
+	    value      	"OggettiTematici")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"RealNameSpace"
+	    value      	"")
+	(object Attribute
+	    tool       	"XSDGen"
+	    name       	"UsedNameSpaces"
+	    value      	"OggettiTematici;"))
+    quid       	"49E4DCBB00F9"
+    stereotype 	"Business Analysis Model"
+    visible_categories 	(list visibility_relationship_list
+	(object Visibility_Relationship
+	    quid       	"49E4DF3503B5"
+	    supplier   	"Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Scuola (Oggetti)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Titolare Richiesta Visualizzazione Elenco Istituti Scolastici"
+	    quidu      	"49E4DD980159"))
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class_Category "Titolare Richiesta Visualizzazione Elenco Istituti Scolastici"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpacePrefix"
+		    value      	"OggettiTematici")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"RealNameSpace"
+		    value      	"")
+		(object Attribute
+		    tool       	"XSDGen"
+		    name       	"UsedNameSpaces"
+		    value      	"OggettiTematici;"))
+	    quid       	"49E4DD980159"
+	    stereotype 	"Business Analysis Model"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class "Titolare Richiesta Visualizzazione Elenco Istituti Scolastici"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"SelfDiscovery"
+			    value      	"choice")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"hasGroup"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedNo"
+			    value      	"2")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Realized"
+			    value      	"OggettiCondivisi:CredenzialiUtente;OggettiCondivisi:CredenzialiUtenteCertificate;")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealizedID"
+			    value      	"40156B4703C1;417C2C860170;")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Inherited"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"InheritedID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributesNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AssociationNo"
+			    value      	"0")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Virtual"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClass"
+			    value      	"none")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"BaseClassName"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClass"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassID"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"PureBaseClassName"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isDomain"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"isException"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Lavorato"
+			    value      	"True")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"UsedNameSpaces"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpace"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"RealNameSpacePrefix"
+			    value      	"OggettiTematici")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasReferences"
+			    value      	"none")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"HasConst"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Attributes"
+			    value      	"")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"Abstract"
+			    value      	"False")
+			(object Attribute
+			    tool       	"XSDGen"
+			    name       	"AttributeNames"
+			    value      	"Richiesta Di Visualizzazione Elenco Istituti Scolastici;"))
+		    quid       	"49E4DC2600C8"))
+	    logical_presentations 	(list unit_reference_list
+		(object ClassDiagram "Titolare Richiesta Visualizzazione Elenco Istituti Scolastici"
+		    quid       	"49E4DEFF0328"
+		    title      	"Titolare Richiesta Visualizzazione Elenco Istituti Scolastici"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Scuola (Oggetti)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Titolare Richiesta Visualizzazione Elenco Istituti Scolastici::Titolare Richiesta Visualizzazione Elenco Istituti Scolastici" @1
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4A01637B0072"
+			    location   	(831, 303)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4A01637B0073"
+				Parent_View 	@1
+				location   	(258, 257)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	1146
+				justify    	0
+				label      	"Titolare Richiesta Visualizzazione Elenco Istituti Scolastici")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"49E4DC2600C8"
+			    width      	1164
+			    height     	117
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Credenziali::Credenziali Utente::Credenziali Utente" @2
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4A01637B0077"
+			    location   	(399, 735)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4A01637B0078"
+				Parent_View 	@2
+				location   	(205, 689)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	388
+				justify    	0
+				label      	"Credenziali Utente")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"40156B4703C1"
+			    width      	406
+			    height     	117
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::Oggetti::Oggetti Condivisi::Concetti base::Credenziali::Credenziali Certificate::Credenziali Utente Certificate::Credenziali Utente Certificate" @3
+			    ShowCompartmentStereotypes 	TRUE
+			    SuppressAttribute 	TRUE
+			    SuppressOperation 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    quid       	"4A01637B007C"
+			    location   	(1233, 735)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				quid       	"4A01637B007D"
+				Parent_View 	@3
+				location   	(921, 689)
+				fill_color 	13434879
+				nlines     	1
+				max_width  	624
+				justify    	0
+				label      	"Credenziali Utente Certificate")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"417C2C860170"
+			    width      	642
+			    height     	117
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object RealizeView "" @4
+			    quid       	"4A01637B0081"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"49E4F400031C"
+			    client     	@2
+			    supplier   	@1
+			    vertices   	(list Points
+				(456, 676)
+				(771, 361))
+			    line_style 	0)
+			(object InheritView "" @5
+			    quid       	"4A01637B0083"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"417C2CB20354"
+			    client     	@3
+			    supplier   	@2
+			    vertices   	(list Points
+				(911, 735)
+				(602, 735))
+			    line_style 	0)
+			(object RealizeView "" @6
+			    quid       	"4A01637B0085"
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"49E4F4000327"
+			    client     	@3
+			    supplier   	@1
+			    vertices   	(list Points
+				(1177, 676)
+				(885, 361))
+			    line_style 	0))))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "Visualizzazione Elenco Istituti Scolastici (Oggetti)"
+	    quid       	"49E4DDB0029C"
+	    title      	"Visualizzazione Elenco Istituti Scolastici (Oggetti)"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	372
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object CategoryView "Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Scuola (Oggetti)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici::Titolare Richiesta Visualizzazione Elenco Istituti Scolastici" @7
+		    quid       	"4A01637B0089"
+		    location   	(975, 975)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			quid       	"4A01637B008A"
+			Parent_View 	@7
+			location   	(975, 1207)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	937
+			justify    	0
+			label      	"Titolare Richiesta Visualizzazione Elenco Istituti Scolastici")
+		    icon       	"Business Analysis Model"
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"49E4DD980159"
+		    width      	324
+		    height     	314)
+		(object CategoryView "Use Case View::Oggetti::Oggetti Tematici::Pubblica Amministrazione (Oggetti)::Scuola (Oggetti)::Servizi Di Supporto::Visualizzazione Elenco Istituti Scolastici" @8
+		    quid       	"4A01637B008C"
+		    location   	(1185, 288)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			quid       	"4A01637B008D"
+			Parent_View 	@8
+			location   	(1185, 520)
+			anchor_loc 	1
+			nlines     	2
+			max_width  	937
+			justify    	0
+			label      	"Visualizzazione Elenco Istituti Scolastici")
+		    icon       	"Business Analysis Model"
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"49E4DCBB00F9"
+		    width      	324
+		    height     	314)
+		(object ImportView "" @9
+		    quid       	"4A01637B008F"
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"49E4DF3503B5"
+		    client     	@8
+		    supplier   	@7
+		    vertices   	(list Points
+			(1137, 439)
+			(1020, 823))
+		    line_style 	0)))))
